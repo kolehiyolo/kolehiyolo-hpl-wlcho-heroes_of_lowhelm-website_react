@@ -1,0 +1,74 @@
+body {
+    background-color:#F0F0F0;
+    font-family: 'Raleway','Source Sans Pro', 'Arial';
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("assets/images/staking/hero-section-bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+label {
+    display:block;
+    margin-bottom:10px;
+}
+input {
+    padding:10px;
+    width: 100%;
+    margin-bottom: 1em;
+}
+button {
+    margin: 2em 0;
+    padding: 1em 4em;
+    display:block;
+}
+#result {
+    padding:1em;
+    background-color:#fff;
+    width: 100%;
+    padding:10px;
+    margin: 1em 0;
+}
+.headerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 200px;
+}
+.totalNetworkContainer {
+    background-image: url("./assets/images/staking/fill.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px;
+    margin: 15px;
+    color: #dac799;
+}
+.colorYellow {
+    color: #dac799 !important;
+}
+.font-bold {
+    font-weight: bold;
+}
+.stakeFormSection {
+    margin-bottom: 20px;
+}
+.loadingContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.oneLineFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.oneLineBetween {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

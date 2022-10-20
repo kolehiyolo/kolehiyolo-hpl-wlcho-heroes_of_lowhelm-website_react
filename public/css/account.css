@@ -1,0 +1,2247 @@
+html body {
+  /* Mobile Size */
+}
+@media (min-width: 0px) {
+  html body .header p {
+    margin: 0;
+  }
+  html body .header-account {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: black;
+    top: 85px;
+    margin: 0;
+    width: 350px;
+    right: 0;
+    transition: right 0.5s;
+    border-radius: 0 0 0 20px;
+  }
+  html body .header-account ul {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0;
+    margin: 0;
+  }
+  html body .header-account ul li {
+    list-style-type: none;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+  }
+  html body .header-account ul li form {
+    width: 100%;
+    height: 100%;
+  }
+  html body .header-account ul li form button {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: white !important;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 15px 40px;
+  }
+  html body .header-account ul li a, html body .header-account ul li form {
+    color: white !important;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    z-index: 15;
+    position: relative;
+  }
+  html body .header-account ul li a {
+    padding: 15px 40px;
+  }
+  html body .header-account ul li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 60px !important;
+    width: 0%;
+    right: 0;
+    bottom: 0;
+    transition: width 0.25s ease-out;
+    background: linear-gradient(to left, #d7c396 0%, transparent 100%);
+    opacity: 0.3;
+    z-index: 10;
+  }
+  html body .header-account ul li:hover:before {
+    width: 100%;
+  }
+  html body .header-account ul li.header-navigation-item-active:before {
+    width: 100%;
+  }
+  html body .header-account ul li:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    transition: width 0.3s;
+    margin: 0;
+    border-top: 0;
+    border: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+    opacity: 0.5;
+    background: linear-gradient(90deg, rgba(0, 212, 255, 0) 0%, #d7c396 20%, #FFF 50%, #d7c396 80%, rgba(0, 212, 255, 0) 100%);
+  }
+  html body .header-account-collapsed-active {
+    right: 0;
+  }
+  html body .header-account-collapsed-inactive {
+    right: -100vw;
+  }
+}
+@media (min-width: 0px) and (max-width: 600px) {
+  html body .header {
+    padding: 0 15px !important;
+  }
+  html body .header-branding a img {
+    width: 200px !important;
+  }
+  html body .header-documentation-toggle, html body .header-collapse-btn {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  html body .header-documentation-toggle button, html body .header-collapse-btn button {
+    width: 30px !important;
+    height: 30px !important;
+    font-size: 30px !important;
+  }
+  html body .header-documentation-toggle button i, html body .header-collapse-btn button i {
+    position: relative;
+    top: -5px;
+    left: -5px;
+    width: 30px !important;
+    height: 30px !important;
+  }
+}
+@media (min-width: 0px) and (max-width: 991px) {
+  html body .header {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    z-index: 2000000;
+    background-color: var(--header-bg);
+    height: 85px;
+    padding: 0 30px;
+  }
+  html body .header-branding a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  html body .header-branding a img {
+    width: 250px;
+  }
+  html body .header-navigation {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: black;
+    top: 85px;
+    height: 100vh;
+    margin: 0;
+    width: 350px;
+    right: 0;
+    transition: right 0.5s;
+  }
+  html body .header-navigation ul {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0;
+    margin: 0;
+  }
+  html body .header-navigation ul li {
+    list-style-type: none;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+  }
+  html body .header-navigation ul li a {
+    padding: 15px 40px;
+    width: 100%;
+    color: white !important;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    z-index: 15;
+    position: relative;
+  }
+  html body .header-navigation ul li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 60px !important;
+    width: 0%;
+    right: 0;
+    bottom: 0;
+    transition: width 0.25s ease-out;
+    background: linear-gradient(to left, #d7c396 0%, transparent 100%);
+    opacity: 0.3;
+    z-index: 10;
+  }
+  html body .header-navigation ul li:hover:before {
+    width: 100%;
+  }
+  html body .header-navigation ul li.header-navigation-item-active:before {
+    width: 100%;
+  }
+  html body .header-navigation ul li:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    transition: width 0.3s;
+    margin: 0;
+    border-top: 0;
+    border: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+    opacity: 0.5;
+    background: linear-gradient(90deg, rgba(0, 212, 255, 0) 0%, #d7c396 20%, #FFF 50%, #d7c396 80%, rgba(0, 212, 255, 0) 100%);
+  }
+  html body .header-navigation-login_register {
+    padding: 40px;
+  }
+  html body .header-navigation-login_register button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 40px;
+  }
+  html body .header-navigation-login_register a {
+    background: url("../images/header/1-Connect-Wallet.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #3d2503 !important;
+    font-weight: bold !important;
+    text-transform: uppercase;
+    height: 60px;
+    width: 100%;
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+  html body .header-navigation-collapsed-active {
+    right: 0;
+  }
+  html body .header-navigation-collapsed-inactive {
+    right: -100vw;
+  }
+  html body .header-collapse-btn {
+    position: relative;
+    opacity: 1;
+    z-index: 50;
+    width: 50px;
+    height: 100%;
+  }
+  html body .header-collapse-btn button {
+    border: none;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    color: white;
+    font-size: 40px;
+    position: relative;
+  }
+  html body .header:before {
+    content: "";
+    display: block;
+    width: 100vw;
+    height: 2px;
+    transition: width 0.3s;
+    margin: 0;
+    border-top: 0;
+    border: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+    background: linear-gradient(90deg, rgba(0, 212, 255, 0) 0%, #d7c396 20%, #FFF 50%, #d7c396 80%, rgba(0, 212, 255, 0) 100%);
+  }
+  html body .main {
+    padding-top: 85px;
+  }
+}
+@media (min-width: 992px) {
+  html body .header {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    z-index: 2000000;
+    background-color: black;
+    height: 92px;
+    padding: 0 30px;
+  }
+  html body .header-branding a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  html body .header-branding a img {
+    width: 175px;
+  }
+  html body .header-navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    background-color: black;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+  }
+  html body .header-navigation ul {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    padding: 0;
+    margin: 0 20px;
+  }
+  html body .header-navigation ul li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  html body .header-navigation ul li a {
+    padding: 0px 10px;
+    text-align: center;
+    color: white !important;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    z-index: 15;
+    position: relative;
+  }
+  html body .header-navigation ul li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 0px;
+    width: 100%;
+    bottom: 0;
+    transition: height 0.25s ease-out;
+    background: linear-gradient(to top, #d7c396 0%, transparent 100%);
+    opacity: 0.3;
+    z-index: 10;
+  }
+  html body .header-navigation ul li:hover:before {
+    height: 100%;
+  }
+  html body .header-navigation ul li.header-navigation-item-active:before {
+    height: 100%;
+  }
+  html body .header-navigation-login_register {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 170px;
+  }
+  html body .header-navigation-login_register button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 40px;
+    position: relative;
+    top: -5px;
+  }
+  html body .header-navigation-login_register a {
+    background: url("../images/header/1-Connect-Wallet.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #3d2503 !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: neilvard-one;
+    height: 40px;
+    width: 100%;
+    font-size: 12px;
+    letter-spacing: 3px;
+  }
+  html body .header-navigation-collapsed-active {
+    right: 0;
+  }
+  html body .header-navigation-collapsed-inactive {
+    right: -100vw;
+  }
+  html body .header-collapse-btn {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    width: 50px;
+    height: 100%;
+  }
+  html body .header-collapse-btn button {
+    border: none;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    color: white;
+    font-size: 40px;
+    position: relative;
+  }
+  html body .header:before {
+    content: "";
+    display: block;
+    width: 100vw;
+    height: 2px;
+    transition: width 0.3s;
+    margin: 0;
+    border-top: 0;
+    border: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+    background: linear-gradient(90deg, rgba(0, 212, 255, 0) 0%, #d7c396 20%, #FFF 50%, #d7c396 80%, rgba(0, 212, 255, 0) 100%);
+  }
+  html body .main {
+    padding-top: 92px;
+  }
+}
+@media (min-width: 1400px) {
+  html body .header-navigation ul li a {
+    width: 160px;
+  }
+}
+@media (min-width: 0px) {
+  html body .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 20px 100px;
+    position: relative;
+    background-color: #101018;
+    text-align: center;
+  }
+  html body .footer * {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  html body .footer-upper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.5);
+  }
+  html body .footer-upper-logo img {
+    width: 300px;
+  }
+  html body .footer-upper-links ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  html body .footer-upper-links ul li {
+    list-style-type: none;
+  }
+  html body .footer-upper-links ul li a {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    padding: 0 20px;
+    text-transform: uppercase;
+  }
+  html body .footer-lower {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+  }
+  html body .footer-lower-copyright p {
+    display: inline-block;
+    margin: 0;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+  }
+  html body .footer-lower-socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  html body .footer-lower-socials a {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  html body .footer-lower-socials a img {
+    opacity: 0.5;
+    width: 25px;
+    height: 25px;
+  }
+}
+@media (max-width: 1400px) {
+  html body .footer {
+    padding: 20px 50px;
+  }
+  html body .footer-upper {
+    flex-direction: column;
+  }
+}
+@media (max-width: 990px) {
+  html body .footer {
+    padding: 20px 20px;
+  }
+  html body .footer-upper-links ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    justify-items: stretch;
+  }
+  html body .footer-upper-links ul li a {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  html body .footer-lower {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+}
+@media (max-width: 700px) {
+  html body .footer {
+    padding: 20px 20px;
+  }
+  html body .footer-upper-links ul {
+    grid-template-columns: auto auto auto;
+  }
+  html body .footer-upper-links ul li a {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  html body .footer-lower-socials {
+    gap: 20px;
+  }
+}
+@media (max-width: 576px) {
+  html body .footer-upper-links ul {
+    grid-template-columns: auto auto auto;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+  html body .footer-upper-links ul li a {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  html body .footer-lower-socials {
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 0px) {
+  html body .swal2-container {
+    z-index: 9999999 !important;
+  }
+  html body .swal2-html-container form input {
+    background-color: #26140a;
+    border: none;
+    font-size: 18px;
+    color: #453423;
+    width: 100%;
+    height: 50px;
+    text-indent: 5px;
+    border: 1px solid #867d64;
+    border-radius: 7px;
+  }
+  html body .swal2-html-container form .row {
+    margin: 0;
+  }
+  html body .swal2-html-container form label {
+    text-align: left;
+    color: #B19D7B;
+  }
+  html body .swal2-html-container form input::-moz-placeholder {
+    color: #5C4E47;
+  }
+  html body .swal2-html-container form input:-ms-input-placeholder {
+    color: #5C4E47;
+  }
+  html body .swal2-html-container form input::placeholder {
+    color: #5C4E47;
+  }
+  html body .swal2-html-container p {
+    color: #fff;
+    font-size: 15px;
+  }
+  html body .swal2-html-container label {
+    padding: 0;
+  }
+  html body .finish {
+    text-align: center;
+  }
+  html body .finish {
+    color: #fff;
+  }
+  html body .btn-login {
+    box-shadow: 0;
+    transition: box-shadow 1s ease;
+  }
+  html body .btn-login:hover {
+    box-shadow: 0px 0px 10px #888888;
+  }
+  html body .btn-login {
+    background: url("../images/staking/teal-button.svg");
+    background-size: 146%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 350px;
+    height: 50px;
+    font-size: 23px;
+    font-weight: 600;
+    margin: auto;
+    margin: 20px auto;
+    color: var(--txt-white);
+    border: 3px solid #82cec0;
+    border-radius: 6px;
+    box-shadow: inset 0 0 6px #057868;
+  }
+  html body .btn-register {
+    box-shadow: 0;
+    transition: box-shadow 1s ease;
+  }
+  html body .btn-register:hover {
+    box-shadow: 0px 0px 10px #888888;
+  }
+  html body .btn-register {
+    background: url("../images/staking/connect-button-container.png");
+    background-size: 146%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 50px;
+    font-size: 23px;
+    font-weight: 600;
+    margin: auto;
+    margin: 20px auto;
+    color: var(--txt-white);
+    border-radius: 6px;
+    border: 3px solid #DDD3BA;
+    box-shadow: inset 0 0 6px #b9ac8c;
+  }
+  html body #register {
+    margin-top: 0px;
+  }
+  html body .Facode {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  html body .Facode .digit-code {
+    position: relative;
+    margin: 20px auto;
+    width: 100%;
+  }
+  html body .Facode .form-masked-pin {
+    display: block;
+    width: 100%;
+    height: 45px;
+    overflow: hidden;
+    margin: 0px 0px;
+    padding: 0;
+    position: relative;
+    left: -4px;
+    top: -5px;
+    font-size: 25px;
+    letter-spacing: 29px;
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+    text-indent: 14px;
+    z-index: 1;
+    outline: 0;
+    font-family: Menlo, Monaco, "Courier New", monospace;
+  }
+  html body .Facode .bg-box-group {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    z-index: 0;
+    top: 0px;
+    left: 0;
+    margin: 0 0;
+  }
+  html body .Facode .bg-box {
+    width: 34px;
+    height: 34px;
+    display: block;
+    border-radius: 8px;
+    border: 2px solid #909096;
+    background: #fff;
+    float: left;
+    margin-right: 10px;
+  }
+  html body .qr-code {
+    width: 50%;
+    margin: auto;
+  }
+  html body .step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    text-align: left;
+    font-size: 14px;
+    color: #dac799;
+  }
+  html body .step svg {
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+  }
+  html body .next-step {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  html body .row-setup {
+    margin-bottom: 10px !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  html body .swal2-html-container form input {
+    background-color: #26140a;
+    border: none;
+    font-size: 18px;
+    color: #453423;
+    width: 100%;
+    height: 50px;
+    text-indent: 5px;
+    border: 1px solid #867d64;
+    border-radius: 7px;
+  }
+  html body .swal2-html-container form .row {
+    margin: 0;
+  }
+  html body .swal2-html-container form label {
+    text-align: left;
+    color: #B19D7B;
+  }
+  html body .swal2-html-container form input::-moz-placeholder {
+    color: #5C4E47;
+  }
+  html body .swal2-html-container form input:-ms-input-placeholder {
+    color: #5C4E47;
+  }
+  html body .swal2-html-container form input::placeholder {
+    color: #5C4E47;
+  }
+  html body .swal2-html-container p {
+    color: #fff;
+    font-size: 15px;
+  }
+  html body .swal2-html-container label {
+    padding: 0;
+  }
+  html body .finish {
+    text-align: center;
+  }
+  html body .finish {
+    color: #fff;
+  }
+  html body .btn-login {
+    box-shadow: 0;
+    transition: box-shadow 1s ease;
+  }
+  html body .btn-login:hover {
+    box-shadow: 0px 0px 10px #888888;
+  }
+  html body .btn-login {
+    background: url("../images/staking/teal-button.svg");
+    background-size: 146%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 350px;
+    height: 50px;
+    font-size: 23px;
+    font-weight: 600;
+    margin: auto;
+    margin: 20px auto;
+    color: var(--txt-white);
+    border: 3px solid #82cec0;
+    border-radius: 6px;
+    box-shadow: inset 0 0 6px #057868;
+  }
+  html body .btn-register {
+    box-shadow: 0;
+    transition: box-shadow 1s ease;
+  }
+  html body .btn-register:hover {
+    box-shadow: 0px 0px 10px #888888;
+  }
+  html body .btn-register {
+    background: url("../images/staking/connect-button-container.png");
+    background-size: 146%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 350px;
+    height: 50px;
+    font-size: 23px;
+    font-weight: 600;
+    margin: auto;
+    margin: 20px auto;
+    color: var(--txt-white);
+    border-radius: 6px;
+    border: 3px solid #DDD3BA;
+    box-shadow: inset 0 0 6px #b9ac8c;
+  }
+  html body #register {
+    margin-top: 0px;
+  }
+  html body .Facode {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  html body .Facode .digit-code {
+    position: relative;
+    margin: 20px auto;
+  }
+  html body .Facode .form-masked-pin {
+    display: block;
+    width: 340px;
+    height: 45px;
+    overflow: hidden;
+    margin: 0 -157px;
+    padding: 0;
+    position: relative;
+    left: 50%;
+    font-size: 28px;
+    letter-spacing: 37px;
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+    text-indent: 14px;
+    z-index: 1;
+    outline: 0;
+    font-family: Menlo, Monaco, "Courier New", monospace;
+  }
+  html body .Facode .bg-box-group {
+    width: 324px;
+    height: 60px;
+    position: absolute;
+    z-index: 0;
+    top: 0px;
+    left: 50%;
+    margin: 0 -157px;
+  }
+  html body .Facode .bg-box {
+    width: 44px;
+    height: 45px;
+    display: block;
+    border-radius: 8px;
+    border: 2px solid #909096;
+    background: #fff;
+    float: left;
+    margin-right: 10px;
+  }
+  html body .qr-code {
+    width: 50%;
+    margin: auto;
+  }
+  html body .step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    text-align: left;
+    font-size: 14px;
+    color: #dac799;
+  }
+  html body .step svg {
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+  }
+  html body .next-step {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  html body .row-setup {
+    margin-bottom: 10px !important;
+  }
+}
+
+.disable-scroll {
+  overflow-y: hidden !important;
+}
+
+.zilpay::-moz-placeholder, .metamask::-moz-placeholder {
+  color: rgb(255, 255, 255) !important;
+}
+
+.zilpay:-ms-input-placeholder, .metamask:-ms-input-placeholder {
+  color: rgb(255, 255, 255) !important;
+}
+
+.zilpay::placeholder, .metamask::placeholder {
+  color: rgb(255, 255, 255) !important;
+}
+
+@media screen and (min-width: 0px) {
+  html body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  html body .main .hol-sidebar {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow: visible;
+    z-index: 9999;
+    display: none;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel {
+    position: absolute;
+    left: 0;
+    top: 30%;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: 9;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel .logo-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel .logo-container img {
+    width: 50%;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel ul li {
+    position: relative;
+    padding: 20px 0;
+    padding-left: 30px;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    min-height: 300px;
+    z-index: 999;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel ul li:hover:before {
+    width: 100%;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel ul li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100% !important;
+    width: 0px;
+    left: 0;
+    bottom: 0;
+    transition: width 0.25s ease-out;
+    background: linear-gradient(to right, #101010 0%, transparent 100%);
+    opacity: 0.3;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel ul .active:before {
+    width: 100% !important;
+  }
+  html body .main .hide {
+    display: none !important;
+  }
+  html body .main .show {
+    display: block;
+  }
+  html body .main .update-information:before {
+    content: "";
+    background: url("../images/account/heroes.png");
+    min-height: 942px;
+    min-width: 642px;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    bottom: 0;
+    right: 0;
+  }
+  html body .main .update-information {
+    background: url("../images/account/BG.png");
+    min-height: 1000px;
+    position: relative;
+    padding: 20px 0;
+  }
+  html body .main .update-information .details {
+    padding: 10px;
+    margin: auto;
+    position: relative;
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 95%;
+  }
+  html body .main .update-information .details .step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  html body .main .update-information .details .step svg {
+    width: 25px;
+    height: 25px;
+    margin-right: 30px;
+  }
+  html body .main .update-information .details .next-step {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  html body .main .update-information .details .qr-code {
+    width: 50%;
+    margin: auto;
+  }
+  html body .main .update-information .details .zilpay {
+    background: #153d61;
+    border: 1px solid #78a9c1;
+    border-radius: 0;
+  }
+  html body .main .update-information .details .metamask {
+    background: #4a9fcc;
+    border: 1px solid #277aa0;
+    border-radius: 0;
+  }
+  html body .main .update-information .details .transparent-code {
+    border: 1px solid #277aa0;
+    border-radius: 0;
+  }
+  html body .main .update-information .details ::-moz-placeholder {
+    color: rgb(59, 59, 59);
+  }
+  html body .main .update-information .details :-ms-input-placeholder {
+    color: rgb(59, 59, 59);
+  }
+  html body .main .update-information .details ::placeholder {
+    color: rgb(59, 59, 59);
+  }
+  html body .main .update-information .details span {
+    font-size: 15px;
+    text-align: center;
+  }
+  html body .main .update-information .details h4 {
+    font-size: 27px;
+    text-align: left;
+    margin-top: 30px;
+  }
+  html body .main .update-information .details input {
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  html body .main .update-information .details .Facode {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  html body .main .update-information .details .Facode .digit-code {
+    position: relative;
+    margin: 20px auto;
+  }
+  html body .main .update-information .details .Facode .form-masked-pin {
+    display: block;
+    width: 340px;
+    height: 45px;
+    overflow: hidden;
+    margin: 0 -157px;
+    padding: 0;
+    position: relative;
+    left: 50%;
+    font-size: 28px;
+    letter-spacing: 37px;
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+    text-indent: 14px;
+    z-index: 1;
+    outline: 0;
+    font-family: Menlo, Monaco, "Courier New", monospace;
+  }
+  html body .main .update-information .details .Facode .bg-box-group {
+    width: 324px;
+    height: 60px;
+    position: absolute;
+    z-index: 0;
+    top: 0px;
+    left: 50%;
+    margin: 0 -157px;
+  }
+  html body .main .update-information .details .Facode .bg-box {
+    width: 44px;
+    height: 45px;
+    display: block;
+    border-radius: 8px;
+    border: 2px solid #909096;
+    background: #fff;
+    float: left;
+    margin-right: 10px;
+  }
+  html body .main .update-information .details h3 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: #103A4A;
+    padding: 20px 0;
+  }
+  html body .main input {
+    border: 1px solid #145068;
+    border-radius: 5px;
+    padding: 10px;
+    background: transparent;
+    margin-bottom: 10px;
+  }
+  html body .main input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  html body .main .pribtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  html body .main .btn_connect {
+    margin-bottom: 0;
+    color: #3c2302;
+    background: url("../images/staking/claim-reward-button-container.png");
+    background-repeat: no-repeat;
+    background-size: 113%;
+    background-position-y: -13px;
+    background-position-x: -18px;
+    width: 250px;
+    height: 55px;
+    font-size: 18px;
+    font-weight: 700;
+    border: 3px solid #DDD3BA;
+    box-shadow: inset 0 0 6px #b9ac8c;
+  }
+  html body .main h4, html body .main label {
+    padding: 0;
+  }
+  html body .main ::-moz-placeholder {
+    color: #1e4d68;
+  }
+  html body .main :-ms-input-placeholder {
+    color: #1e4d68;
+  }
+  html body .main ::placeholder {
+    color: #1e4d68;
+  }
+  html body .main .row {
+    margin: unset;
+    padding: 0 40px;
+  }
+}
+@media screen and (min-width: 576px) {
+  html body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  html body .main .hol-sidebar {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow: visible;
+    z-index: 9999;
+    display: none;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel {
+    position: absolute;
+    left: 0;
+    top: 30%;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: 9;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel .logo-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel .logo-container img {
+    width: 50%;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel ul li {
+    position: relative;
+    padding: 20px 0;
+    padding-left: 30px;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    min-height: 300px;
+    z-index: 999;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel ul li:hover:before {
+    width: 100%;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel ul li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100% !important;
+    width: 0px;
+    left: 0;
+    bottom: 0;
+    transition: width 0.25s ease-out;
+    background: linear-gradient(to right, #101010 0%, transparent 100%);
+    opacity: 0.3;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel ul .active:before {
+    width: 100% !important;
+  }
+  html body .main .hide {
+    display: none !important;
+  }
+  html body .main .show {
+    display: block;
+  }
+  html body .main .update-information:before {
+    content: "";
+    background: url("../images/account/heroes.png");
+    min-height: 942px;
+    min-width: 642px;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    bottom: 0;
+    right: 0;
+  }
+  html body .main .update-information {
+    background: url("../images/account/BG.png");
+    min-height: 1000px;
+    position: relative;
+    padding: 20px 0;
+  }
+  html body .main .update-information .details {
+    padding: 10px;
+    margin: auto;
+    position: relative;
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 95%;
+  }
+  html body .main .update-information .details .step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  html body .main .update-information .details .step svg {
+    width: 25px;
+    height: 25px;
+    margin-right: 30px;
+  }
+  html body .main .update-information .details .next-step {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  html body .main .update-information .details .qr-code {
+    width: 50%;
+    margin: auto;
+  }
+  html body .main .update-information .details .zilpay {
+    background: #153d61;
+    border: 1px solid #78a9c1;
+    border-radius: 0;
+  }
+  html body .main .update-information .details .metamask {
+    background: #4a9fcc;
+    border: 1px solid #277aa0;
+    border-radius: 0;
+  }
+  html body .main .update-information .details .transparent-code {
+    border: 1px solid #277aa0;
+    border-radius: 0;
+  }
+  html body .main .update-information .details ::-moz-placeholder {
+    color: rgb(59, 59, 59);
+  }
+  html body .main .update-information .details :-ms-input-placeholder {
+    color: rgb(59, 59, 59);
+  }
+  html body .main .update-information .details ::placeholder {
+    color: rgb(59, 59, 59);
+  }
+  html body .main .update-information .details span {
+    font-size: 15px;
+    text-align: center;
+  }
+  html body .main .update-information .details h4 {
+    font-size: 27px;
+    text-align: left;
+    margin-top: 30px;
+  }
+  html body .main .update-information .details input {
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  html body .main .update-information .details .Facode {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  html body .main .update-information .details .Facode .digit-code {
+    position: relative;
+    margin: 20px auto;
+  }
+  html body .main .update-information .details .Facode .form-masked-pin {
+    display: block;
+    width: 340px;
+    height: 45px;
+    overflow: hidden;
+    margin: 0 -157px;
+    padding: 0;
+    position: relative;
+    left: 50%;
+    font-size: 28px;
+    letter-spacing: 37px;
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+    text-indent: 14px;
+    z-index: 1;
+    outline: 0;
+    font-family: Menlo, Monaco, "Courier New", monospace;
+  }
+  html body .main .update-information .details .Facode .bg-box-group {
+    width: 324px;
+    height: 60px;
+    position: absolute;
+    z-index: 0;
+    top: 0px;
+    left: 50%;
+    margin: 0 -157px;
+  }
+  html body .main .update-information .details .Facode .bg-box {
+    width: 44px;
+    height: 45px;
+    display: block;
+    border-radius: 8px;
+    border: 2px solid #909096;
+    background: #fff;
+    float: left;
+    margin-right: 10px;
+  }
+  html body .main .update-information .details h3 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: #103A4A;
+    padding: 20px 0;
+  }
+  html body .main input {
+    border: 1px solid #145068;
+    border-radius: 5px;
+    padding: 10px;
+    background: transparent;
+    margin-bottom: 10px;
+  }
+  html body .main input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  html body .main .pribtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  html body .main .btn_connect {
+    margin-bottom: 0;
+    color: #3c2302;
+    background: url("../images/staking/claim-reward-button-container.png");
+    background-repeat: no-repeat;
+    background-size: 113%;
+    background-position-y: -13px;
+    background-position-x: -18px;
+    width: 250px;
+    height: 55px;
+    font-size: 18px;
+    font-weight: 700;
+    border: 3px solid #DDD3BA;
+    box-shadow: inset 0 0 6px #b9ac8c;
+  }
+  html body .main h4, html body .main label {
+    padding: 0;
+  }
+  html body .main ::-moz-placeholder {
+    color: #1e4d68;
+  }
+  html body .main :-ms-input-placeholder {
+    color: #1e4d68;
+  }
+  html body .main ::placeholder {
+    color: #1e4d68;
+  }
+  html body .main .row {
+    margin: unset;
+    padding: 0 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  html body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  html body .main .hol-sidebar {
+    position: fixed;
+    width: 20%;
+    height: 100vh;
+    overflow: visible;
+    z-index: 9999;
+    display: block;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel {
+    position: absolute;
+    left: 0;
+    top: 30%;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: 9;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel .logo-container img {
+    width: 50%;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel ul {
+    padding: 0;
+    list-style: none;
+    display: block;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel ul li {
+    position: relative;
+    padding: 20px 0;
+    padding-left: 30px;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    min-height: 300px;
+    z-index: 999;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel ul li:hover:before {
+    width: 100%;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel ul li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100% !important;
+    width: 0px;
+    left: 0;
+    bottom: 0;
+    transition: width 0.25s ease-out;
+    background: linear-gradient(to right, #101010 0%, transparent 100%);
+    opacity: 0.3;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel ul .active:before {
+    width: 100% !important;
+  }
+  html body .main .hide {
+    display: none !important;
+  }
+  html body .main .show {
+    display: block;
+  }
+  html body .main .update-information:before {
+    content: "";
+    background: url("../images/account/heroes.png");
+    min-height: 942px;
+    min-width: 642px;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    bottom: 0;
+    right: 0;
+  }
+  html body .main .update-information {
+    background: url("../images/account/BG.png");
+    min-height: 940px;
+    position: relative;
+    padding: 20px 0;
+  }
+  html body .main .update-information .details {
+    padding: 10px;
+    margin: auto;
+    position: relative;
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 60%;
+  }
+  html body .main .update-information .details .step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  html body .main .update-information .details .step svg {
+    width: 25px;
+    height: 25px;
+    margin-right: 30px;
+  }
+  html body .main .update-information .details .next-step {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  html body .main .update-information .details .qr-code {
+    width: 50%;
+    margin: auto;
+  }
+  html body .main .update-information .details .zilpay {
+    background: #153d61;
+    border: 1px solid #78a9c1;
+    border-radius: 0;
+  }
+  html body .main .update-information .details .metamask {
+    background: #4a9fcc;
+    border: 1px solid #277aa0;
+    border-radius: 0;
+  }
+  html body .main .update-information .details .transparent-code {
+    border: 1px solid #277aa0;
+    border-radius: 0;
+  }
+  html body .main .update-information .details ::-moz-placeholder {
+    color: rgb(59, 59, 59);
+  }
+  html body .main .update-information .details :-ms-input-placeholder {
+    color: rgb(59, 59, 59);
+  }
+  html body .main .update-information .details ::placeholder {
+    color: rgb(59, 59, 59);
+  }
+  html body .main .update-information .details span {
+    font-size: 15px;
+    text-align: center;
+  }
+  html body .main .update-information .details h4 {
+    font-size: 27px;
+    text-align: left;
+    margin-top: 30px;
+  }
+  html body .main .update-information .details input {
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  html body .main .update-information .details .Facode {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  html body .main .update-information .details .Facode .digit-code {
+    position: relative;
+    margin: 20px auto;
+  }
+  html body .main .update-information .details .Facode .form-masked-pin {
+    display: block;
+    width: 340px;
+    height: 45px;
+    overflow: hidden;
+    margin: 0 -157px;
+    padding: 0;
+    position: relative;
+    left: 50%;
+    font-size: 28px;
+    letter-spacing: 37px;
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+    text-indent: 14px;
+    z-index: 1;
+    outline: 0;
+    font-family: Menlo, Monaco, "Courier New", monospace;
+  }
+  html body .main .update-information .details .Facode .bg-box-group {
+    width: 324px;
+    height: 60px;
+    position: absolute;
+    z-index: 0;
+    top: 0px;
+    left: 50%;
+    margin: 0 -157px;
+  }
+  html body .main .update-information .details .Facode .bg-box {
+    width: 44px;
+    height: 45px;
+    display: block;
+    border-radius: 8px;
+    border: 2px solid #909096;
+    background: #fff;
+    float: left;
+    margin-right: 10px;
+  }
+  html body .main .update-information .details h3 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: #103A4A;
+    padding: 20px 0;
+  }
+  html body .main input {
+    border: 1px solid #145068;
+    border-radius: 5px;
+    padding: 10px;
+    background: transparent;
+    margin-bottom: 10px;
+  }
+  html body .main input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  html body .main .pribtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  html body .main .btn_connect {
+    margin-bottom: 0;
+    color: #3c2302;
+    background: url("../images/staking/claim-reward-button-container.png");
+    background-repeat: no-repeat;
+    background-size: 113%;
+    background-position-y: -13px;
+    background-position-x: -18px;
+    width: 250px;
+    height: 55px;
+    font-size: 18px;
+    font-weight: 700;
+    border: 3px solid #DDD3BA;
+    box-shadow: inset 0 0 6px #b9ac8c;
+  }
+  html body .main h4, html body .main label {
+    padding: 0;
+  }
+  html body .main ::-moz-placeholder {
+    color: #1e4d68;
+  }
+  html body .main :-ms-input-placeholder {
+    color: #1e4d68;
+  }
+  html body .main ::placeholder {
+    color: #1e4d68;
+  }
+  html body .main .row {
+    margin: unset;
+    padding: 0 40px;
+  }
+}
+@media screen and (min-width: 992px) {
+  html body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  html body .main .hol-sidebar {
+    position: fixed;
+    width: 20%;
+    height: 100vh;
+    overflow: visible;
+    z-index: 9999;
+    display: block;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel {
+    position: absolute;
+    left: 0;
+    top: 30%;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: 9;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel .logo-container img {
+    width: 50%;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel ul {
+    padding: 0;
+    list-style: none;
+    display: block;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel ul li {
+    position: relative;
+    padding: 20px 0;
+    padding-left: 30px;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    min-height: 300px;
+    z-index: 999;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel ul li:hover:before {
+    width: 100%;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel ul li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 60px !important;
+    width: 0px;
+    left: 0;
+    bottom: 0;
+    transition: width 0.25s ease-out;
+    background: linear-gradient(to right, #101010 0%, transparent 100%);
+    opacity: 0.3;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel ul .active:before {
+    width: 100% !important;
+  }
+  html body .main .hide {
+    display: none !important;
+  }
+  html body .main .show {
+    display: block;
+  }
+  html body .main .update-information:before {
+    content: "";
+    background: url("../images/account/heroes.png");
+    min-height: 942px;
+    min-width: 642px;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    bottom: 0;
+    right: 0;
+  }
+  html body .main .update-information {
+    background: url("../images/account/BG.png");
+    min-height: 940px;
+    position: relative;
+    padding: 20px 0;
+  }
+  html body .main .update-information .details {
+    padding: 10px;
+    margin: auto;
+    position: relative;
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 60%;
+  }
+  html body .main .update-information .details .step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  html body .main .update-information .details .step svg {
+    width: 25px;
+    height: 25px;
+    margin-right: 30px;
+  }
+  html body .main .update-information .details .next-step {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  html body .main .update-information .details .qr-code {
+    width: 50%;
+    margin: auto;
+  }
+  html body .main .update-information .details .zilpay {
+    background: #153d61;
+    border: 1px solid #78a9c1;
+    border-radius: 0;
+  }
+  html body .main .update-information .details .metamask {
+    background: #4a9fcc;
+    border: 1px solid #277aa0;
+    border-radius: 0;
+  }
+  html body .main .update-information .details .transparent-code {
+    border: 1px solid #277aa0;
+    border-radius: 0;
+  }
+  html body .main .update-information .details ::-moz-placeholder {
+    color: rgb(59, 59, 59);
+  }
+  html body .main .update-information .details :-ms-input-placeholder {
+    color: rgb(59, 59, 59);
+  }
+  html body .main .update-information .details ::placeholder {
+    color: rgb(59, 59, 59);
+  }
+  html body .main .update-information .details span {
+    font-size: 15px;
+    text-align: center;
+  }
+  html body .main .update-information .details h4 {
+    font-size: 27px;
+    text-align: left;
+    margin-top: 30px;
+  }
+  html body .main .update-information .details input {
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  html body .main .update-information .details .Facode {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  html body .main .update-information .details .Facode .digit-code {
+    position: relative;
+    margin: 20px auto;
+  }
+  html body .main .update-information .details .Facode .form-masked-pin {
+    display: block;
+    width: 340px;
+    height: 45px;
+    overflow: hidden;
+    margin: 0 -157px;
+    padding: 0;
+    position: relative;
+    left: 50%;
+    font-size: 28px;
+    letter-spacing: 37px;
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+    text-indent: 14px;
+    z-index: 1;
+    outline: 0;
+    font-family: Menlo, Monaco, "Courier New", monospace;
+  }
+  html body .main .update-information .details .Facode .bg-box-group {
+    width: 324px;
+    height: 60px;
+    position: absolute;
+    z-index: 0;
+    top: 0px;
+    left: 50%;
+    margin: 0 -157px;
+  }
+  html body .main .update-information .details .Facode .bg-box {
+    width: 44px;
+    height: 45px;
+    display: block;
+    border-radius: 8px;
+    border: 2px solid #909096;
+    background: #fff;
+    float: left;
+    margin-right: 10px;
+  }
+  html body .main .update-information .details h3 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: #103A4A;
+    padding: 20px 0;
+  }
+  html body .main input {
+    border: 1px solid #145068;
+    border-radius: 5px;
+    padding: 10px;
+    background: transparent;
+    margin-bottom: 10px;
+  }
+  html body .main input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  html body .main .pribtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  html body .main .btn_connect {
+    margin-bottom: 0;
+    color: #3c2302;
+    background: url("../images/staking/claim-reward-button-container.png");
+    background-repeat: no-repeat;
+    background-size: 113%;
+    background-position-y: -13px;
+    background-position-x: -18px;
+    width: 250px;
+    height: 55px;
+    font-size: 18px;
+    font-weight: 700;
+    border: 3px solid #DDD3BA;
+    box-shadow: inset 0 0 6px #b9ac8c;
+  }
+  html body .main h4, html body .main label {
+    padding: 0;
+  }
+  html body .main ::-moz-placeholder {
+    color: #1e4d68;
+  }
+  html body .main :-ms-input-placeholder {
+    color: #1e4d68;
+  }
+  html body .main ::placeholder {
+    color: #1e4d68;
+  }
+  html body .main .row {
+    margin: unset;
+    padding: 0 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  html body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  html body .main .hol-sidebar {
+    position: fixed;
+    width: 20%;
+    height: 100vh;
+    overflow: visible;
+    z-index: 9999;
+    display: block;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel {
+    position: absolute;
+    left: 0;
+    top: 30%;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: 9;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel .logo-container img {
+    width: 50%;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel ul {
+    display: block;
+    padding: 0;
+    list-style: none;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel ul li {
+    position: relative;
+    padding: 20px 0;
+    padding-left: 100px;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    min-height: 300px;
+    z-index: 999;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel ul li:hover:before {
+    width: 100%;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel ul li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 60px !important;
+    width: 0px;
+    left: 0;
+    bottom: 0;
+    transition: width 0.25s ease-out;
+    background: linear-gradient(to right, #101010 0%, transparent 100%);
+    opacity: 0.3;
+  }
+  html body .main .hol-sidebar .hol-sidebar-panel ul .active:before {
+    width: 100% !important;
+  }
+  html body .main .hide {
+    display: none !important;
+  }
+  html body .main .show {
+    display: block;
+  }
+  html body .main .update-information:before {
+    content: "";
+    background: url("../images/account/heroes.png");
+    min-height: 942px;
+    min-width: 642px;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    bottom: 0;
+    right: 0;
+  }
+  html body .main .update-information {
+    background: url("../images/account/BG.png");
+    min-height: 940px;
+    position: relative;
+    padding: unset;
+  }
+  html body .main .update-information .details {
+    padding: unset;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+    background-color: transparent;
+    width: 33.33333333%;
+  }
+  html body .main .update-information .details .step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  html body .main .update-information .details .step svg {
+    width: 25px;
+    height: 25px;
+    margin-right: 30px;
+  }
+  html body .main .update-information .details .next-step {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  html body .main .update-information .details .qr-code {
+    width: 50%;
+    margin: auto;
+  }
+  html body .main .update-information .details .zilpay {
+    background: #153d61;
+    border: 1px solid #78a9c1;
+    border-radius: 0;
+  }
+  html body .main .update-information .details .metamask {
+    background: #4a9fcc;
+    border: 1px solid #277aa0;
+    border-radius: 0;
+  }
+  html body .main .update-information .details .transparent-code {
+    border: 1px solid #277aa0;
+    border-radius: 0;
+  }
+  html body .main .update-information .details ::-moz-placeholder {
+    color: #fff;
+  }
+  html body .main .update-information .details :-ms-input-placeholder {
+    color: #fff;
+  }
+  html body .main .update-information .details ::placeholder {
+    color: #fff;
+  }
+  html body .main .update-information .details span {
+    font-size: 15px;
+    text-align: center;
+  }
+  html body .main .update-information .details h4 {
+    font-size: 27px;
+    text-align: left;
+    margin-top: 30px;
+  }
+  html body .main .update-information .details input {
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  html body .main .update-information .details .Facode {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  html body .main .update-information .details .Facode .digit-code {
+    position: relative;
+    margin: 20px auto;
+  }
+  html body .main .update-information .details .Facode .form-masked-pin {
+    display: block;
+    width: 340px;
+    height: 45px;
+    overflow: hidden;
+    margin: 0 -157px;
+    padding: 0;
+    position: relative;
+    left: 50%;
+    font-size: 28px;
+    letter-spacing: 37px;
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+    text-indent: 14px;
+    z-index: 1;
+    outline: 0;
+    font-family: Menlo, Monaco, "Courier New", monospace;
+  }
+  html body .main .update-information .details .Facode .bg-box-group {
+    width: 324px;
+    height: 60px;
+    position: absolute;
+    z-index: 0;
+    top: 0px;
+    left: 50%;
+    margin: 0 -157px;
+  }
+  html body .main .update-information .details .Facode .bg-box {
+    width: 44px;
+    height: 45px;
+    display: block;
+    border-radius: 8px;
+    border: 2px solid #909096;
+    background: #fff;
+    float: left;
+    margin-right: 10px;
+  }
+  html body .main .update-information .details h3 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: #103A4A;
+    padding: 20px 0;
+  }
+  html body .main input {
+    border: 1px solid #145068;
+    border-radius: 5px;
+    padding: 10px;
+    background: transparent;
+    margin-bottom: 10px;
+  }
+  html body .main input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  html body .main .pribtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  html body .main .btn_connect {
+    margin-bottom: 0;
+    color: #3c2302;
+    background: url("../images/staking/claim-reward-button-container.png");
+    background-repeat: no-repeat;
+    background-size: 113%;
+    background-position-y: -13px;
+    background-position-x: -18px;
+    width: 250px;
+    height: 55px;
+    font-size: 18px;
+    font-weight: 700;
+    border: 3px solid #DDD3BA;
+    box-shadow: inset 0 0 6px #b9ac8c;
+  }
+  html body .main h4, html body .main label {
+    padding: 0;
+  }
+  html body .main ::-moz-placeholder {
+    color: #1e4d68;
+  }
+  html body .main :-ms-input-placeholder {
+    color: #1e4d68;
+  }
+  html body .main ::placeholder {
+    color: #1e4d68;
+  }
+  html body .main .row {
+    margin: unset;
+  }
+}/*# sourceMappingURL=account.css.map */
