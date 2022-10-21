@@ -1,0 +1,267 @@
+// * Node-SASS Script For Exporting
+// node-sass --watch scss/footer.scss css/footer.css
+
+// * All Sizes
+// Styles that apply to all sizes
+@media (min-width: 0px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        padding: 20px 100px;
+        position: relative;
+        background-color: #101018;
+        text-align: center;
+        
+        * {
+            color: rgba(255, 255, 255, 0.5);
+        }
+        
+        &-upper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            padding: 30px 0;
+            border-bottom: solid 1px rgba(255, 255, 255, 0.5);
+
+            &-logo {
+                img {
+                    width: 300px;
+                }
+            }
+
+            &-links {
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 0;
+                    padding: 0;
+
+                    li {
+                        list-style-type: none;
+
+                        a {
+                            text-decoration: none;
+                            font-family: 'Montserrat', sans-serif;
+                            padding: 0 20px;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-lower {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            // padding-top: 15px;
+            padding: 25px 0;
+
+            &-copyright {
+                p {
+                    display: inline-block;
+                    margin: 0;
+                    font-weight: 700;
+                    font-family: 'Montserrat', sans-serif;
+                }
+            }
+
+            &-socials {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap: 30px;
+
+                a {
+                    color: white;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        opacity: 0.5;
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 1400px) {
+    .footer {
+        padding: 20px 50px;
+
+        &-upper {
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: 990px) {
+    .footer {
+        padding: 20px 20px;
+        &-upper {
+            &-links {
+                ul {
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: auto auto auto auto auto auto;
+                    justify-items: stretch;
+
+                    li {
+                        a {
+                            font-size: 14px;
+                            padding: 0 10px;
+                        }
+                    }
+                }
+            }            
+        }
+
+        &-lower {
+            flex-direction: column-reverse;
+            gap: 20px;
+
+            &-socials {
+
+
+                a {
+
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .footer {
+        padding: 20px 20px;
+
+        &-upper {
+            &-links {
+                ul {
+                    grid-template-columns: auto auto auto;
+
+                    li {
+                        a {
+                            font-size: 14px;
+                            padding: 0 10px;
+                        }
+                    }
+                }
+            }            
+        }
+
+        &-lower {
+            &-socials {
+                gap: 20px;
+
+                a {
+
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .footer {
+        &-upper {
+            &-links {
+                ul {
+                    grid-template-columns: auto auto auto;
+                    position: absolute;
+                    opacity: 0;
+                    z-index: -1;
+
+                    li {
+                        a {
+                            font-size: 14px;
+                            padding: 0 10px;
+                        }
+                    }
+                }
+            }            
+        }
+
+        &-lower {
+            &-socials {
+                gap: 20px;
+
+                a {
+
+                }
+            }
+        }
+    }
+}
+
+
+// * Mobile Size
+// @media (max-width: 576px) {
+//     .footer {
+//         &-copyright {
+//             p {
+//                 display: block;
+//             }
+//         }
+//     }
+// }
+
+// * Collapsed Version
+// @media (min-width: 0px) and (max-width: 1199px) {
+//     .footer {
+//         flex-direction: column-reverse;
+//         gap: 15px;
+//         padding: 20px 20px;
+
+//         // .footer-copyright
+//         &-copyright {
+//             p {
+//                 font-size: 18px;
+//             }
+//         }
+
+//         &-socials {
+//             gap: 20px;
+//         }
+//     }
+// }
+
+// * Non-collapsed Version
+// @media (min-width: 1200px) {
+//     .footer {
+//         flex-direction: row-reverse;
+//         padding: 20px 150px;
+
+//         &-copyright {
+//             position: absolute;
+//             top: 50%;
+//             left: 50%;
+//             transform: translate(-50%, -50%);
+
+//             p {
+//                 font-size: 18px;
+//             }
+//         }
+//     }
+// }
+
+// * Desktop Size 2-3
+// @media (min-width: 1200px) and (max-width: 1400px) {
+//     .footer {
+//         padding: 20px 50px;
+//     }
+// }

@@ -1,0 +1,28 @@
+html {
+    body {
+        @import "modules/_header.scss";
+        @import "modules/_footer.scss";
+        @import "modules/_pop-up.scss";
+        @import "modules/_staking.scss";
+    }
+} 
+
+.disable-scroll {
+    overflow-y: hidden !important;
+    // opacity: 0 !important;
+}
+
+
+html {
+    body {
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        // min-height: 100vh;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: space-between;
+    }
+}

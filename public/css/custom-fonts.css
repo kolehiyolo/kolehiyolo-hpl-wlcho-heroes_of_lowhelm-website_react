@@ -1,0 +1,101 @@
+/* Custom Fonts */
+@font-face {
+    font-family: "neilvard-one";
+    src: url("../fonts/neilvard one/Neilvard One.ttf");
+  }
+  
+  @font-face {
+    font-family: "neilvard-semibold-one";
+    src: url("../fonts/neilvard one/Neilvard Semibold One.ttf");
+  }
+  
+  .nav-link {
+    font-size: 15px !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0 !important;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .nav-item {
+    width: 170px;
+  }
+  
+  .hero-context-head h1 {
+    padding-top: 40px;
+    font-family: neilvard-one;
+    font-weight: 400;
+    font-size: 64px;
+    color: white;
+  }
+  
+  .hero-context-head p {
+    font-family: neilvard-one;
+    font-weight: 400;
+    font-size: 24px;
+    color: #F6DED0;
+  }
+  
+  /*.hero-context-head:after {
+    content: '';
+      background-image: url("../images/011 - Staking Portal Page/hero-divider.png");
+      height: 18px;
+      width: 85%;
+      background-size: cover;
+      background-position: center;
+      display: inline-block;
+      margin-bottom: 15px;
+  }*/
+  
+  .hero-context-body p {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #F6DED0;
+  }
+  
+  ._qwertystake * {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+  }
+  
+  .add-stake-field {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  
+  .add-stake-field .btn-max {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+    background-color: #ffc543;
+    border: none;
+    color: #8C3606;
+    border-radius: 3px;
+  }
+  
+  .stake-left input::placeholder {
+    color: rgba(255, 255, 255, 0.247);
+    font-weight: 400;
+  }
+  
+  .stake-right {
+    font-family: 'Montserrat', sans-serif;
+  } 
+  
+  ._qwerty_alternative {
+    text-transform: uppercase;
+  }
+  
+  .total-staked-label {
+    color: #ae9263;
+    font-weight: 600;
+  }
+  
+  /* ._qwertystake .btn-max {
+  
+  } */

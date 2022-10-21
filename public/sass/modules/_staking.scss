@@ -1,0 +1,3271 @@
+/*mobile only*/
+/*mobile only*/
+@media (max-width: 576px) {
+
+	body,
+	html {
+		display: block;
+		margin: 0;
+		padding: 0;
+		background: #160101;
+		overflow-x: hidden;
+	}
+
+	/*for navigator*/
+	nav {
+		padding: 0 !important;
+		z-index: 2;
+		background: rgba(17, 17, 17, .58) !important;
+	}
+
+	.navbar-nav {
+		justify-content: center;
+		display: flex;
+		margin: auto;
+	}
+
+	ul .nav-item .nav-link {
+		color: #fff !important;
+		text-align: left !important;
+		padding: 20 10px !important;
+		margin: 15px 0px;
+	}
+
+	.navbar-brand {
+		width: 50%;
+	}
+
+	.navbar .container-fluid {
+		flex-direction: row;
+	}
+
+	nav:before {
+		content: '';
+		display: block;
+		width: 100vw;
+		height: 2px;
+		transition: width .3s;
+		margin: 0;
+		border-top: 0;
+		border: none;
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: auto;
+		bottom: 0;
+		background: linear-gradient(90deg, rgba(0, 212, 255, 0) 0%, #d7c396 20%, #FFF 50%, #d7c396 80%, rgba(0, 212, 255, 0) 100%);
+	}
+
+	/*for header*/
+	.wrapper,
+	nav,
+	.staking,
+	.hero,
+	.nav-item,
+	.hero-image {
+		position: relative;
+	}
+
+	.hero-section {
+		padding: 0;
+	}
+
+	.hero-section {
+		background: url("../images/staking/bg.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		margin: 0;
+		height: auto;
+		width: 100%;
+		display: block;
+		min-height: 100vh;
+	}
+
+	.mbhero {
+		display: none;
+	}
+
+	.staking:after {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 133px;
+		left: 0;
+		background: url("../images/staking/body-container.png");
+		position: absolute;
+		margin: auto;
+		top: -44px;
+		background-repeat: no-repeat;
+		background-size: 136%;
+		background-position: center;
+		background-position-y: 2px;
+		overflow: hidden;
+	}
+
+	.stake_container {
+		padding: 0;
+	}
+
+	._qwertystake {
+		min-height: 350px;
+	}
+
+	.staking {
+		padding: 0 20px;
+		padding-top: 80px;
+		padding-bottom: 80px;
+		background-color: #d2b566;
+		background: url("../images/staking/body-container.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position-y: -178px;
+		background-color: #d7bd73;
+	}
+
+	.btn-stake {
+		background: url("../images/staking/teal-button.svg");
+		background-size: 108%;
+		background-repeat: no-repeat;
+		background-position: center;
+		border: none;
+		width: 100%;
+		height: 50px;
+		color: var(--txt-white);
+		font-size: 18px;
+		font-weight: 600;
+		margin: 20px auto;
+		border: 3px solid #82cec0;
+		border-radius: 6px;
+		-moz-box-shadow: inset 0 0 10px #057868;
+		-webkit-box-shadow: inset 0 0 10px #057868;
+		box-shadow: inset 0 0 6px #057868;
+	}
+
+	.staking input {
+		background-color: #26140a;
+		border: none;
+		font-size: 18px;
+		color: #453423;
+		width: 100%;
+		height: 50px;
+		text-indent: 15px;
+		border: 1px solid #867d64;
+		border-radius: 7px;
+	}
+
+	.label-text {
+		color: #dac799;
+		font-size: 18px;
+		font-weight: 600;
+		margin-bottom: 4px;
+		display: inline-block;
+		width: 100%;
+	}
+
+	.top-left,
+	.bottom-left,
+	.bottom-right,
+	.top-right {
+		background: url("../images/staking/hol-core-border-white.svg");
+		height: 32px;
+		width: 32px;
+		position: absolute;
+		border-radius: 5px;
+	}
+
+	.top-left,
+	.bottom-left {
+		left: -5px;
+	}
+
+	.bottom-right,
+	.top-right {
+		right: -3px;
+	}
+
+	.top-left {
+		top: -3px;
+		transform: rotate(90deg);
+	}
+
+	.bottom-left {
+		bottom: -5px;
+		transform: rotate(0);
+	}
+
+	.bottom-right {
+		bottom: -3px;
+		transform: rotate(270deg);
+	}
+
+	.top-right {
+		top: -5px;
+		transform: rotate(180deg);
+	}
+
+	::placeholder {
+		color: #dac799;
+	}
+
+	.stake_value {
+		background-color: unset !important;
+		color: #fff;
+		width: 100%;
+		height: 50px;
+		text-indent: unset !important;
+		border: unset !important;
+		font-size: 25px !important;
+		font-weight: 600;
+		height: 30px !important;
+	}
+
+	._qwerty_alternative {
+		display: inline-block;
+		font-size: 12px;
+		font-weight: 600;
+		color: #ae9263;
+	}
+
+	.btn_wallet {
+		background: url("../images/staking/connect-button-container.svg");
+		background-size: 132%;
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 100%;
+		margin-bottom: 30px;
+		color: #3c2302;
+		border: 3px solid #DDD3BA;
+		-moz-box-shadow: inset 0 0 10px #b9ac8c;
+		-webkit-box-shadow: inset 0 0 10px #b9ac8c;
+		box-shadow: inset 0 0 6px #b9ac8c;
+	}
+
+	.btn_connect {
+		background: url("../images/staking/claim-reward-button-container.png");
+		background-size: 132%;
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 40px;
+		margin-bottom: 0;
+		color: #3c2302;
+		font-size: 16px;
+		border: 3px solid #b9ac8c;
+		-moz-box-shadow: inset 0 0 10px #b9ac8c;
+		-webkit-box-shadow: inset 0 0 10px #b9ac8c;
+		box-shadow: inset 0 0 6px #b9ac8c;
+	}
+
+	.sub_label {
+		font-size: 12px
+	}
+
+	.hol-register-login,
+	.btn_container {
+		display: none;
+	}
+
+	nav .container-fluid {
+		padding: 20px;
+	}
+
+	footer {
+		background: #998753;
+		height: 60px;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		font-size: 18px;
+		font-weight: 600;
+		color: #423201;
+	}
+
+	.staking .wrapper .container {
+		background: red;
+		position: relative;
+		background: url("../images/staking/fill.png");
+		border: 3px solid #D7C396;
+		padding: 30px;
+		border-radius: 5px;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.staking .row {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.form-content {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.form-content * {
+		width: 50% !important;
+	}
+
+	.col-sm-12 {
+		width: 100%;
+	}
+
+	.logo {
+		width: 100%;
+	}
+
+	.navbar-brand {
+		align-items: center;
+		justify-content: center;
+		display: flex;
+	}
+
+	.hero-context-body p {
+		display: none;
+	}
+
+	.hero-context-head p {
+		font-size: 14px !important;
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.hero-context-head h1 {
+		font-size: 40px !important;
+	}
+
+	.hero-context-head {
+		text-align: center;
+	}
+
+	.hero:after {
+		content: '';
+		display: block;
+		width: 100%;
+		min-width: 1290px;
+		height: 100vh;
+		background: url("../images/staking/bg.png");
+		position: relative;
+		margin: auto;
+		top: 0;
+		left: 0;
+		background-repeat: no-repeat;
+		background-size: contain;
+		overflow: hidden;
+		z-index: 0;
+	}
+
+	.justify-content-start {
+		justify-content: flex-start !important;
+		flex-direction: column-reverse;
+	}
+
+	label div {
+		height: 3px;
+		width: 25px;
+		background: white;
+		margin-bottom: 5px;
+	}
+
+	.hol-read-more {
+		background: url(../images/staking/1-Connect-Wallet.png);
+		background-repeat: no-repeat;
+		height: 55px;
+		width: 226px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-decoration: none;
+		color: #3d2503 !important;
+		font-weight: bold !important;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		margin: auto;
+	}
+
+	.mb-hol-context {
+		transform: translateY(-100px);
+		z-index: 1;
+	}
+
+	.mb-full-hieght {
+		height: 100vh;
+	}
+
+	.container.hero-section {
+		max-width: 100%;
+	}
+
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+
+	body,
+	html {
+		display: block;
+		margin: 0;
+		padding: 0;
+		background: #160101;
+		overflow-x: hidden;
+	}
+
+	/*for navigator*/
+	nav {
+		padding: 0 !important;
+		z-index: 2;
+		background: rgba(17, 17, 17, .58) !important;
+	}
+
+	.navbar-nav {
+		justify-content: center;
+		display: flex;
+		margin: auto;
+	}
+
+	ul .nav-item .nav-link {
+		color: #fff !important;
+		text-align: left !important;
+		padding: 20 10px !important;
+		margin: 15px 0px;
+	}
+
+	.navbar-brand {
+		width: 50%;
+	}
+
+	.navbar .container-fluid {
+		flex-direction: row;
+	}
+
+	nav:before {
+		content: '';
+		display: block;
+		width: 100vw;
+		height: 2px;
+		transition: width .3s;
+		margin: 0;
+		border-top: 0;
+		border: none;
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: auto;
+		bottom: 0;
+		background: linear-gradient(90deg, rgba(0, 212, 255, 0) 0%, #d7c396 20%, #FFF 50%, #d7c396 80%, rgba(0, 212, 255, 0) 100%);
+	}
+
+	/*for header*/
+	.wrapper,
+	nav,
+	.staking,
+	.hero,
+	.nav-item,
+	.hero-image {
+		position: relative;
+	}
+
+	.hero-section {
+		padding: 0;
+		margin: 0;
+		max-width: unset;
+		width: 100%;
+	}
+
+	.staking:after {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 133px;
+		left: 0;
+		background: url("../images/staking/body-container.png");
+		position: absolute;
+		margin: auto;
+		top: -58px;
+		background-repeat: no-repeat;
+		background-size: 115%;
+		background-position: center;
+		background-position-y: 2px;
+		overflow: hidden;
+	}
+
+	.stake_container {
+		padding: 0;
+	}
+
+	._qwertystake {
+		min-height: 350px;
+	}
+
+	.staking {
+		padding: 0 0px;
+		padding-top: 80px;
+		padding-bottom: 80px;
+		background-color: #d2b566;
+		background: url("../images/staking/body-container.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position-y: -124px;
+		background-color: #d7bd73;
+	}
+
+	.btn-stake {
+		background: url("../images/staking/teal-button.svg");
+		background-size: 108%;
+		background-repeat: no-repeat;
+		background-position: center;
+		border: none;
+		width: 100%;
+		height: 50px;
+		color: var(--txt-white);
+		font-size: 18px;
+		font-weight: 600;
+		margin: 20px auto;
+		border: 3px solid #82cec0;
+		border-radius: 6px;
+		-moz-box-shadow: inset 0 0 10px #057868;
+		-webkit-box-shadow: inset 0 0 10px #057868;
+		box-shadow: inset 0 0 6px #057868;
+	}
+
+	.staking input {
+		background-color: #26140a;
+		border: none;
+		font-size: 18px;
+		color: #453423;
+		width: 100%;
+		height: 50px;
+		text-indent: 15px;
+		border: 1px solid #867d64;
+		border-radius: 7px;
+	}
+
+	.label-text {
+		color: #dac799;
+		font-size: 18px;
+		font-weight: 600;
+		margin-bottom: 4px;
+		display: inline-block;
+		width: 100%;
+	}
+
+	.top-left,
+	.bottom-left,
+	.bottom-right,
+	.top-right {
+		background: url("../images/staking/hol-core-border-white.svg");
+		height: 32px;
+		width: 32px;
+		position: absolute;
+		border-radius: 5px;
+	}
+
+	.top-left,
+	.bottom-left {
+		left: -5px;
+	}
+
+	.bottom-right,
+	.top-right {
+		right: -3px;
+	}
+
+	.top-left {
+		top: -3px;
+		transform: rotate(90deg);
+	}
+
+	.bottom-left {
+		bottom: -5px;
+		transform: rotate(0);
+	}
+
+	.bottom-right {
+		bottom: -3px;
+		transform: rotate(270deg);
+	}
+
+	.top-right {
+		top: -5px;
+		transform: rotate(180deg);
+	}
+
+	::placeholder {
+		color: #dac799;
+	}
+
+	.stake_value {
+		background-color: unset !important;
+		color: #fff;
+		width: 100%;
+		height: 50px;
+		text-indent: unset !important;
+		border: unset !important;
+		font-size: 25px !important;
+		font-weight: 600;
+		height: 30px !important;
+	}
+
+	._qwerty_alternative {
+		display: inline-block;
+		font-size: 12px;
+		font-weight: 600;
+		color: #ae9263;
+	}
+
+	.btn_wallet {
+		background: url("../images/staking/connect-button-container.svg");
+		background-size: 132%;
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 100%;
+		margin-bottom: 30px;
+		color: #3c2302;
+		border: 3px solid #DDD3BA;
+		-moz-box-shadow: inset 0 0 10px #b9ac8c;
+		-webkit-box-shadow: inset 0 0 10px #b9ac8c;
+		box-shadow: inset 0 0 6px #b9ac8c;
+	}
+
+	.btn_connect {
+		background: url("../images/staking/claim-reward-button-container.png");
+		background-size: 132%;
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 40px;
+		margin-bottom: 0;
+		color: #3c2302;
+		font-size: 16px;
+		border: 3px solid #b9ac8c;
+		-moz-box-shadow: inset 0 0 10px #b9ac8c;
+		-webkit-box-shadow: inset 0 0 10px #b9ac8c;
+		box-shadow: inset 0 0 6px #b9ac8c;
+	}
+
+	.sub_label {
+		font-size: 12px
+	}
+
+	.hol-register-login,
+	.btn_container {
+		display: none;
+	}
+
+	nav .container-fluid {
+		padding: 20px;
+	}
+
+	footer {
+		background: #998753;
+		height: 60px;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		font-size: 18px;
+		font-weight: 600;
+		color: #423201;
+	}
+
+	.staking .wrapper .container {
+		background: red;
+		position: relative;
+		background: url("../images/staking/fill.png");
+		border: 3px solid #D7C396;
+		padding: 30px;
+		border-radius: 5px;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.staking .row {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.form-content {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.form-content * {
+		width: 50% !important;
+	}
+
+	.col-sm-12 {
+		width: 100%;
+	}
+
+	.logo {
+		width: 100%;
+	}
+
+	.navbar-brand {
+		align-items: center;
+		justify-content: center;
+		display: flex;
+	}
+
+	.hero-context-body p {
+		display: none;
+	}
+
+	.hero-context-head p {
+		font-size: 14px !important;
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.hero-context-head h1 {
+		font-size: 40px !important;
+	}
+
+	.hero-context-head {
+		text-align: center;
+	}
+
+	.hero:after {
+		content: '';
+		display: block;
+		width: 100%;
+		min-width: 1290px;
+		height: 130vh;
+		background: url("../images/staking/bg.png");
+		position: relative;
+		margin: auto;
+		top: 0;
+		left: 0;
+		background-repeat: no-repeat;
+		background-size: 60%;
+		background-position-y: 30%;
+		overflow: hidden;
+		z-index: 0;
+	}
+
+	.justify-content-start {
+		justify-content: flex-start !important;
+		flex-direction: column-reverse;
+	}
+
+	label div {
+		height: 3px;
+		width: 25px;
+		background: white;
+		margin-bottom: 5px;
+	}
+
+	.hol-read-more {
+		background: url(../images/staking/1-Connect-Wallet.png);
+		background-repeat: no-repeat;
+		height: 55px;
+		width: 226px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-decoration: none;
+		color: #3d2503 !important;
+		font-weight: bold !important;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		margin: auto;
+	}
+
+	.mb-hol-context {
+		transform: translateY(-100px);
+		z-index: 999999;
+	}
+
+	.mb-full-hieght {
+		height: 100vh;
+	}
+
+	.hero-section {
+		background: url("../images/staking/bg.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		margin: 0;
+		height: auto;
+		width: 100%;
+		display: block;
+		min-height: 100vh;
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	body,
+	html {
+		display: block;
+		margin: 0;
+		padding: 0;
+		background: #160101;
+		overflow-x: hidden;
+	}
+
+	/*for navigator*/
+	nav {
+		padding: 0 !important;
+		z-index: 2;
+		background: rgba(17, 17, 17, .58) !important;
+	}
+
+	.navbar-nav {
+		justify-content: center;
+		display: flex;
+		margin: auto;
+	}
+
+	ul .nav-item .nav-link {
+		color: #fff !important;
+		text-align: left !important;
+		padding: 20 10px !important;
+		margin: 15px 0px;
+	}
+
+	.navbar-brand {
+		width: 50%;
+	}
+
+	.navbar .container-fluid {
+		flex-direction: row;
+	}
+
+	nav:before {
+		content: '';
+		display: block;
+		width: 100vw;
+		height: 2px;
+		transition: width .3s;
+		margin: 0;
+		border-top: 0;
+		border: none;
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: auto;
+		bottom: 0;
+		background: linear-gradient(90deg, rgba(0, 212, 255, 0) 0%, #d7c396 20%, #FFF 50%, #d7c396 80%, rgba(0, 212, 255, 0) 100%);
+	}
+
+	/*for header*/
+	.wrapper,
+	nav,
+	.staking,
+	.hero,
+	.nav-item,
+	.hero-image {
+		position: relative;
+	}
+
+	.hero-section {
+		padding: 0;
+		margin: 0;
+		max-width: unset;
+		width: 100%;
+	}
+
+	.staking:after {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 133px;
+		left: 0;
+		background: url("../images/staking/body-container.png");
+		position: absolute;
+		margin: auto;
+		top: -124px;
+		background-repeat: no-repeat;
+		background-size: 149%;
+		background-position: center;
+		background-position-y: 35px;
+		overflow: hidden;
+	}
+
+	.stake_container {
+		padding: 0;
+	}
+
+	._qwertystake {
+		min-height: 350px;
+	}
+
+	.staking {
+		padding: 0 0px;
+		padding-top: 80px;
+		padding-bottom: 80px;
+		background-color: #d2b566;
+		background: url("../images/staking/body-container.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position-y: -145px;
+		background-color: #d7bd73;
+	}
+
+	.btn-stake {
+		background: url("../images/staking/teal-button.svg");
+		background-size: 108%;
+		background-repeat: no-repeat;
+		background-position: center;
+		border: none;
+		width: 100%;
+		height: 50px;
+		color: var(--txt-white);
+		font-size: 18px;
+		font-weight: 600;
+		margin: 20px auto;
+		border: 3px solid #82cec0;
+		border-radius: 6px;
+		-moz-box-shadow: inset 0 0 10px #057868;
+		-webkit-box-shadow: inset 0 0 10px #057868;
+		box-shadow: inset 0 0 6px #057868;
+	}
+
+	.staking input {
+		background-color: #26140a;
+		border: none;
+		font-size: 18px;
+		color: #453423;
+		width: 100%;
+		height: 50px;
+		text-indent: 15px;
+		border: 1px solid #867d64;
+		border-radius: 7px;
+	}
+
+	.label-text {
+		color: #dac799;
+		font-size: 18px;
+		font-weight: 600;
+		margin-bottom: 4px;
+		display: inline-block;
+		width: 100%;
+	}
+
+	.top-left,
+	.bottom-left,
+	.bottom-right,
+	.top-right {
+		background: url("../images/staking/hol-core-border-white.svg");
+		height: 32px;
+		width: 32px;
+		position: absolute;
+		border-radius: 5px;
+	}
+
+	.top-left,
+	.bottom-left {
+		left: -5px;
+	}
+
+	.bottom-right,
+	.top-right {
+		right: -3px;
+	}
+
+	.top-left {
+		top: -3px;
+		transform: rotate(90deg);
+	}
+
+	.bottom-left {
+		bottom: -5px;
+		transform: rotate(0);
+	}
+
+	.bottom-right {
+		bottom: -3px;
+		transform: rotate(270deg);
+	}
+
+	.top-right {
+		top: -5px;
+		transform: rotate(180deg);
+	}
+
+	::placeholder {
+		color: #dac799;
+	}
+
+	.stake_value {
+		background-color: unset !important;
+		color: #fff;
+		width: 100%;
+		height: 50px;
+		text-indent: unset !important;
+		border: unset !important;
+		font-size: 25px !important;
+		font-weight: 600;
+		height: 30px !important;
+	}
+
+	._qwerty_alternative {
+		display: inline-block;
+		font-size: 12px;
+		font-weight: 600;
+		color: #ae9263;
+	}
+
+	.btn_wallet {
+		background: url("../images/staking/connect-button-container.svg");
+		background-size: 132%;
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 100%;
+		margin-bottom: 30px;
+		color: #3c2302;
+		border: 3px solid #DDD3BA;
+		-moz-box-shadow: inset 0 0 10px #b9ac8c;
+		-webkit-box-shadow: inset 0 0 10px #b9ac8c;
+		box-shadow: inset 0 0 6px #b9ac8c;
+	}
+
+	.btn_connect {
+		background: url("../images/staking/claim-reward-button-container.png");
+		background-size: 132%;
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 40px;
+		margin-bottom: 0;
+		color: #3c2302;
+		font-size: 16px;
+		border: 3px solid #b9ac8c;
+		-moz-box-shadow: inset 0 0 10px #b9ac8c;
+		-webkit-box-shadow: inset 0 0 10px #b9ac8c;
+		box-shadow: inset 0 0 6px #b9ac8c;
+	}
+
+	.sub_label {
+		font-size: 12px
+	}
+
+	.hol-register-login,
+	.btn_container {
+		display: none;
+	}
+
+	nav .container-fluid {
+		padding: 20px;
+	}
+
+	footer {
+		background: #998753;
+		height: 60px;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		font-size: 18px;
+		font-weight: 600;
+		color: #423201;
+	}
+
+	.staking .wrapper .container {
+		background: red;
+		position: relative;
+		background: url("../images/staking/fill.png");
+		border: 3px solid #D7C396;
+		padding: 30px;
+		border-radius: 5px;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.staking .row {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.form-content {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.form-content * {
+		width: 50% !important;
+	}
+
+	.col-sm-12 {
+		width: 100%;
+	}
+
+	.logo {
+		width: 100%;
+	}
+
+	.navbar-brand {
+		align-items: center;
+		justify-content: center;
+		display: flex;
+	}
+
+	.hero-context-body p {
+		display: none;
+	}
+
+	.hero-context-head p {
+		font-size: 14px !important;
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.hero-context-head h1 {
+		font-size: 40px !important;
+	}
+
+	.hero-context-head {
+		text-align: center;
+	}
+
+	.hero:after {
+		content: '';
+		display: block;
+		width: 100%;
+		min-width: 1290px;
+		height: 130vh;
+		background: url("../images/staking/bg.png");
+		position: relative;
+		margin: auto;
+		top: 0;
+		left: 0;
+		background-repeat: no-repeat;
+		background-size: 60%;
+		background-position-y: 30%;
+		overflow: hidden;
+		z-index: 0;
+	}
+
+	.justify-content-start {
+		justify-content: flex-start !important;
+		flex-direction: column-reverse;
+	}
+
+	label div {
+		height: 3px;
+		width: 25px;
+		background: white;
+		margin-bottom: 5px;
+	}
+
+	.hol-read-more {
+		background: url(../images/staking/1-Connect-Wallet.png);
+		background-repeat: no-repeat;
+		height: 55px;
+		width: 226px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-decoration: none;
+		color: #3d2503 !important;
+		font-weight: bold !important;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		margin: auto;
+	}
+
+	.mb-hol-context {
+		transform: translateY(-100px);
+		z-index: 999999;
+	}
+
+	.mb-full-hieght {
+		height: 100vh;
+	}
+
+	.hero-section {
+		background: url("../images/staking/bg.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		margin: 0;
+		height: auto;
+		width: 100%;
+		display: block;
+		min-height: 100vh;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+	body,
+	html,
+	.container {
+		max-width: 1919px;
+		margin: auto;
+	}
+
+	.col-6 {
+		width: 50%;
+	}
+
+	.container-fluid {
+		background: #11111194;
+		padding: 0 15px !important;
+	}
+
+	nav {
+		padding: 0 !important;
+		z-index: 2;
+		background: rgba(17, 17, 17, .58) !important;
+	}
+
+	nav ul li a {
+		color: var(--txt-white) !important;
+		font-size: var(--font-size) !important;
+		margin: 0 20px;
+		font-weight: 300;
+	}
+
+	.nav-item {
+		width: unset !important;
+		padding: 0 13px;
+	}
+
+	nav:before {
+		content: '';
+		display: block;
+		width: 100vw;
+		height: 2px;
+		transition: width .3s;
+		margin: 0;
+		border-top: 0;
+		border: none;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+		background: linear-gradient(90deg, rgba(0, 212, 255, 0) 0%, #d7c396 20%, #FFF 50%, #d7c396 80%, rgba(0, 212, 255, 0) 100%);
+	}
+
+	.navbar-nav {
+		justify-content: center;
+		display: flex;
+		margin: auto;
+	}
+
+	.social_media {
+		display: none;
+	}
+
+	/*hero image*/
+	.hero-image {
+		background: url("../images/staking/hero-section-bg.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: auto;
+		min-height: 441px;
+	}
+
+	.wrapper,
+	nav,
+	.staking,
+	.hero,
+	.nav-item,
+	.btn_container {
+		position: relative;
+	}
+
+	.hero-image:before {
+		content: '';
+		display: block;
+		height: 226px;
+		background: url("../images/staking/body-container.png");
+		position: absolute;
+		margin: auto;
+		bottom: -142px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		overflow: hidden;
+
+	}
+
+	.hero:before {
+		content: '';
+		display: block;
+		min-width: 937px;
+		height: 100vh;
+		position: absolute;
+		margin: auto;
+		top: 36px;
+		left: -228px;
+		background-repeat: no-repeat;
+		background-size: contain;
+		overflow: hidden;
+		z-index: 1;
+	}
+
+	.hero-section p {
+		color: #FFF1E0;
+		font-size: 115px;
+	}
+
+	.hero-context {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		min-height: 430px;
+		margin-left: 20px;
+		position: relative;
+		top: -90px;
+	}
+
+	.hero-context-body p {
+		font-size: 17px !important;
+	}
+
+	.container {
+		padding: 0;
+	}
+
+	.nav-item .nav-link:before {
+		content: '';
+		display: block;
+		position: absolute;
+		height: 0%;
+		left: 0;
+		bottom: -27px;
+		transition: height 0.25s ease-out;
+		background: linear-gradient(to top, #d7c396 0%, transparent 100%);
+		opacity: .2;
+	}
+
+	.nav-item .nav-link:hover:before,
+	.nav-item .active:before {
+		height: 80px;
+	}
+
+	.outer-border {
+		border: 3px solid #cfc093;
+		border-radius: 5px;
+	}
+
+	.outer-border-white {
+		border: 1px solid #fff;
+		border-radius: 5px;
+	}
+
+	.stake_container {
+		margin-left: 27px;
+		padding: 0;
+		border-radius: 5px;
+	}
+
+	.stake-left {
+		margin: auto !important;
+	}
+
+	._qwerty_storage,
+	._qwertystake {
+		position: relative;
+		background: url("../images/staking/fill.png");
+		border: 3px solid #d7c396;
+		padding: 50px 50px;
+		border-radius: 5px;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	._qwerty_storage {
+		min-height: 185px;
+		height: auto;
+		padding: 15px 20px;
+		margin: auto;
+	}
+
+	.mrg-btm {
+		margin-bottom: 27px;
+	}
+
+	._margin_left {
+		margin-right: 25px;
+	}
+
+	._qwertystake {
+		min-height: 350px;
+	}
+
+	.staking {
+		padding: 0 0px;
+		padding-top: 80px;
+		padding-bottom: 80px;
+		background-color: #d2b566;
+		background: url("../images/staking/body-container.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position-y: -90.9px;
+		background-color: #d7bd73;
+	}
+
+	form * {
+		display: block;
+	}
+
+	form {
+		padding: 0 !important;
+	}
+
+	.logo {
+		width: 15%;
+		position: absolute;
+		margin: auto;
+		top: 32px;
+	}
+
+	.container-fluid {
+		height: 80px;
+	}
+
+	.btn-stake {
+		background: url("../images/staking/teal-button.svg");
+		background-size: 146%;
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 215px;
+		height: 50px;
+		font-size: 23px;
+		font-weight: 600;
+		margin: auto;
+		margin: 25px auto;
+		color: var(--txt-white);
+		border: 3px solid #82cec0;
+		border-radius: 6px;
+		-moz-box-shadow: inset 0 0 10px #057868;
+		-webkit-box-shadow: inset 0 0 10px #057868;
+		box-shadow: inset 0 0 6px #057868;
+	}
+
+	.btn_wallet,
+	.btn_connect {
+		border: 3px solid #DDD3BA;
+		-moz-box-shadow: inset 0 0 10px #b9ac8c;
+		-webkit-box-shadow: inset 0 0 10px #b9ac8c;
+		box-shadow: inset 0 0 6px #b9ac8c;
+	}
+
+	.staking input {
+		background-color: #26140a;
+		border: none;
+		font-size: 18px;
+		/* color: #453423; */
+		color: #dac799;
+		height: 45px;
+		text-indent: 15px;
+		border: qpx solid #867d64;
+		border-radius: 7px;
+	}
+
+	span[class='stake_value'] {
+		font-size: 18px;
+		color: #dac799;
+		text-indent: 15px;
+	}
+
+	.label-text {
+		color: #dac799;
+		font-size: 18px;
+		font-weight: 600;
+		margin-bottom: 4px;
+		display: inline-block;
+	}
+
+	.top-left,
+	.bottom-left,
+	.bottom-right,
+	.top-right {
+		background: url("../images/staking/hol-core-border-white.svg");
+		height: 32px;
+		width: 32px;
+		position: absolute;
+		border-radius: 5px;
+	}
+
+	.top-left,
+	.bottom-left {
+		left: -3px;
+	}
+
+	.bottom-right,
+	.top-right {
+		right: -3px;
+	}
+
+	.top-left {
+		top: -3px;
+		transform: rotate(90deg);
+	}
+
+	.bottom-left {
+		bottom: -3px;
+		transform: rotate(0);
+	}
+
+	.bottom-right {
+		bottom: -3px;
+		transform: rotate(270deg);
+	}
+
+	.top-right {
+		top: -3px;
+		transform: rotate(180deg);
+	}
+
+	::placeholder {
+		color: #dac799;
+	}
+
+	.stake_value {
+		background-color: unset !important;
+		color: #453423;
+		height: 50px;
+		text-indent: unset !important;
+		border: unset !important;
+		font-size: 25px !important;
+		font-weight: 600;
+		height: 30px !important;
+	}
+
+	._qwerty_alternative {
+		display: inline-block;
+		font-size: 12px;
+		font-weight: 600;
+		color: #ae9263;
+	}
+
+	.btn_wallet {
+		background: url("../images/staking/connect-button-container.png");
+		background-size: 115%;
+		width: 420px;
+	}
+
+	.btn_connect {
+		background: url("../images/staking/claim-reward-button-container.png");
+		background-size: 123%;
+		width: 164px;
+		height: 40px;
+		font-size: 12px;
+	}
+
+	.sub_label {
+		font-size: 14px
+	}
+
+	.hol-register-login {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: url("../images/staking/1-Connect-Wallet.png");
+		background-repeat: no-repeat;
+		background-size: contain;
+		height: 43px;
+		width: 180px;
+		text-decoration: none;
+		color: #3d2503 !important;
+		font-weight: bold !important;
+		text-transform: uppercase;
+		position: absolute;
+		right: 0px;
+		top: -22px;
+		letter-spacing: 0px;
+	}
+
+	.btn_connect,
+	.btn_wallet {
+		background-position: center;
+		margin-bottom: 0;
+		color: #3c2302;
+	}
+
+	.hol-read-more {
+		background: url(../images/staking/1-Connect-Wallet.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		height: 43px;
+		width: 180px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-decoration: none;
+		color: #3d2503 !important;
+		font-weight: bold !important;
+		text-transform: uppercase;
+		letter-spacing: 0px;
+	}
+
+	.hero-context-head h1,
+	.hero-context-head p,
+	.hero-context-body p,
+	.divider,
+	.stake_container {
+		transition: opacity var(--delay) ease, transform var(--delay) ease;
+		// transform: translateY(100px);
+		// opacity: 0;
+	}
+
+	.divider {
+		background-image: url("../images/staking/hero-divider.png");
+		height: 18px;
+		width: 85%;
+		background-size: contain;
+		background-position: center;
+		display: inline-block;
+		margin-bottom: 15px;
+	}
+
+	.qwerty-rewards {
+		margin: 0;
+		padding: 0;
+	}
+
+	.btn-stake {
+		box-shadow: 0;
+		transition: box-shadow 1s ease;
+	}
+
+	.btn-stake:hover {
+		box-shadow: 0px 0px 10px #888888;
+	}
+
+	span[class='stake_value'],
+	.stake_value,
+	.staking input,
+	._qwerty_storage,
+	.nav-item .nav-link:before,
+	.hero-image,
+	.hero-image:before,
+	.hero:before {
+		width: 100%;
+	}
+
+	.hero-context-head h1 {
+		font-size: 45px !important;
+	}
+
+	.hero-context-head p {
+		font-size: 16px !important;
+		width: 100%;
+	}
+
+	.hero-context-body p {
+		width: 90%;
+	}
+
+	.hero-context-body p {
+		display: none;
+	}
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+
+	body,
+	html,
+	.container {
+		max-width: 1919px;
+		margin: auto;
+	}
+
+	.col-6 {
+		width: 50%;
+	}
+
+	.container-fluid {
+		background: #11111194;
+		padding: var(--ltr-padding-sm) !important;
+	}
+
+	nav {
+		padding: 0 !important;
+		z-index: 2;
+		background: rgba(17, 17, 17, .58) !important;
+	}
+
+	nav ul li a {
+		color: var(--txt-white) !important;
+		font-size: var(--font-size) !important;
+		margin: 0 20px;
+		font-weight: 300;
+	}
+
+	.nav-item {
+		width: unset !important;
+		padding: 0 20px;
+	}
+
+	nav:before {
+		content: '';
+		display: block;
+		width: 100vw;
+		height: 2px;
+		transition: width .3s;
+		margin: 0;
+		border-top: 0;
+		border: none;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+		background: linear-gradient(90deg, rgba(0, 212, 255, 0) 0%, #d7c396 20%, #FFF 50%, #d7c396 80%, rgba(0, 212, 255, 0) 100%);
+	}
+
+	.navbar-nav {
+		justify-content: center;
+		display: flex;
+		margin: auto;
+	}
+
+	.social_media {
+		display: none;
+	}
+
+	/*hero image*/
+	.hero-image {
+		background: url("../images/staking/hero-section-bg.jpg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		height: auto;
+		min-height: 660px;
+	}
+
+	.wrapper,
+	nav,
+	.staking,
+	.hero,
+	.nav-item,
+	.btn_container {
+		position: relative;
+	}
+
+	.hero-image:before {
+		content: '';
+		display: block;
+		height: 226px;
+		background: url("../images/staking/body-container.png");
+		position: absolute;
+		margin: auto;
+		bottom: -1px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		overflow: hidden;
+	}
+
+	.hero:before {
+		content: '';
+		display: block;
+		min-width: 937px;
+		height: 100vh;
+		position: absolute;
+		margin: auto;
+		top: 36px;
+		left: -228px;
+		background-repeat: no-repeat;
+		background-size: contain;
+		overflow: hidden;
+		z-index: 1;
+	}
+
+	.hero-section p {
+		color: #FFF1E0;
+		font-size: 115px;
+	}
+
+	.hero-context {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		min-height: 600px;
+		margin-left: 80px;
+		position: relative;
+		top: -90px;
+	}
+
+	.hero-context-body p {
+		font-size: 17px !important;
+	}
+
+	.container {
+		padding: 0;
+	}
+
+	.nav-item .nav-link:before {
+		content: '';
+		display: block;
+		position: absolute;
+		height: 0%;
+		left: 0;
+		bottom: -27px;
+		transition: height 0.25s ease-out;
+		background: linear-gradient(to top, #d7c396 0%, transparent 100%);
+		opacity: .2;
+	}
+
+	.nav-item .nav-link:hover:before,
+	.nav-item .active:before {
+		height: 80px;
+	}
+
+	.outer-border {
+		border: 3px solid #cfc093;
+		border-radius: 5px;
+	}
+
+	.outer-border-white {
+		border: 1px solid #fff;
+		border-radius: 5px;
+	}
+
+	.stake_container {
+		margin-left: 27px;
+		padding: 0;
+		border-radius: 5px;
+	}
+
+	._qwerty_storage,
+	._qwertystake {
+		position: relative;
+		background: url("../images/staking/fill.png");
+		border: 3px solid #d7c396;
+		padding: 30px 50px;
+		border-radius: 5px;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	._qwerty_storage {
+		min-height: 185px;
+		height: auto;
+		padding: 15px 20px;
+		margin: auto;
+	}
+
+	.mrg-btm {
+		margin-bottom: 27px;
+	}
+
+	._margin_left {
+		margin-right: 25px;
+	}
+
+	._qwertystake {
+		min-height: 350px;
+	}
+
+	.staking {
+		padding: 0 0px;
+		padding-top: 40px;
+		padding-bottom: 80px;
+		background-color: #d2b566;
+		background: url("../images/staking/body-container.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position-y: -224.9px;
+		background-color: #d7bd73;
+	}
+
+	form * {
+		display: block;
+	}
+
+	form {
+		padding: 0 !important;
+	}
+
+	.logo {
+		width: 15%;
+		position: absolute;
+		margin: auto;
+		top: 32px;
+	}
+
+	.container-fluid {
+		height: 80px;
+	}
+
+	.btn-stake {
+		background: url("../images/staking/teal-button.svg");
+		background-size: 146%;
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 215px;
+		height: 50px;
+		font-size: 23px;
+		font-weight: 600;
+		margin: auto;
+		margin: 25px auto;
+		color: var(--txt-white);
+		border: 3px solid #82cec0;
+		border-radius: 6px;
+		-moz-box-shadow: inset 0 0 10px #057868;
+		-webkit-box-shadow: inset 0 0 10px #057868;
+		box-shadow: inset 0 0 6px #057868;
+	}
+
+	.btn_wallet,
+	.btn_connect {
+		border: 3px solid #DDD3BA;
+		-moz-box-shadow: inset 0 0 10px #b9ac8c;
+		-webkit-box-shadow: inset 0 0 10px #b9ac8c;
+		box-shadow: inset 0 0 6px #b9ac8c;
+	}
+
+	.staking input {
+		background-color: #26140a;
+		border: none;
+		font-size: 18px;
+		/* color: #453423; */
+		color: #dac799;
+		height: 50px;
+		text-indent: 15px;
+		border: qpx solid #867d64;
+		border-radius: 7px;
+	}
+
+	span[class='stake_value'] {
+		font-size: 18px;
+		color: #dac799;
+		text-indent: 15px;
+	}
+
+	.label-text {
+		color: #dac799;
+		font-size: 21px;
+		font-weight: 600;
+		margin-bottom: 4px;
+		display: inline-block;
+	}
+
+	.top-left,
+	.bottom-left,
+	.bottom-right,
+	.top-right {
+		background: url("../images/staking/hol-core-border-white.svg");
+		height: 32px;
+		width: 32px;
+		position: absolute;
+		border-radius: 5px;
+	}
+
+	.top-left,
+	.bottom-left {
+		left: -3px;
+	}
+
+	.bottom-right,
+	.top-right {
+		right: -3px;
+	}
+
+	.top-left {
+		top: -3px;
+		transform: rotate(90deg);
+	}
+
+	.bottom-left {
+		bottom: -3px;
+		transform: rotate(0);
+	}
+
+	.bottom-right {
+		bottom: -3px;
+		transform: rotate(270deg);
+	}
+
+	.top-right {
+		top: -3px;
+		transform: rotate(180deg);
+	}
+
+	::placeholder {
+		color: #dac799;
+	}
+
+	.stake_value {
+		background-color: unset !important;
+		color: #453423;
+		height: 50px;
+		text-indent: unset !important;
+		border: unset !important;
+		font-size: 25px !important;
+		font-weight: 600;
+		height: 30px !important;
+	}
+
+	._qwerty_alternative {
+		display: inline-block;
+		font-size: 12px;
+		font-weight: 600;
+		color: #ae9263;
+	}
+
+	.btn_wallet {
+		background: url("../images/staking/connect-button-container.png");
+		background-size: 115%;
+		width: 420px;
+	}
+
+	.btn_connect {
+		background: url("../images/staking/claim-reward-button-container.png");
+		background-size: 123%;
+		width: 164px;
+		height: 40px;
+		font-size: 12px;
+	}
+
+	.sub_label {
+		font-size: 14px
+	}
+
+	.hol-register-login {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: url("../images/staking/1-Connect-Wallet.png");
+		background-repeat: no-repeat;
+		background-size: contain;
+		height: 43px;
+		width: 180px;
+		text-decoration: none;
+		color: #3d2503 !important;
+		font-weight: bold !important;
+		text-transform: uppercase;
+		position: absolute;
+		right: 0px;
+		top: -22px;
+		letter-spacing: 0px;
+	}
+
+	.btn_connect,
+	.btn_wallet {
+		background-position: center;
+		margin-bottom: 0;
+		color: #3c2302;
+	}
+
+	.hol-read-more {
+		background: url(../images/staking/1-Connect-Wallet.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		height: 43px;
+		width: 180px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-decoration: none;
+		color: #3d2503 !important;
+		font-weight: bold !important;
+		text-transform: uppercase;
+		letter-spacing: 0px;
+	}
+
+	.hero-context-head h1,
+	.hero-context-head p,
+	.hero-context-body p,
+	.divider,
+	.stake_container {
+		transition: opacity var(--delay) ease, transform var(--delay) ease;
+		// transform: translateY(100px);
+		// opacity: 0;
+	}
+
+	.divider {
+		background-image: url("../images/staking/hero-divider.png");
+		height: 18px;
+		width: 85%;
+		background-size: cover;
+		background-position: center;
+		display: inline-block;
+		margin-bottom: 15px;
+	}
+
+	.qwerty-rewards {
+		margin: 0;
+		padding: 0;
+	}
+
+	.btn-stake {
+		box-shadow: 0;
+		transition: box-shadow 1s ease;
+	}
+
+	.btn-stake:hover {
+		box-shadow: 0px 0px 10px #888888;
+	}
+
+	span[class='stake_value'],
+	.stake_value,
+	.staking input,
+	._qwerty_storage,
+	.nav-item .nav-link:before,
+	.hero-image,
+	.hero-image:before,
+	.hero:before {
+		width: 100%;
+	}
+
+	.hero-context-head h1 {
+		font-size: 50px !important;
+	}
+
+	.hero-context-head p {
+		font-size: 20px !important;
+		width: 100%;
+	}
+
+	.hero-context-body p {
+		width: 90%;
+	}
+
+	.hero-context-body p {
+		display: inline-block;
+		word-wrap: break-word;
+		white-space: normal;
+		display: -webkit-box;
+		text-overflow: ellipsis;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 5;
+		overflow: hidden;
+
+	}
+}
+
+@media (min-width: 1400px) and (max-width: 1919px) {
+
+	body,
+	html,
+	.container {
+		max-width: 1919px;
+		margin: auto;
+	}
+
+	.col-6 {
+		width: 50%;
+	}
+
+	.container-fluid {
+		background: #11111194;
+		padding: var(--ltr-padding-sm) !important;
+	}
+
+	nav {
+		padding: 0 !important;
+		z-index: 2;
+		background: rgba(17, 17, 17, .58) !important;
+	}
+
+	nav ul li a {
+		color: var(--txt-white) !important;
+		font-size: var(--font-size) !important;
+		margin: 0 20px;
+		font-weight: 300;
+	}
+
+	nav:before {
+		content: '';
+		display: block;
+		width: 100vw;
+		height: 2px;
+		transition: width .3s;
+		margin: 0;
+		border-top: 0;
+		border: none;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+		background: linear-gradient(90deg, rgba(0, 212, 255, 0) 0%, #d7c396 20%, #FFF 50%, #d7c396 80%, rgba(0, 212, 255, 0) 100%);
+	}
+
+	.navbar-nav {
+		justify-content: center;
+		display: flex;
+		margin: auto;
+	}
+
+	.social_media {
+		display: none;
+	}
+
+	/*hero image*/
+	.hero-image {
+		background: url("../images/staking/hero-section-bg.jpg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		height: auto;
+		min-height: 770px;
+	}
+
+	.wrapper,
+	nav,
+	.staking,
+	.hero,
+	.nav-item,
+	.btn_container {
+		position: relative;
+	}
+
+	.hero-image:before {
+		content: '';
+		display: block;
+		height: 226px;
+		background: url("../images/staking/body-container.png");
+		position: absolute;
+		margin: auto;
+		bottom: -1px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		overflow: hidden;
+	}
+
+	.hero:before {
+		content: '';
+		display: block;
+		min-width: 937px;
+		height: 100vh;
+		position: absolute;
+		margin: auto;
+		top: 36px;
+		left: -228px;
+		background-repeat: no-repeat;
+		background-size: contain;
+		overflow: hidden;
+		z-index: 1;
+	}
+
+	.hero-section p {
+		color: #FFF1E0;
+		font-size: 19px;
+	}
+
+	.hero-context {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		min-height: 600px;
+		margin-left: 80px;
+	}
+
+	.hero-context-body p {
+		font-size: 17px !important;
+	}
+
+	.container {
+		padding: 0;
+	}
+
+	.nav-item .nav-link:before {
+		content: '';
+		display: block;
+		position: absolute;
+		height: 0%;
+		left: 0;
+		bottom: -33px;
+		transition: height 0.25s ease-out;
+		background: linear-gradient(to top, #d7c396 0%, transparent 100%);
+		opacity: .2;
+	}
+
+	.nav-item .nav-link:hover:before,
+	.nav-item .active:before {
+		height: 92px;
+	}
+
+	.outer-border {
+		border: 3px solid #cfc093;
+		border-radius: 5px;
+	}
+
+	.outer-border-white {
+		border: 1px solid #fff;
+		border-radius: 5px;
+	}
+
+	.stake_container {
+		margin-left: 27px;
+		padding: 0;
+		border-radius: 5px;
+	}
+
+	._qwerty_storage,
+	._qwertystake {
+		position: relative;
+		background: url("../images/staking/fill.png");
+		border: 3px solid #d7c396;
+		padding: 30px 50px;
+		border-radius: 5px;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	._qwerty_storage {
+		min-height: 185px;
+		height: auto;
+		padding: 15px 20px;
+		margin: auto;
+	}
+
+	.mrg-btm {
+		margin-bottom: 27px;
+	}
+
+	._margin_left {
+		margin-right: 25px;
+	}
+
+	._qwertystake {
+		min-height: 350px;
+	}
+
+	.staking {
+		padding: 0 70px;
+		padding-top: 80px;
+		padding-bottom: 80px;
+		background-color: #d2b566;
+		background: url("../images/staking/body-container.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position-y: -216.9px;
+		background-color: #d7bd73;
+	}
+
+	form * {
+		display: block;
+	}
+
+	form {
+		padding: 0 !important;
+	}
+
+	.logo {
+		width: 15%;
+		position: absolute;
+		margin: auto;
+		top: 32px;
+	}
+
+	.container-fluid {
+		height: 92px;
+	}
+
+	.btn-stake {
+		background: url("../images/staking/teal-button.svg");
+		background-size: 146%;
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 215px;
+		height: 60px;
+		font-size: 23px;
+		font-weight: 600;
+		margin: auto;
+		margin: 20px auto;
+		color: var(--txt-white);
+		border: 3px solid #82cec0;
+		border-radius: 6px;
+		-moz-box-shadow: inset 0 0 10px #057868;
+		-webkit-box-shadow: inset 0 0 10px #057868;
+		box-shadow: inset 0 0 6px #057868;
+	}
+
+	.btn_wallet,
+	.btn_connect {
+		border: 3px solid #DDD3BA;
+		-moz-box-shadow: inset 0 0 10px #b9ac8c;
+		-webkit-box-shadow: inset 0 0 10px #b9ac8c;
+		box-shadow: inset 0 0 6px #b9ac8c;
+	}
+
+	.staking input {
+		background-color: #26140a;
+		border: none;
+		font-size: 18px;
+		/* color: #453423; */
+		color: #dac799;
+		height: 50px;
+		text-indent: 15px;
+		border: 2px solid #867d64;
+		border-radius: 7px;
+	}
+
+	span[class='stake_value'] {
+		font-size: 18px;
+		color: #dac799;
+		text-indent: 15px;
+	}
+
+	.label-text {
+		color: #dac799;
+		font-size: 24px;
+		font-weight: 600;
+		margin-bottom: 4px;
+		display: inline-block;
+	}
+
+	.top-left,
+	.bottom-left,
+	.bottom-right,
+	.top-right {
+		background: url("../images/staking/hol-core-border-white.svg");
+		height: 32px;
+		width: 32px;
+		position: absolute;
+		border-radius: 5px;
+	}
+
+	.top-left,
+	.bottom-left {
+		left: -3px;
+	}
+
+	.bottom-right,
+	.top-right {
+		right: -3px;
+	}
+
+	.top-left {
+		top: -3px;
+		transform: rotate(90deg);
+	}
+
+	.bottom-left {
+		bottom: -3px;
+		transform: rotate(0);
+	}
+
+	.bottom-right {
+		bottom: -3px;
+		transform: rotate(270deg);
+	}
+
+	.top-right {
+		top: -3px;
+		transform: rotate(180deg);
+	}
+
+	::placeholder {
+		color: #dac799;
+	}
+
+	.stake_value {
+		background-color: unset !important;
+		color: #453423;
+		height: 50px;
+		text-indent: unset !important;
+		border: unset !important;
+		font-size: 25px !important;
+		font-weight: 600;
+		height: 30px !important;
+	}
+
+	._qwerty_alternative {
+		display: inline-block;
+		font-size: 12px;
+		font-weight: 600;
+		color: #ae9263;
+	}
+
+	.btn_wallet {
+		background: url("../images/staking/connect-button-container.png");
+		background-size: 115%;
+		width: 420px;
+	}
+
+	.btn_connect {
+		background: url("../images/staking/claim-reward-button-container.png");
+		background-size: 123%;
+		width: 164px;
+		height: 49px;
+		font-size: 12px;
+	}
+
+	.sub_label {
+		font-size: 15px
+	}
+
+	.hol-register-login {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: url("../images/staking/1-Connect-Wallet.png");
+		background-repeat: no-repeat;
+		height: 55px;
+		width: 226px;
+		text-decoration: none;
+		color: #3d2503 !important;
+		font-weight: bold !important;
+		text-transform: uppercase;
+		position: absolute;
+		right: 0px;
+		top: -28px;
+		letter-spacing: 3px;
+	}
+
+	.btn_connect,
+	.btn_wallet {
+		background-position: center;
+		margin-bottom: 0;
+		color: #3c2302;
+	}
+
+	.hol-read-more {
+		display: none;
+	}
+
+	.hero-context-head h1,
+	.hero-context-head p,
+	.hero-context-body p,
+	.divider,
+	.stake_container {
+		transition: opacity var(--delay) ease, transform var(--delay) ease;
+		// transform: translateY(100px);
+		// opacity: 0;
+	}
+
+	.divider {
+		background-image: url("../images/staking/hero-divider.png");
+		height: 18px;
+		width: 85%;
+		background-size: cover;
+		background-position: center;
+		display: inline-block;
+		margin-bottom: 15px;
+	}
+
+	.qwerty-rewards {
+		margin: 0;
+		padding: 0;
+	}
+
+	.btn-stake {
+		box-shadow: 0;
+		transition: box-shadow 1s ease;
+	}
+
+	.btn-stake:hover {
+		box-shadow: 0px 0px 10px #888888;
+	}
+
+	span[class='stake_value'],
+	.stake_value,
+	.staking input,
+	._qwerty_storage,
+	.nav-item .nav-link:before,
+	.hero-image,
+	.hero-image:before,
+	.hero:before {
+		width: 100%;
+	}
+
+	.hero-context-head h1 {
+		font-size: 50px !important;
+	}
+
+	.hero-context-head p {
+		font-size: 20px !important;
+		width: 75%;
+	}
+
+	.hero-context-body p {
+		width: 90%;
+	}
+
+}
+
+@media (min-width: 1920px) {
+
+	body,
+	html,
+	.container {
+		max-width: 1920px;
+		margin: auto;
+	}
+
+	.col-6 {
+		width: 50%;
+	}
+
+	.container-fluid {
+		background: #11111194;
+		padding: var(--ltr-padding) !important;
+	}
+
+	nav {
+		padding: 0 !important;
+		z-index: 2;
+		background: rgba(17, 17, 17, .58) !important;
+	}
+
+	nav ul li a {
+		color: var(--txt-white) !important;
+		font-size: var(--font-size) !important;
+		margin: 0 20px;
+		font-weight: 300;
+	}
+
+	nav:before {
+		content: '';
+		display: block;
+		width: 100vw;
+		height: 2px;
+		transition: width .3s;
+		margin: 0;
+		border-top: 0;
+		border: none;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+		background: linear-gradient(90deg, rgba(0, 212, 255, 0) 0%, #d7c396 20%, #FFF 50%, #d7c396 80%, rgba(0, 212, 255, 0) 100%);
+	}
+
+	.navbar-nav {
+		justify-content: center;
+		display: flex;
+		margin: auto;
+	}
+
+	.social_media {
+		display: none;
+	}
+
+	/*hero image*/
+	.hero-image {
+		background: url("../images/staking/hero-section-bg.png");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		height: auto;
+		min-height: 825.219px;
+	}
+
+	.wrapper,
+	nav,
+	.staking,
+	.hero,
+	.nav-item,
+	.btn_container {
+		position: relative;
+	}
+
+	.hero-image:before {
+		content: '';
+		display: block;
+		height: 226px;
+		background: url("../images/staking/body-container.png");
+		position: absolute;
+		margin: auto;
+		bottom: 0;
+		background-repeat: no-repeat;
+		background-size: cover;
+		overflow: hidden;
+	}
+
+	.hero:before {
+		content: '';
+		display: block;
+		min-width: 1290px;
+		height: 100vh;
+		background: url("../images/staking/character-clipped.png");
+		position: absolute;
+		margin: auto;
+		top: -101px;
+		left: -310px;
+		background-repeat: no-repeat;
+		background-size: contain;
+		overflow: hidden;
+		z-index: 1;
+	}
+
+	.hero-section p {
+		color: #FFF1E0;
+		font-size: 19px;
+	}
+
+	.hero-context {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		min-height: 600px;
+		margin-left: 350px;
+	}
+
+	.container {
+		padding: 0;
+	}
+
+	.nav-item .nav-link:before {
+		content: '';
+		display: block;
+		position: absolute;
+		height: 0%;
+		left: 0;
+		bottom: -33px;
+		transition: height 0.25s ease-out;
+		background: linear-gradient(to top, #d7c396 0%, transparent 100%);
+		opacity: .2;
+	}
+
+	.nav-item .nav-link:hover:before,
+	.nav-item .active:before {
+		height: 92px;
+	}
+
+	.outer-border {
+		border: 3px solid #cfc093;
+		border-radius: 5px;
+	}
+
+	.outer-border-white {
+		border: 1px solid #fff;
+		border-radius: 5px;
+	}
+
+	.stake_container {
+		margin-left: 27px;
+		padding: 0;
+		border-radius: 5px;
+	}
+
+	._qwerty_storage,
+	._qwertystake {
+		position: relative;
+		background: url("../images/staking/fill.png");
+		border: 3px solid #d7c396;
+		padding: 30px 50px;
+		border-radius: 5px;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	._qwerty_storage {
+		min-height: 185px;
+		height: auto;
+		padding: 15px 20px;
+		margin: auto;
+	}
+
+	.mrg-btm {
+		margin-bottom: 27px;
+	}
+
+	._margin_left {
+		margin-right: 25px;
+	}
+
+	._qwertystake {
+		min-height: 350px;
+	}
+
+	.staking {
+		padding: 0 330px;
+		padding-top: 80px;
+		padding-bottom: 80px;
+		background-color: #d2b566;
+		background: url("../images/staking/body-container.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position-y: -219.9px;
+		background-color: #d7bd73;
+		max-width: 1920px;
+		margin: auto;
+	}
+
+	form * {
+		display: block;
+	}
+
+	form {
+		padding: 0 !important;
+	}
+
+	.logo {
+		width: 15%;
+		position: absolute;
+		margin: auto;
+		top: 32px;
+	}
+
+	.container-fluid {
+		height: 92px;
+	}
+
+	.btn-stake {
+		background: url("../images/staking/teal-button.svg");
+		background-size: 146%;
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 215px;
+		height: 60px;
+		font-size: 23px;
+		font-weight: 600;
+		margin: auto;
+		margin: 20px auto;
+		color: var(--txt-white);
+		border: 3px solid #82cec0;
+		border-radius: 6px;
+		-moz-box-shadow: inset 0 0 10px #057868;
+		-webkit-box-shadow: inset 0 0 10px #057868;
+		box-shadow: inset 0 0 6px #057868;
+	}
+
+	.btn_wallet,
+	.btn_connect {
+		border: 3px solid #DDD3BA;
+		-moz-box-shadow: inset 0 0 10px #b9ac8c;
+		-webkit-box-shadow: inset 0 0 10px #b9ac8c;
+		box-shadow: inset 0 0 6px #b9ac8c;
+	}
+
+	.staking input {
+		background-color: #26140a;
+		border: none;
+		font-size: 18px;
+		/* color: #453423; */
+		color: #dac799;
+		height: 50px;
+		text-indent: 15px;
+		border: 2px solid #867d64;
+		border-radius: 7px;
+	}
+
+	span[class='stake_value'] {
+		font-size: 18px;
+		color: #dac799;
+		text-indent: 15px;
+	}
+
+	.label-text {
+		color: #dac799;
+		font-size: 24px;
+		font-weight: 600;
+		margin-bottom: 4px;
+		display: inline-block;
+	}
+
+	.top-left,
+	.bottom-left,
+	.bottom-right,
+	.top-right {
+		background: url("../images/staking/hol-core-border-white.svg");
+		height: 32px;
+		width: 32px;
+		position: absolute;
+		border-radius: 5px;
+	}
+
+	.top-left,
+	.bottom-left {
+		left: -3px;
+	}
+
+	.bottom-right,
+	.top-right {
+		right: -3px;
+	}
+
+	.top-left {
+		top: -3px;
+		transform: rotate(90deg);
+	}
+
+	.bottom-left {
+		bottom: -3px;
+		transform: rotate(0);
+	}
+
+	.bottom-right {
+		bottom: -3px;
+		transform: rotate(270deg);
+	}
+
+	.top-right {
+		top: -3px;
+		transform: rotate(180deg);
+	}
+
+	::placeholder {
+		color: #dac799;
+	}
+
+	.stake_value {
+		background-color: unset !important;
+		color: #453423;
+		height: 50px;
+		text-indent: unset !important;
+		border: unset !important;
+		font-size: 25px !important;
+		font-weight: 600;
+		height: 30px !important;
+	}
+
+	._qwerty_alternative {
+		display: inline-block;
+		font-size: 12px;
+		font-weight: 600;
+		color: #ae9263;
+	}
+
+	.btn_wallet {
+		background: url("../images/staking/connect-button-container.png");
+		background-size: 115%;
+		width: 420px;
+	}
+
+	.btn_connect {
+		background: url("../images/staking/claim-reward-button-container.png");
+		background-size: 123%;
+		width: 164px;
+		height: 49px;
+		font-size: 12px;
+	}
+
+	.sub_label {
+		font-size: 15px
+	}
+
+	.hol-register-login {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: url("../images/staking/1-Connect-Wallet.png");
+		background-repeat: no-repeat;
+		height: 55px;
+		width: 226px;
+		text-decoration: none;
+		color: #3d2503 !important;
+		font-weight: bold !important;
+		text-transform: uppercase;
+		position: absolute;
+		right: 0px;
+		top: -28px;
+		letter-spacing: 3px;
+	}
+
+	.btn_connect,
+	.btn_wallet {
+		background-position: center;
+		margin-bottom: 0;
+		color: #3c2302;
+	}
+
+	.hol-read-more {
+		display: none;
+	}
+
+	.hero-context-head h1,
+	.hero-context-head p,
+	.hero-context-body p,
+	.divider,
+	.stake_container {
+		transition: opacity var(--delay) ease, transform var(--delay) ease;
+		// transform: translateY(100px);
+		// opacity: 0;
+	}
+
+	.divider {
+		background-image: url("../images/staking/hero-divider.png");
+		height: 18px;
+		width: 85%;
+		background-size: cover;
+		background-position: center;
+		display: inline-block;
+		margin-bottom: 15px;
+	}
+
+	.qwerty-rewards {
+		margin: 0;
+		padding: 0;
+	}
+
+	.btn-stake {
+		box-shadow: 0;
+		transition: box-shadow 1s ease;
+	}
+
+	.btn-stake:hover {
+		box-shadow: 0px 0px 10px #888888;
+	}
+
+	span[class='stake_value'],
+	.stake_value,
+	.staking input,
+	._qwerty_storage,
+	.nav-item .nav-link:before,
+	.hero-image,
+	.hero-image:before,
+	.hero:before {
+		width: 100%;
+	}
+
+}
+
+@media (min-width: 0px) {
+	::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+		color: white !important;
+		opacity: 1; /* Firefox */
+	  }
+	  
+	  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+		color: white;
+	  }
+	  
+	  ::-ms-input-placeholder { /* Microsoft Edge */
+		color: white;
+	  }
+
+	._qwertystake {
+		padding: 30px 40px;
+
+		.stakeFormSection {
+			.label-text {
+				padding: 0;
+			}
+	
+			.input-div {			
+				div {
+					width: 100% !important;
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					margin: 0 !important;
+					padding: 0 !important;
+					gap: 10px;
+	
+					#filled-adornment-password {
+						box-sizing: border-box;
+						padding: 0px !important;
+						flex-grow: 1;
+						font-family: 'Montserrat', sans-serif;
+					}
+	
+					.MuiInputAdornment-root {
+						width: 100px !important;
+						height: 50px !important;
+						max-height: none;
+	
+						button {
+							background-color: #ffc543;
+							color: #8c3606;
+							font-weight: bold;
+							font-size: 16px;
+							height: 100% !important;
+							width: 100% !important;
+						}
+					}
+
+					&.css-g9m4e0-MuiInputBase-root-MuiFilledInput-root:after,
+					&.css-19mk8g1-MuiInputBase-root-MuiFilledInput-root:after {
+						border: none !important;
+						// background-color: transparent !important;
+					}
+				}
+	
+			}
+	
+			.stake-button-div {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+	
+				button {
+					text-transform: capitalize;
+					color: white;
+					font-family: 'Montserrat', sans-serif;
+				}
+			}
+	
+		}
+	}
+
+	.stake-right {
+		.stake-right-top {
+			.outer-border {
+				._qwerty_storage {
+					.row {
+						width: 100%;
+
+						p {
+							padding: 0 !important;
+						}
+
+						form {
+							.label-text {
+								._qwerty_alternative {
+									margin-left: 10px;
+								}
+							}
+						}
+
+						button {
+							// width: 100%;
+							margin: 20px 57px;
+							text-transform: capitalize;
+							font-family: 'Montserrat', sans-serif;
+						}						
+					}
+					
+				}
+			}
+		}
+
+		.stake-right-bottom {
+			.col {
+				.outer-border-white {
+					.outer-border {
+						.row {
+							.row {
+								.stake_value {
+									color: #dac799;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+body,
+html {
+	display: block;
+	margin: 0;
+	padding: 0;
+	background: #0E0301;
+	overflow-x: hidden;
+}
+
+.anim,
+.hero-context-head:after {
+	transform: none !important;
+	opacity: 1 !important;
+}
+
+:root {
+	--theme-color: #11111194;
+	--txt-white: #fff;
+	--txt-black: #372302;
+	--default-font: arial;
+	--ltr-padding: 0 200px;
+	--ltr-padding-sm: 0 50px;
+	--font-size: 20px;
+	--width-full: 100%;
+}
+
+:button {
+	--theme-color: #11111194;
+	--txt-white: #fff;
+	--txt-black: #372302;
+	--default-font: arial;
+}
+
+
+
+
+
+
+
+
+/*popup*/
+.swal2-actions {
+	width: 100% !important;
+}
+
+.swal2-popup {
+	background: url("../images/staking/fill.png") !important;
+	border: 4px solid #cfc093 !important;
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+	box-shadow: inset 0 0 4px #fff;
+}
+
+.swal2-actions button {
+	background: url("../images/Header/1-Connect-Wallet.png") !important;
+	background-repeat: no-repeat !important;
+	background-size: 100% 100% !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: #3d2503 !important;
+	font-weight: 700;
+	text-transform: uppercase;
+	height: 40px;
+	width: 50% !important;
+	font-size: 12px;
+	letter-spacing: 3px;
+	border: none !important;
+	background-color: transparent !important;
+}
+
+.swal2-actions button:focus,
+.swal2-popup .swal2-close:focus {
+	outline: none;
+	border: none;
+	box-shadow: unset !important;
+}
+
+.pop-up-readmore {
+	color: #dac799;
+	font-size: 33px;
+	font-weight: 600;
+	margin-bottom: 4px;
+	display: inline-block;
+}
+
+.swal2-title {
+	text-align: left !important;
+}
+
+.swal2-container {
+	padding: 20px !important;
+}
+
+.readmore-content {
+	text-align: left;
+	font-size: 15px;
+	color: #e9cba5;
+	font-weight: 300;
+}
+
+.swal2-title,
+.readmore-content {
+	margin-bottom: 0 !important;
+}
+
+.pop-divider {
+	background-image: url("../images/staking/hero-divider.png");
+	height: 18px;
+	width: 100%;
+	background-size: contain;
+	background-position: center;
+	display: inline-block;
+	margin-bottom: 15px;
+}
+
+.swal2-popup .swal2-close {
+	background: url("../images/staking/close-button.png") !important;
+	border: none !important;
+	background-color: unset !important;
+	background-repeat: no-repeat !important;
+	background-size: 100% 100% !important;
+}

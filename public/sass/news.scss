@@ -1,0 +1,1198 @@
+html {
+    body {
+        @import "modules/_header.scss";
+        @import "modules/_footer.scss";
+        @import "modules/_pop-up.scss";
+    }
+} 
+
+html {
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+.txt-red{
+    color: #DA3A48;
+}
+.subtext{
+    color: #96969a;
+    font-weight: 600;
+}
+.theme-color{
+    color: #d7c396;
+}
+
+.disable-scroll {
+    overflow-y: hidden !important;
+    // opacity: 0 !important;
+}
+
+
+
+@media (max-width: 450px){
+    h3 {
+        // color: red !important;
+    }
+    .paging {
+        padding: 30px 0 !important;
+        // background-color: red !important;
+    }
+}
+
+
+@media screen and (min-width: 0){
+    main{
+        .hero-section{
+            background: url("../images/news/hol-home-header.jpg");
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+            min-height: 550px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .container{
+                .wrapper{
+                    .col-6 {
+                        width: 75%;
+                    }
+                    color: #fff;
+                    .team-divider:before {
+                        content: "";
+                        background-image: url(../images/about/hol-core-hr-2.png);
+                        padding: 10px 0;
+                        width: 85%;
+                        background-size: contain;
+                        background-position: center;
+                        display: inline-block;
+                        margin-bottom: 15px;
+                        background-repeat: no-repeat;
+                    }
+                    h1{
+                        font-size: 50px;
+                        font-weight: 700;
+                        font-family: neilvard-one;
+                    }
+                    
+                    #read_more{
+                        background: url("../images/staking/1-Connect-Wallet.png");
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        height: 43px;
+                        width: 180px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-decoration: none;
+                        color: #3d2503 !important;
+                        font-weight: bold !important;
+                        text-transform: uppercase;
+                        letter-spacing: 0px;
+                    }
+                }
+            }
+        }
+        .latest-news{
+            background-image: url(../images/news/hol-home-content.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 1000px;
+            padding: 100px 0 50px 0;
+            .container{
+                display: block;
+                justify-content: center;
+                align-items: flex-start;
+                max-width: 1920px;
+                color: #fff;
+                .col-5 {
+                    width: 100%;
+                }
+                .trend{
+                    padding: 0 0 0 0;
+                    margin: 0;
+                }
+                .section-title{
+                    font-size: 40px;
+                    font-weight: 800;
+                    margin-bottom: 50px;
+                    font-family: neilvard-one;
+                }
+                .news-container:hover{
+                    background-color: rgba(0, 0, 0, 0.2);
+                    cursor: pointer;
+                }
+                .news-container{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    padding-left: 10px;
+                    .avatar{
+                        border: 3px solid #d7c396;
+                        box-shadow: inset 0 0 14px 5px #000000bf;
+                        border-radius: 5px;
+                        height: 250px;
+                        position: relative;
+                        width: 100%;
+                        padding: 0;
+                        overflow: hidden;
+                        max-width: 100%;
+                        position: relative;
+                        .avatar-image{
+
+                            background-image: url(../images/news/SEPTEMBER.png);
+                            background-size: cover;
+                            background-position: center;
+                        }
+                    }
+                    .news-context{
+                        padding: 20px 0;
+                        margin-left: 0;
+                        width: 100%;
+                        .author{
+                            text-align: right;
+                        }
+                    }
+                    
+                }
+                .featured{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    padding: 0;
+                    .section-title{
+                        font-size: 40px;
+                        font-weight: 800;
+                        margin-bottom: 50px;
+                    }
+                    .features-container{
+                        background: #00000073;
+                        padding: 5px;
+                        border: 1px solid white;
+                        border-radius: 5px;
+                        .featured-wrapper:hover:before{
+                            height: 100%;
+                        }
+                        .featured-wrapper:hover .features-context h3{
+                            opacity: 1;
+                            transform: translateY(0px);
+                        }
+                        .featured-wrapper:before{
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            height: 0px;
+                            width: 100%;
+                            bottom: 0;
+                            transition: height 0.25s ease-out;
+                            background: linear-gradient(to top, #000000 0%, transparent 100%);
+                            opacity: 0.9;
+                        }
+                        .featured-wrapper{
+                            border: 3px solid #D7C396;
+                            position: relative;
+                            .feature-image{
+                                min-height: 250px;
+                                background-size: cover;
+                            }
+                            .features-context{
+                                position: absolute;
+                                bottom: 0;
+                                width: 100%;
+                                text-align: center;
+                                h3{
+                                    font-size: 20px;
+                                    font-weight: 500;
+                                    transform: translateY(20px);
+                                    transition: 0.25s ease-out;
+                                    opacity: 0;
+                                    z-index: 999999;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .paging{
+                margin: auto;
+                padding: 30px;
+                .page-link{
+                    background-color: unset;
+                    color: #D7C396;
+                    border: unset;
+                    margin: 10px;
+                }
+                .active{
+                    background-color:#D7C396;
+                    color: #371111;
+                }
+            }
+        }
+    }
+    .old-news{
+        width: 100%;
+        background: url("../images/news/Section-3-BG.png");
+        margin: auto;
+        padding: 50px 0;
+        &-container{
+            width: 90%;
+            margin: auto;
+            h3{
+                font-size: 40px;
+                font-weight: 800;
+                margin-bottom: 50px;
+                color: #3B2A0D;
+                font-family: neilvard-one;
+            }
+            .old-news-wrapper{
+                .new-container{
+                    margin-bottom: 50px;
+                    width: 100%;
+                }
+                .old-news-avatar{
+                    background-image: url("../images/news/Monthly-Development-report.png");
+                    background-size: cover;
+                    background-position: center;
+                    min-height: 167px;
+                }
+                h4{
+                    font-size: 22px;
+                    font-weight: 800;
+                    color: #39290E;
+                }
+                p{
+                    color: #897250;
+                    font-size: 15px;
+                }
+                span{
+                    color: #897250;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 576px){
+    main{
+        .hero-section{
+            background: url("../images/news/hol-home-header.jpg");
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+            min-height: 550px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .container{
+                .wrapper{
+                    .col-6 {
+                        width: 50%;
+                    }
+                    color: #fff;
+                    .team-divider:before {
+                        content: "";
+                        background-image: url(../images/about/hol-core-hr-2.png);
+                        padding: 10px 0;
+                        width: 85%;
+                        background-size: contain;
+                        background-position: center;
+                        display: inline-block;
+                        margin-bottom: 15px;
+                        background-repeat: no-repeat;
+                    }
+                    h1{
+                        font-size: 57px;
+                        font-weight: 700;
+                    }
+                    
+                    #read_more{
+                        background: url("../images/staking/1-Connect-Wallet.png");
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        height: 43px;
+                        width: 180px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-decoration: none;
+                        color: #3d2503 !important;
+                        font-weight: bold !important;
+                        text-transform: uppercase;
+                        letter-spacing: 0px;
+                    }
+                }
+            }
+        }
+        .latest-news{
+            background-image: url(../images/news/hol-home-content.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 1000px;
+            padding: 100px 0 50px 0;
+            .container{
+                display: block;
+                justify-content: center;
+                align-items: flex-start;
+                max-width: 1920px;
+                color: #fff;
+                .col-5 {
+                    width: 100%;
+                }
+                .trend{
+                    padding: 0 0 0 0;
+                    margin: 0;
+                }
+                .section-title{
+                    font-size: 40px;
+                    font-weight: 800;
+                    margin-bottom: 50px;
+                }
+                .news-container:hover{
+                    background-color: rgba(0, 0, 0, 0.2);
+                    cursor: pointer;
+                }
+                .news-container{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding-left: 12px;
+                    .avatar{
+                        border: 3px solid #d7c396;
+                        box-shadow: inset 0 0 14px 5px #000000bf;
+                        border-radius: 5px;
+                        height: 250px;
+                        position: relative;
+                        width: 100%;
+                        padding: 0;
+                        overflow: hidden;
+                        max-width: 100%;
+                        position: relative;
+                        .avatar-image{
+
+                            background-image: url(../images/news/SEPTEMBER.png);
+                            background-size: cover;
+                            background-position: center;
+                        }
+                    }
+                    .news-context{
+                        padding: 20px 0;
+                        margin-left: 0;
+                        .author{
+                            text-align: right;
+                        }
+                    }
+                    
+                }
+                .featured{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    padding: 0;
+                    .section-title{
+                        font-size: 40px;
+                        font-weight: 800;
+                        margin-bottom: 50px;
+                    }
+                    .features-container{
+                        background: #00000073;
+                        padding: 5px;
+                        border: 1px solid white;
+                        border-radius: 5px;
+                        .featured-wrapper:hover:before{
+                            height: 100%;
+                        }
+                        .featured-wrapper:hover .features-context h3{
+                            opacity: 1;
+                            transform: translateY(0px);
+                        }
+                        .featured-wrapper:before{
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            height: 0px;
+                            width: 100%;
+                            bottom: 0;
+                            transition: height 0.25s ease-out;
+                            background: linear-gradient(to top, #000000 0%, transparent 100%);
+                            opacity: 0.9;
+                        }
+                        .featured-wrapper{
+                            border: 3px solid #D7C396;
+                            position: relative;
+                            .feature-image{
+                                min-height: 250px;
+                                background-size: cover;
+                            }
+                            .features-context{
+                                position: absolute;
+                                bottom: 0;
+                                width: 100%;
+                                text-align: center;
+                                h3{
+                                    font-size: 20px;
+                                    font-weight: 500;
+                                    transform: translateY(20px);
+                                    transition: 0.25s ease-out;
+                                    opacity: 0;
+                                    z-index: 999999;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .paging{
+                margin: auto;
+                padding: 30px;
+                .page-link{
+                    background-color: unset;
+                    color: #D7C396;
+                    border: unset;
+                    margin: 10px;
+                }
+                .active{
+                    background-color:#D7C396;
+                    color: #371111;
+                }
+            }
+        }
+    }
+    .old-news{
+        width: 100%;
+        background: url("../images/news/Section-3-BG.png");
+        margin: auto;
+        padding: 50px 0;
+        &-container{
+            width: 90%;
+            margin: auto;
+            h3{
+                font-size: 40px;
+                font-weight: 800;
+                margin-bottom: 50px;
+                color: #3B2A0D;
+            }
+            .old-news-wrapper{
+                .new-container{
+                    margin-bottom: 50px;
+                    width: 100%;
+                }
+                .old-news-avatar{
+                    background-image: url("../images/news/Monthly-Development-report.png");
+                    background-size: cover;
+                    background-position: center;
+                    min-height: 167px;
+                }
+                h4{
+                    font-size: 22px;
+                    font-weight: 800;
+                    color: #39290E;
+                }
+                p{
+                    color: #897250;
+                    font-size: 15px;
+                }
+                span{
+                    color: #897250;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 768px){
+    main{
+        .hero-section{
+            background: url("../images/news/hol-home-header.jpg");
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+            min-height: 550px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .container{
+                .wrapper{
+                    .col-6 {
+                        width: 75%;
+                    }
+                    color: #fff;
+                    .team-divider:before {
+                        content: "";
+                        background-image: url(../images/about/hol-core-hr-2.png);
+                        padding: 10px 0;
+                        width: 85%;
+                        background-size: contain;
+                        background-position: center;
+                        display: inline-block;
+                        margin-bottom: 15px;
+                        background-repeat: no-repeat;
+                    }
+                    h1{
+                        font-size: 60px;
+                        font-weight: 700;
+                    }
+                    
+                    #read_more{
+                        background: url("../images/staking/1-Connect-Wallet.png");
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        height: 43px;
+                        width: 180px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-decoration: none;
+                        color: #3d2503 !important;
+                        font-weight: bold !important;
+                        text-transform: uppercase;
+                        letter-spacing: 0px;
+                    }
+                }
+            }
+        }
+        .latest-news{
+            background-image: url(../images/news/hol-home-content.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 1000px;
+            padding: 100px 0 50px 0;
+            .container{
+                display: block;
+                justify-content: center;
+                align-items: flex-start;
+                max-width: 1920px;
+                color: #fff;
+                .col-5 {
+                    width: 100%;
+                }
+                .trend{
+                    padding: 0 0 0 0;
+                    margin: 0;
+                }
+                .section-title{
+                    font-size: 40px;
+                    font-weight: 800;
+                    margin-bottom: 50px;
+                }
+                .news-container:hover{
+                    background-color: rgba(0, 0, 0, 0.2);
+                    cursor: pointer;
+                }
+                .news-container{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: row;
+                    padding-left: 30px;
+                    min-height: 280px;
+                    .avatar{
+                        border: 3px solid #d7c396;
+                        box-shadow: inset 0 0 14px 5px #000000bf;
+                        border-radius: 5px;
+                        height: 250px;
+                        position: relative;
+                        width: 100%;
+                        padding: 0;
+                        overflow: hidden;
+                        max-width: 257.984px;
+                        position: relative;
+                        .avatar-image{
+
+                            background-image: url(../images/news/SEPTEMBER.png);
+                            background-size: cover;
+                            background-position: center;
+                        }
+                    }
+                    .news-context{
+                        padding: 20px;
+                        margin-left: 20px;
+                        width: 66.66666667%;
+                        .author{
+                            text-align: right;
+                        }
+                    }
+                    
+                }
+                .featured{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    padding: 0;
+                    .section-title{
+                        font-size: 40px;
+                        font-weight: 800;
+                        margin-bottom: 50px;
+                    }
+                    .features-container{
+                        background: #00000073;
+                        padding: 5px;
+                        border: 1px solid white;
+                        border-radius: 5px;
+                        .featured-wrapper:hover:before{
+                            height: 100%;
+                        }
+                        .featured-wrapper:hover .features-context h3{
+                            opacity: 1;
+                            transform: translateY(0px);
+                        }
+                        .featured-wrapper:before{
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            height: 0px;
+                            width: 100%;
+                            bottom: 0;
+                            transition: height 0.25s ease-out;
+                            background: linear-gradient(to top, #000000 0%, transparent 100%);
+                            opacity: 0.9;
+                        }
+                        .featured-wrapper{
+                            border: 3px solid #D7C396;
+                            position: relative;
+                            .feature-image{
+                                min-height: 250px;
+                                background-size: cover;
+                            }
+                            .features-context{
+                                position: absolute;
+                                bottom: 0;
+                                width: 100%;
+                                text-align: center;
+                                h3{
+                                    font-size: 20px;
+                                    font-weight: 500;
+                                    transform: translateY(20px);
+                                    transition: 0.25s ease-out;
+                                    opacity: 0;
+                                    z-index: 999999;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .paging{
+                margin: auto;
+                padding: 30px;
+                .page-link{
+                    background-color: unset;
+                    color: #D7C396;
+                    border: unset;
+                    margin: 10px;
+                }
+                .active{
+                    background-color:#D7C396;
+                    color: #371111;
+                }
+            }
+        }
+    }
+    .old-news{
+        width: 100%;
+        background: url("../images/news/Section-3-BG.png");
+        margin: auto;
+        padding: 50px 0;
+        &-container{
+            width: 90%;
+            margin: auto;
+            h3{
+                font-size: 40px;
+                font-weight: 800;
+                margin-bottom: 50px;
+                color: #3B2A0D;
+            }
+            .old-news-wrapper{
+                .new-container{
+                    margin-bottom: 50px;
+                    width: 100%;
+                }
+                .old-news-avatar{
+                    background-image: url("../images/news/Monthly-Development-report.png");
+                    background-size: cover;
+                    background-position: center;
+                    min-height: 167px;
+                }
+                h4{
+                    font-size: 22px;
+                    font-weight: 800;
+                    color: #39290E;
+                }
+                p{
+                    color: #897250;
+                    font-size: 15px;
+                }
+                span{
+                    color: #897250;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px){
+    main{
+        .hero-section{
+            background: url("../images/news/hol-home-header.jpg");
+            background-size: cover;
+            overflow: hidden;
+            min-height: 550px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .container{
+                
+                .wrapper{
+                    color: #fff;
+                    .col-6 {
+                        width: 50%;
+                    }
+                    .team-divider:before {
+                        content: "";
+                        background-image: url(../images/about/hol-core-hr-2.png);
+                        padding: 10px 0;
+                        width: 85%;
+                        background-size: contain;
+                        background-position: center;
+                        display: inline-block;
+                        margin-bottom: 15px;
+                        background-repeat: no-repeat;
+                    }
+                    h1{
+                        font-size: 60px;
+                        font-weight: 700;
+                    }
+                    
+                    #read_more{
+                        background: url("../images/staking/1-Connect-Wallet.png");
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        height: 43px;
+                        width: 180px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-decoration: none;
+                        color: #3d2503 !important;
+                        font-weight: bold !important;
+                        text-transform: uppercase;
+                        letter-spacing: 0px;
+                    }
+                }
+            }
+        }
+        .latest-news{
+            background-image: url(../images/news/hol-home-content.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 1000px;
+            padding: 100px 11px 50px 20px;
+            .container{
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                max-width: 1920px;
+                color: #fff;
+                .col-5 {
+                    width: 70.666667%;
+                }
+                .trend{
+                    padding: 0 50px 0 0;
+                }
+                .section-title{
+                    font-size: 40px;
+                    font-weight: 800;
+                    margin-bottom: 50px;
+                }
+                .news-container:hover{
+                    background-color: rgba(0, 0, 0, 0.2);
+                    cursor: pointer;
+                }
+                .news-container{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding-left: 30px;
+                    .avatar{
+                        border: 3px solid #d7c396;
+                        box-shadow: inset 0 0 14px 5px #000000bf;
+                        border-radius: 5px;
+                        height: 250px;
+                        position: relative;
+                        width: 100%;
+                        padding: 0;
+                        overflow: hidden;
+                        max-width: 257.984px;
+                        position: relative;
+                        .avatar-image{
+
+                            background-image: url(../images/news/SEPTEMBER.png);
+                            background-size: cover;
+                            background-position: center;
+                        }
+                    }
+                    .news-context{
+                        padding: 20px;
+                        margin-left: 20px;
+                        .author{
+                            text-align: right;
+                        }
+                    }
+                    
+                }
+                .featured{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 30%;
+                    padding: 0;
+                    .section-title{
+                        font-size: 40px;
+                        font-weight: 800;
+                        margin-bottom: 50px;
+                    }
+                    .features-container{
+                        background: #00000073;
+                        padding: 5px;
+                        border: 1px solid white;
+                        border-radius: 5px;
+                        .featured-wrapper:hover:before{
+                            height: 100%;
+                        }
+                        .featured-wrapper:hover .features-context h3{
+                            opacity: 1;
+                            transform: translateY(0px);
+                        }
+                        .featured-wrapper:before{
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            height: 0px;
+                            width: 100%;
+                            bottom: 0;
+                            transition: height 0.25s ease-out;
+                            background: linear-gradient(to top, #000000 0%, transparent 100%);
+                            opacity: 0.9;
+                        }
+                        .featured-wrapper{
+                            border: 3px solid #D7C396;
+                            position: relative;
+                            .feature-image{
+                                min-height: 170px;
+                                background-size: cover;
+                            }
+                            .features-context{
+                                position: absolute;
+                                bottom: 0;
+                                width: 100%;
+                                text-align: center;
+                                h3{
+                                    font-size: 20px;
+                                    font-weight: 500;
+                                    transform: translateY(20px);
+                                    transition: 0.25s ease-out;
+                                    opacity: 0;
+                                    z-index: 999999;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .paging{
+                margin: auto;
+                padding: 30px;
+                .page-link{
+                    background-color: unset;
+                    color: #D7C396;
+                    border: unset;
+                    margin: 10px;
+                }
+                .active{
+                    background-color:#D7C396;
+                    color: #371111;
+                }
+            }
+        }
+    }
+    .old-news{
+        width: 100%;
+        background: url("../images/news/Section-3-BG.png");
+        margin: auto;
+        padding: 50px 0;
+        &-container{
+            width: 90%;
+            margin: auto;
+            h3{
+                font-size: 40px;
+                font-weight: 800;
+                margin-bottom: 50px;
+                color: #3B2A0D;
+            }
+            .old-news-wrapper{
+                .new-container{
+                    margin-bottom: 50px;
+                    width: 50%;
+                }
+                .old-news-avatar{
+                    background-image: url("../images/news/Monthly-Development-report.png");
+                    background-size: cover;
+                    background-position: center;
+                    min-height: 167px;
+                }
+                h4{
+                    font-size: 22px;
+                    font-weight: 800;
+                    color: #39290E;
+                }
+                p{
+                    color: #897250;
+                    font-size: 15px;
+                }
+                span{
+                    color: #897250;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px){
+    main{
+        .hero-section{
+            background: url("../images/news/hol-home-header.jpg");
+            background-size: cover;
+            overflow: hidden;
+            min-height: 550px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .container{
+                .wrapper{
+                    .col-6 {
+                        width: 50%;
+                    }
+                    color: #fff;
+                    .team-divider:before {
+                        content: "";
+                        background-image: url(../images/about/hol-core-hr-2.png);
+                        padding: 10px 0;
+                        width: 70%;
+                        background-size: contain;
+                        background-position: center;
+                        display: inline-block;
+                        margin-bottom: 15px;
+                        background-repeat: no-repeat;
+                    }
+                    h1{
+                        font-size: 60px;
+                        font-weight: 700;
+                    }
+                    
+                    #read_more{
+                        background: url("../images/staking/1-Connect-Wallet.png");
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        height: 43px;
+                        width: 180px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-decoration: none;
+                        color: #3d2503 !important;
+                        font-weight: bold !important;
+                        text-transform: uppercase;
+                        letter-spacing: 0px;
+                    }
+                }
+            }
+        }
+        .latest-news{
+            background-image: url(../images/news/hol-home-content.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 1000px;
+            padding: 100px 0 50px 0;
+            .container{
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                max-width: 1920px;
+                color: #fff;
+                .col-5 {
+                    width: 41.66666667%;
+                }
+                .trend{
+                    padding: 0 50px 0 0;
+                }
+                .section-title{
+                    font-size: 40px;
+                    font-weight: 800;
+                    margin-bottom: 50px;
+                }
+                .news-container:hover{
+                    background-color: rgba(0, 0, 0, 0.2);
+                    cursor: pointer;
+                }
+                .news-container{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding-left: 30px;
+                    .avatar{
+                        border: 3px solid #d7c396;
+                        box-shadow: inset 0 0 14px 5px #000000bf;
+                        border-radius: 5px;
+                        height: 250px;
+                        position: relative;
+                        width: 100%;
+                        padding: 0;
+                        overflow: hidden;
+                        max-width: 257.984px;
+                        position: relative;
+                        .avatar-image{
+
+                            background-image: url(../images/news/SEPTEMBER.png);
+                            background-size: cover;
+                            background-position: center;
+                        }
+                    }
+                    .news-context{
+                        padding: 20px;
+                        margin-left: 20px;
+                        .author{
+                            text-align: right;
+                        }
+                    }
+                    
+                }
+                .featured{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0 50px 0 0;
+                    .col-3 {
+                        width: 25%;
+                    }
+                    .section-title{
+                        font-size: 40px;
+                        font-weight: 800;
+                        margin-bottom: 50px;
+                    }
+                    .features-container{
+                        background: #00000073;
+                        padding: 5px;
+                        border: 1px solid white;
+                        border-radius: 5px;
+                        .featured-wrapper:hover:before{
+                            height: 100%;
+                        }
+                        .featured-wrapper:hover .features-context h3{
+                            opacity: 1;
+                            transform: translateY(0px);
+                        }
+                        .featured-wrapper:before{
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            height: 0px;
+                            width: 100%;
+                            bottom: 0;
+                            transition: height 0.25s ease-out;
+                            background: linear-gradient(to top, #000000 0%, transparent 100%);
+                            opacity: 0.9;
+                        }
+                        .featured-wrapper{
+                            border: 3px solid #D7C396;
+                            position: relative;
+                            .feature-image{
+                                min-height: 170px;
+                                background-size: cover;
+                            }
+                            .features-context{
+                                position: absolute;
+                                bottom: 0;
+                                width: 100%;
+                                text-align: center;
+                                h3{
+                                    font-size: 20px;
+                                    font-weight: 500;
+                                    transform: translateY(20px);
+                                    transition: 0.25s ease-out;
+                                    opacity: 0;
+                                    z-index: 999999;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .paging{
+                margin: auto;
+                padding: 30px;
+                .page-link{
+                    background-color: unset;
+                    color: #D7C396;
+                    border: unset;
+                    margin: 10px;
+                }
+                .active{
+                    background-color:#D7C396;
+                    color: #371111;
+                }
+            }
+        }
+    }
+    .old-news{
+        width: 100%;
+        background: url("../images/news/Section-3-BG.png");
+        margin: auto;
+        padding: 50px 0;
+        &-container{
+            width: 66.66666667%;
+            margin: auto;
+            h3{
+                font-size: 40px;
+                font-weight: 800;
+                margin-bottom: 50px;
+                color: #3B2A0D;
+            }
+            .old-news-wrapper{
+                .new-container{
+                    margin-bottom: 50px;
+                    width: 33.33333333%;
+                }
+                .old-news-avatar{
+                    background-image: url("../images/news/Monthly-Development-report.png");
+                    background-size: cover;
+                    background-position: center;
+                    min-height: 125px;
+                }
+                h4{
+                    font-size: 22px;
+                    font-weight: 800;
+                    color: #39290E;
+                }
+                p{
+                    color: #897250;
+                    font-size: 15px;
+                }
+                span{
+                    color: #897250;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

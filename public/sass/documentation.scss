@@ -1,0 +1,1906 @@
+html {
+    body {
+        @import "modules/_header.scss";
+        @import "modules/_footer.scss";
+        @import "modules/_pop-up.scss";
+    }
+} 
+
+.disable-scroll {
+    overflow-y: hidden !important;
+    // opacity: 0 !important;
+}
+
+html {
+    overflow-x: hidden;
+
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        min-height: 100vh;
+        overflow-x: hidden;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: space-between;
+    }
+}
+
+html{
+    body {
+            .header {
+                &-documentation-toggle {
+                    position: relative;
+                    opacity: 1;
+                    z-index: 50;
+                    width: 50px;
+                    height: 100%;
+
+                    button {
+                        border: none;
+                        width: 100%;
+                        height: 100%;
+                        background-color: transparent;
+                        color: white;
+                        font-size: 40px;
+                        position: relative;
+
+                        i {
+                            // width: 100%;
+                            // height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 992px) {
+        .header {
+            &-documentation-toggle {
+                position: absolute !important;
+                opacity: 0 !important;
+                z-index: -1 !important;
+            }
+        }
+    }
+    
+
+    // * All
+    @media (min-width: 0px) {
+        .main {
+            margin-left: 400px;
+            text-align: center;
+
+            // * Fonts for all non-header elements
+            * {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 17px;
+            }
+
+            // * Fonts for all Headers
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family: neilvard-one;
+                font-size: 90px;
+            }
+
+            // * Images
+            img {
+                max-width: 100% !important;
+                // opacity: 0 !important;
+            }
+
+            // * White Font Color
+            &-introduction,
+            &-story,
+            &-assets,
+            &-additional_features,
+            &-final {
+                color: white;
+            }
+
+            // * Brown Font Color
+            &-gameplay,
+            &-token {
+                color: #453214;
+            }
+
+            // * Yellow HR Divider
+            &-introduction,
+            &-story {
+                hr {
+                    &:after {
+                        background: url("../images/documentation/yellow-divider.png");
+                    }
+                }
+            }
+
+            // * White HR Divider
+            &-assets,
+            &-additional_features,
+            &-final {
+                hr {
+                    &:after {
+                        background: url("../images/documentation/white-divider.png");
+                    }
+                }
+            }
+
+            // * Brown HR Divider
+            &-gameplay,
+            &-token {
+                hr {
+                    &:after {
+                        background: url("../images/documentation/brown-divider.png");
+                    }
+                }
+            }
+
+            section {
+                padding: 150px 100px;
+                min-height: 100vh;
+
+                h2 {
+                    margin: 0;
+                }
+
+                hr {
+                    position: relative;
+                    width: 100%;
+                    height: 22px;
+                    margin: 30px auto;
+                    border: none;
+                    opacity: 1;
+
+                    &:after {
+                        content: '';
+                        position: relative;
+                        display: block;
+                        width: 100%;
+                        height: 22px;
+                        margin: 0;
+                        background-size: contain;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+
+            &-gameplay,
+            &-token {
+                background-color: #ddc996;
+
+                * {
+                    font-weight: 600;
+                }
+
+                h2,
+                h3 {
+                    font-weight: 400;
+                }
+
+                h2 {
+                    margin: 0;
+                }
+            }
+
+            &-introduction,
+            &-story,
+            &-assets,
+            &-gameplay,
+            &-additional_features,
+            &-token,
+            &-final {
+                &-body {
+                    // background-color: red !important;
+                    max-width: 1200px;
+                    margin: 0 auto;
+
+                    p,
+                    img {
+                        margin-bottom: 30px;
+                    }
+
+                    div {
+                        padding-top: 100px;
+
+                        h3 {
+                            font-family: 'Teko', sans-serif;
+                            text-transform: uppercase;
+                            font-size: 70px;
+                            margin: 0;
+                        }
+
+                        h4 {
+                            font-family: 'Teko', sans-serif;
+                            text-transform: uppercase;
+                            font-size: 50px;
+                        }
+                    }
+                }
+            }
+
+
+            &-navigation {
+                position: fixed;
+                left: 0;
+                top: 92px;
+                height: calc(100vh - 92px);
+                width: 400px;
+                z-index: 500;
+                background-color: black;
+                text-align: left;
+                overflow-y: scroll;
+
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+
+                * {
+                    text-transform: capitalize;
+                }
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: stretch;
+                    padding: 0;
+                    margin: 0;
+
+                    li {
+                        list-style-type: none;
+                        // height: 60px;
+
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: flex-start;
+                        position: relative;
+
+                        a {
+                            width: 100%;
+                            padding: 15px 40px;
+                            color: white !important;
+                            font-weight: 500;
+                            font-family: 'Montserrat', sans-serif;
+                            text-transform: uppercase;
+                            text-transform: capitalize;
+                            text-decoration: none;
+                            font-size: 20px;
+                            z-index: 15;
+                            position: relative;
+                        }
+
+                        .main-navigation-sub {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: stretch;
+                            padding-left: 30px;
+                            margin: 0;
+
+                            li {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: flex-start;
+                                position: relative;
+
+                                a {
+                                    width: 100%;
+                                    padding: 10px 40px;
+                                    color: white !important;
+                                    font-weight: 500;
+                                    font-family: 'Montserrat', sans-serif;
+                                    text-transform: uppercase;
+                                    text-transform: capitalize;
+                                    text-decoration: none;
+                                    font-size: 16px;
+                                    z-index: 15;
+                                    position: relative;
+                                }
+                            }
+                        }
+
+                        &:before {
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            height: 100% !important;
+                            width: 0%;
+                            left: 0;
+                            bottom: 0;
+                            transition: width 0.25s ease-out;
+                            background: linear-gradient(to right, #d7c396 0%, transparent 100%);
+                            opacity: .3;
+                            z-index: 10;
+                        }
+
+                        &:hover:before {
+                            width: 100%;
+                        }
+
+                        &.header-navigation-item-active:before {
+                            width: 100%;
+                        }
+
+                        // Gradiented Bottom Border
+                        &:after {
+                            content: '';
+                            display: block;
+                            width: 100%;
+                            height: 1px;
+                            transition: width .3s;
+                            margin: 0;
+                            border-top: 0;
+                            border: none;
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            margin: auto;
+                            bottom: 0;
+                            opacity: 0.5;
+                            background: linear-gradient(90deg, rgba(0, 212, 255, 0) 0%, #d7c396 20%, #FFF 50%, #d7c396 80%, rgba(0, 212, 255, 0) 100%);
+                        }
+                    }
+                }
+            }
+
+            &-introduction {
+                min-height: calc(100vh - 92px);
+                background: url("../images/documentation/Section-1-BG.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+
+                h2 {
+                    margin: 0;
+                }
+
+                hr {
+                    position: relative;
+                    width: 574px;
+                    height: 22px;
+                    margin: 30px auto;
+                    border: none;
+                    opacity: 1;
+
+                    &:after {
+                        content: '';
+                        position: relative;
+                        display: block;
+                        width: 574px;
+                        height: 22px;
+                        margin: 0;
+                    }
+                }
+
+                &-body {
+                    max-width: 1200px;
+                    margin: 0 auto;
+
+                    p {
+                        margin-bottom: 30px;
+                    }
+                }
+
+                &-more {
+                    position: absolute;
+                    z-index: -1;
+                    opacity: 0;
+                }
+            }
+
+            &-story {
+                min-height: calc(100vh - 92px);
+                background: url("../images/documentation/Section-2-BG.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+
+                h2 {
+                    margin: 0;
+                }
+
+                hr {
+                    position: relative;
+                    width: 574px;
+                    height: 22px;
+                    margin: 30px auto;
+                    border: none;
+                    opacity: 1;
+
+                    &:after {
+                        content: '';
+                        position: relative;
+                        display: block;
+                        width: 574px;
+                        height: 22px;
+                        margin: 0;
+                    }
+                }
+
+                &-body {
+                    max-width: 1200px;
+                    margin: 0 auto;
+
+                    h3 {
+                        font-size: 35px;
+                        font-weight: 600;
+                        margin-bottom: 30px;
+                    }
+
+                    p {
+                        margin-bottom: 30px;
+                    }
+
+                    ul {
+                        display: block;
+                        text-align: left;
+                        width: 370px;
+                        margin: 0 auto 30px;
+
+                        li {
+                            span {
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+
+                &-more {
+                    position: absolute;
+                    z-index: -1;
+                    opacity: 0;
+                }
+            }
+
+            &-assets {
+                min-height: calc(100vh - 92px);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                background-color: #171a28;
+
+                h2 {
+                    margin: 0;
+                }
+
+                hr {
+                    position: relative;
+                    width: 574px;
+                    height: 22px;
+                    margin: 30px auto;
+                    border: none;
+                    opacity: 1;
+
+                    &:after {
+                        content: '';
+                        position: relative;
+                        display: block;
+                        width: 574px;
+                        height: 22px;
+                        margin: 0;
+                    }
+                }
+
+                &-body {
+                    max-width: 1200px;
+                    margin: 0 auto;
+
+                    p,
+                    img {
+                        margin-bottom: 30px;
+                    }
+
+                    div {
+                        padding-top: 50px;
+
+                        h3 {
+                            font-family: 'Teko', sans-serif;
+                            text-transform: uppercase;
+                            font-size: 55px;
+                            margin: 0;
+                        }
+                    }
+
+                    &-natural_star_grade {
+                        ul {
+                            display: block;
+                            text-align: center;
+                            max-width: 550px;
+                            margin: 0 auto 30px;
+
+                            .list-title {
+                                list-style-type: none;
+                                position: relative;
+                                left: auto;
+                            }
+                        }
+                    }
+
+                    &-equipment {
+                        &-grid {
+                            display: grid;
+                            padding-top: 0 !important;
+                            grid-template-areas:
+                                "a b c"
+                                "d e f"
+                                "g h i"
+                                "j k l"
+                                "m n o"
+                                "p q o"
+                                "r s o";
+                            grid-template-columns: 1fr 1fr 1fr;
+                            grid-template-rows: repeat(7, auto);
+                            border: solid 1px #8d764e;
+
+                            div {
+                                border: solid 1px #8d764e;
+                                padding: 10px !important;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                gap: 10px;
+                                background-color: #2c190b;
+
+                                h4 {
+                                    font-size: 17px;
+                                    font-family: 'Montserrat', sans-serif;
+                                }
+
+                                p {
+                                    margin: 0;
+                                }
+                            }
+
+                            &-item {
+
+                                &-2,
+                                &-3,
+                                &-4,
+                                &-7,
+                                &-10,
+                                &-13,
+                                &-16,
+                                &-18 {
+                                    font-weight: bold;
+                                }
+                            }
+
+                            &-item {
+                                &-1 {
+                                    grid-area: a;
+                                }
+
+                                &-2 {
+                                    grid-area: b;
+                                }
+
+                                &-3 {
+                                    grid-area: c;
+                                }
+
+                                &-4 {
+                                    grid-area: d;
+                                }
+
+                                &-5 {
+                                    grid-area: e;
+                                }
+
+                                &-6 {
+                                    grid-area: f;
+                                }
+
+                                &-7 {
+                                    grid-area: g;
+                                }
+
+                                &-8 {
+                                    grid-area: h;
+                                }
+
+                                &-9 {
+                                    grid-area: i;
+                                }
+
+                                &-10 {
+                                    grid-area: j;
+                                }
+
+                                &-11 {
+                                    grid-area: k;
+                                }
+
+                                &-12 {
+                                    grid-area: l;
+                                }
+
+                                &-13 {
+                                    grid-area: m;
+                                }
+
+                                &-14 {
+                                    grid-area: n;
+                                }
+
+                                &-15 {
+                                    grid-area: o;
+                                }
+
+                                &-16 {
+                                    grid-area: p;
+                                }
+
+                                &-17 {
+                                    grid-area: q;
+                                }
+
+                                &-18 {
+                                    grid-area: r;
+                                }
+
+                                &-19 {
+                                    grid-area: s;
+                                }
+                            }
+
+                        }
+                    }
+
+                    &-summoning {
+                        h4 {
+                            font-size: 50px;
+                            font-family: 'Teko', sans-serif;
+                        }
+
+                        &-grid {
+                            display: grid;
+                            grid-template-columns: auto;
+                            padding: 0 !important;
+                            margin-bottom: 20px;
+
+                            div {
+                                padding: 0 !important;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                margin: 20px;
+
+                                p:first-child {
+                                    font-weight: bold;
+                                }
+
+                                p {
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &-more {
+                    position: absolute;
+                    z-index: -1;
+                    opacity: 0;
+                }
+            }
+
+            &-gameplay {
+                background-color: #ddc996;
+
+                * {
+                    font-weight: 600;
+                }
+
+                h2,
+                h3 {
+                    font-weight: 400;
+                }
+
+                h2 {
+                    margin: 0;
+                }
+
+                hr {
+                    position: relative;
+                    width: 574px;
+                    height: 22px;
+                    margin: 30px auto;
+                    border: none;
+                    opacity: 1;
+
+                    &:after {
+                        content: '';
+                        position: relative;
+                        display: block;
+                        width: 574px;
+                        height: 22px;
+                        margin: 0;
+                    }
+                }
+
+                &-body {
+                    max-width: 1200px;
+                    margin: 0 auto;
+
+                    p,
+                    img {
+                        margin-bottom: 30px;
+                    }
+
+                    div {
+                        padding-top: 100px;
+
+                        h3 {
+                            font-family: 'Teko', sans-serif;
+                            text-transform: uppercase;
+                            font-size: 70px;
+                        }
+
+                        ul {
+                            display: block;
+                            text-align: left;
+                            width: auto;
+                            margin: 0 auto 30px;
+
+                            li {
+                                span {
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                    }
+
+                    &-pve_adventure_mode {
+                        p {
+                            margin-bottom: 0;
+                        }
+                    }
+
+                    &-mine_raids {
+                        &-grid {
+                            display: grid;
+                            padding-top: 0 !important;
+                            grid-template-columns: 1fr 1fr;
+                            grid-template-rows: repeat(6, 1fr);
+                            border: solid 1px #8d764e;
+                            margin-bottom: 50px;
+                            color: white;
+                            font-weight: 400;
+
+                            div {
+                                border: solid 1px #8d764e;
+                                padding: 20px 20px !important;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                gap: 10px;
+                                background-color: #2c190b;
+
+                                p {
+                                    margin: 0;
+                                }
+                            }
+
+                            &-item-1 {
+                                grid-column-start: span 2;
+                            }
+                        }
+
+                        &-note {
+                            background-color: #2c190b;
+                            color: white;
+                            padding: 20px;
+                            border: solid 1px #8d764e;
+                            font-weight: 400;
+                        }
+                    }
+
+                    &-natural_star_grade {
+                        ul {
+                            display: block;
+                            text-align: left;
+                            max-width: 550px;
+                            margin: 0 auto 30px;
+
+                            .list-title {
+                                list-style-type: none;
+                                position: relative;
+                                left: (-32px);
+                            }
+                        }
+                    }
+                }
+
+                &-more {
+                    position: absolute;
+                    z-index: -1;
+                    opacity: 0;
+                }
+            }
+
+            &-additional_features {
+                background-color: #10131c;
+
+                &-body {
+                    &-hero_expeditions {
+                        ul {
+                            display: block;
+                            text-align: left;
+                            max-width: 250px;
+                            margin: 0 auto 30px;
+
+                            .list-title {
+                                list-style-type: none;
+                                position: relative;
+                                left: (-32px);
+                            }
+                        }
+
+                        &-note {
+                            background-color: #2c190b;
+                            color: white;
+                            padding: 20px;
+                            border: solid 1px #8d764e;
+                            font-weight: 400;
+                        }
+                    }
+
+                    &-the_bazaar {
+                        ul {
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            list-style-type: none;
+                            padding: 0;
+                            text-align: left;
+
+                            li {
+                                margin-bottom: 20px;
+
+                                p {
+                                    margin-bottom: 0;
+                                }
+
+                                ul {
+                                    display: block;
+                                    list-style-type: disc;
+                                    padding-left: 32px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-token {
+                background-color: #ddc996;
+
+                &-body {
+                    &-hol {
+                        .list-title {
+                            margin: 0;
+                        }
+
+                        ul {
+                            display: block;
+                            text-align: left;
+                            max-width: 350px;
+                            margin: 0 auto 30px;
+
+                            .list-title {
+                                list-style-type: none;
+                                position: relative;
+                                left: (-32px);
+                            }
+                        }
+
+                        &-note {
+                            background-color: #2c190b;
+                            color: white;
+                            padding: 20px;
+                            border: solid 1px #8d764e;
+                            font-weight: 400;
+                        }
+                    }
+
+                    &-cast {
+                        .list-title {
+                            margin: 0;
+                        }
+
+                        ul {
+                            display: block;
+                            text-align: left;
+                            max-width: 400px;
+                            margin: 0 auto 30px;
+
+                            .list-title {
+                                list-style-type: none;
+                                position: relative;
+                                left: (-32px);
+                            }
+                        }
+
+                        &-note {
+                            background-color: #2c190b;
+                            color: white;
+                            padding: 20px;
+                            border: solid 1px #8d764e;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+
+            &-final {
+                background: url("../images/documentation/Section-7-BG.png");
+                background-size: 100% 100%;
+
+                section {
+                    min-height: 0;
+                    padding-bottom: 0;
+                }
+
+                &-target {
+                    &-body {
+                        div {
+                            margin-bottom: 50px;
+
+                            h3 {
+                                font-family: 'Montserrat', sans-serif;
+                                font-size: 25px;
+                            }
+
+                            ul {
+                                display: block;
+                                text-align: left;
+                                width: 400px;
+                                margin: 0 auto 30px;
+
+                                li {
+                                    span {
+                                        font-weight: bold;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &-team {
+                    &-body {
+                        div {
+                            margin-bottom: 100px;
+
+                            h3 {
+                                margin: 0 auto;
+                                font-family: 'Teko', sans-serif;
+                                font-size: 55px !important;
+                                text-transform: uppercase;
+                                max-width: 700px;
+                            }
+
+                            ul {
+                                display: block;
+                                text-align: left;
+                                width: 600px;
+                                margin: 0 auto 30px;
+
+                                li {
+                                    span {
+                                        font-weight: bold;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &-socials {
+                    &-body {
+                        ul {
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            max-width: 900px;
+                            margin: 0 auto;
+
+                            li {
+                                text-align: left;
+
+                                // ! WORKING
+                                p:first-child {
+                                    font-weight: bold;
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    @media (min-width: 0) and (max-width: 576px) {
+        .main {
+            text-align: center;
+            margin-left: 0 !important;
+
+            * {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 16px;
+            }
+
+            ul{
+                list-style: none;
+                padding: 0;
+            }
+            .main-final-socials-body ul li{
+                text-align: center;
+            }
+            .main-final-socials-body ul {
+                grid-template-columns: 1fr;
+            }
+            .main-final-team-body-members ul{
+                padding: 0;
+            }
+            .main-final-team-body-members ul li, .main-token-body-cast ul,  .main-token-body-hol ul, .main-additional_features-body-hero_expeditions ul, .main-gameplay-body div ul{
+                text-align: center;
+            }
+            .main-final-team-body div ul{
+                width: 100%;
+            }
+            .main-final-team-body div ul{
+                text-align: center;
+            }
+
+            h2 {
+                font-family: neilvard-one;
+                font-size: 5vw;
+            }
+
+            &-navigation {
+                height: calc(100vh - 85px);
+                transition: left 0.5s ease;
+                top: 85px;
+                
+                &-collapsed-active {
+                    left: 0;
+                    
+                }
+
+                &-collapsed-inactive {
+                    left: -500px;
+                }
+            }
+
+            section {
+                padding: 50px 19px;
+                min-height: 60vh;
+                // border: solid 1px white;
+            }
+            #main-introduction{
+                min-height: 100vh;
+            }
+
+            &-introduction,
+            &-story,
+            &-assets,
+            &-additional_features,
+            &-target {
+                color: white;
+                position: relative;
+
+                button {
+                    position: absolute;
+                    bottom: 40px;
+                    left: calc(50vw - 80px);
+                    background: url("../images/documentation/Read-more-button.container.png");
+                    background-repeat: no-repeat;
+                    background-size: 105% 100%;
+                    color: #453214;
+                    font-family: neilvard-one;
+                    font-weight: bold;
+                    border: none;
+                    z-index: 15;
+                    padding: 15px 30px;
+                }
+            }
+
+            &-gameplay,
+            &-token {
+                color: #453214;
+            }
+
+            &-introduction {
+                min-height: 100vh;
+                padding: 30px 7vw;
+                background: url("../images/documentation/Section-1-BG.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+
+                h2 {
+                    margin: 0;
+                    position: relative;
+                }
+
+                hr {
+                    position: relative;
+                    width: 100%;
+                    height: 3vw;
+                    margin: 2vw auto;
+                    border: none;
+                    opacity: 1;
+
+                    &:after {
+                        content: '';
+                        background-size: 100% 100%;
+                        background-repeat: no-repeat;
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 70%;
+                        max-width: 574px;
+                        display: block;
+                        height: 2.5vw;
+                    }
+                }
+
+                &-body {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    text-align: left;
+
+                    p {
+                        margin-bottom: 30px;
+                    }
+                }
+
+                // &:after {
+                //     content: '';
+                //     display: block;
+                //     width: calc(100vw + 500px);
+                //     height: 200px;
+                //     background: linear-gradient(to top, black, rgba(0, 0, 0, 0));
+                //     position: absolute;
+                //     bottom: 0;
+                //     left: -100px;
+                //     z-index: 10;
+                //     overflow: hidden;
+                // }
+            }
+
+            &-story {
+                min-height: 100vh;
+                padding: 30px 7vw;
+                background: url("../images/documentation/Section-2-BG.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+
+                h2 {
+                    margin: 0;
+                    position: relative;
+                }
+
+                hr {
+                    position: relative;
+                    width: 100%;
+                    height: 3vw;
+                    margin: 2vw auto;
+                    border: none;
+                    opacity: 1;
+
+                    &:after {
+                        content: '';
+                        background-size: 100% 100%;
+                        background-repeat: no-repeat;
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 70%;
+                        max-width: 574px;
+                        display: block;
+                        height: 2.5vw;
+                    }
+                }
+
+                &-body {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    text-align: left;
+
+                    h3 {
+                        text-align: center;
+                        font-size: 4.5vw;
+                        font-size: 4vw;
+                        font-weight: 600;
+                        margin-bottom: 3vw;
+                    }
+
+                    p {
+                        margin-bottom: 30px;
+                    }
+                }
+
+                // &:after {
+                //     content: '';
+                //     display: block;
+                //     width: calc(100vw + 500px);
+                //     height: 200px;
+                //     background: linear-gradient(to top, black, rgba(0, 0, 0, 0));
+                //     position: absolute;
+                //     bottom: 0;
+                //     left: -100px;
+                //     z-index: 10;
+                //     overflow: hidden;
+                // }
+            }
+            .main-final-team-body div {
+                margin-bottom: 0;
+            }
+        }
+    }
+    @media (min-width: 577px) and (max-width: 767px) {
+        .main {
+            text-align: center;
+            margin-left: 0 !important;
+
+            * {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 17px;
+            }
+
+            ul{
+                list-style: none;
+                padding: 0;
+            }
+            .main-final-socials-body ul li{
+                text-align: center;
+            }
+            .main-final-socials-body ul {
+                grid-template-columns: 1fr;
+            }
+            .main-final-team-body-members ul{
+                padding: 0;
+            }
+            .main-final-team-body-members ul li, .main-token-body-cast ul,  .main-token-body-hol ul, .main-additional_features-body-hero_expeditions ul, .main-gameplay-body div ul{
+                text-align: center;
+            }
+            .main-final-team-body div ul{
+                width: 100%;
+            }
+            .main-final-team-body div ul{
+                text-align: center;
+            }
+
+            h2 {
+                font-family: neilvard-one;
+                font-size: 5vw;
+            }
+
+            &-navigation {
+                height: calc(100vh - 85px);
+                transition: left 0.5s ease;
+                top: 85px;
+                
+                &-collapsed-active {
+                    left: 0;
+                    
+                }
+
+                &-collapsed-inactive {
+                    left: -500px;
+                }
+            }
+
+            section {
+                padding: 50px 19px;
+                min-height: 60vh;
+                // border: solid 1px white;
+            }
+            #main-introduction{
+                min-height: 100vh;
+            }
+
+            &-introduction,
+            &-story,
+            &-assets,
+            &-additional_features,
+            &-target {
+                color: white;
+                position: relative;
+
+                button {
+                    position: absolute;
+                    bottom: 40px;
+                    left: calc(50vw - 80px);
+                    background: url("../images/documentation/Read-more-button.container.png");
+                    background-repeat: no-repeat;
+                    background-size: 105% 100%;
+                    color: #453214;
+                    font-family: neilvard-one;
+                    font-weight: bold;
+                    border: none;
+                    z-index: 15;
+                    padding: 15px 30px;
+                }
+            }
+
+            &-gameplay,
+            &-token {
+                color: #453214;
+            }
+
+            &-introduction {
+                // height: calc(100vh - 85px);
+                min-height: 100vh;
+                padding: 30px 7vw;
+                background: url("../images/documentation/Section-1-BG.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+
+                h2 {
+                    margin: 0;
+                    position: relative;
+                }
+
+                hr {
+                    position: relative;
+                    width: 100%;
+                    height: 3vw;
+                    margin: 2vw auto;
+                    border: none;
+                    opacity: 1;
+
+                    &:after {
+                        content: '';
+                        background-size: 100% 100%;
+                        background-repeat: no-repeat;
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 70%;
+                        max-width: 574px;
+                        display: block;
+                        height: 2.5vw;
+                    }
+                }
+
+                &-body {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    text-align: left;
+
+                    p {
+                        margin-bottom: 30px;
+                    }
+                }
+
+                // &:after {
+                //     content: '';
+                //     display: block;
+                //     width: calc(100vw + 500px);
+                //     height: 200px;
+                //     background: linear-gradient(to top, black, rgba(0, 0, 0, 0));
+                //     position: absolute;
+                //     bottom: 0;
+                //     left: -100px;
+                //     z-index: 10;
+                //     overflow: hidden;
+                // }
+            }
+
+            &-story {
+                min-height: 100vh;
+                padding: 30px 7vw;
+                background: url("../images/documentation/Section-2-BG.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+
+                h2 {
+                    margin: 0;
+                    position: relative;
+                }
+
+                hr {
+                    position: relative;
+                    width: 100%;
+                    height: 3vw;
+                    margin: 2vw auto;
+                    border: none;
+                    opacity: 1;
+
+                    &:after {
+                        content: '';
+                        background-size: 100% 100%;
+                        background-repeat: no-repeat;
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 70%;
+                        max-width: 574px;
+                        display: block;
+                        height: 2.5vw;
+                    }
+                }
+
+                &-body {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    text-align: left;
+
+                    h3 {
+                        text-align: center;
+                        font-size: 4.5vw;
+                        font-size: 4vw;
+                        font-weight: 600;
+                        margin-bottom: 3vw;
+                    }
+
+                    p {
+                        margin-bottom: 30px;
+                    }
+                }
+
+                // &:after {
+                //     content: '';
+                //     display: block;
+                //     width: calc(100vw + 500px);
+                //     height: 200px;
+                //     background: linear-gradient(to top, black, rgba(0, 0, 0, 0));
+                //     position: absolute;
+                //     bottom: 0;
+                //     left: -100px;
+                //     z-index: 10;
+                //     overflow: hidden;
+                // }
+            }
+            .main-final-team-body div {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        .main {
+            text-align: center;
+            margin-left: 0 !important;
+
+            * {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 17px;
+            }
+
+            h2 {
+                font-family: neilvard-one;
+                font-size: 5vw;
+            }
+
+            &-navigation {
+                height: calc(100vh - 85px);
+                transition: left 0.5s ease;
+                top: 85px;
+                
+                &-collapsed-active {
+                    left: 0;
+                    
+                }
+
+                &-collapsed-inactive {
+                    left: -500px;
+                }
+            }
+
+            section {
+                padding: 50px 40px;
+                min-height: 60vh;
+                // border: solid 1px white;
+            }
+
+            &-introduction,
+            &-story,
+            &-assets,
+            &-additional_features,
+            &-target {
+                color: white;
+                position: relative;
+
+                button {
+                    position: absolute;
+                    bottom: 40px;
+                    left: calc(50vw - 80px);
+                    background: url("../images/documentation/Read-more-button.container.png");
+                    background-repeat: no-repeat;
+                    background-size: 105% 100%;
+                    color: #453214;
+                    font-family: neilvard-one;
+                    font-weight: bold;
+                    border: none;
+                    z-index: 15;
+                    padding: 15px 30px;
+                }
+            }
+
+            &-gameplay,
+            &-token {
+                color: #453214;
+            }
+
+            &-introduction {
+                // height: calc(100vh - 85px);
+                min-height: 100vh;
+                padding: 30px 7vw;
+                background: url("../images/documentation/Section-1-BG.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+
+                h2 {
+                    margin: 0;
+                    position: relative;
+                }
+
+                hr {
+                    position: relative;
+                    width: 100%;
+                    height: 3vw;
+                    margin: 2vw auto;
+                    border: none;
+                    opacity: 1;
+
+                    &:after {
+                        content: '';
+                        background-size: 100% 100%;
+                        background-repeat: no-repeat;
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 70%;
+                        max-width: 574px;
+                        display: block;
+                        height: 2.5vw;
+                    }
+                }
+
+                &-body {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    text-align: left;
+
+                    p {
+                        margin-bottom: 30px;
+                    }
+                }
+
+                // &:after {
+                //     content: '';
+                //     display: block;
+                //     width: calc(100vw + 500px);
+                //     height: 200px;
+                //     background: linear-gradient(to top, black, rgba(0, 0, 0, 0));
+                //     position: absolute;
+                //     bottom: 0;
+                //     left: -100px;
+                //     z-index: 10;
+                //     overflow: hidden;
+                // }
+            }
+
+            &-story {
+                min-height: 100vh;
+                padding: 30px 7vw;
+                background: url("../images/documentation/Section-2-BG.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+
+                h2 {
+                    margin: 0;
+                    position: relative;
+                }
+
+                hr {
+                    position: relative;
+                    width: 100%;
+                    height: 3vw;
+                    margin: 2vw auto;
+                    border: none;
+                    opacity: 1;
+
+                    &:after {
+                        content: '';
+                        background-size: 100% 100%;
+                        background-repeat: no-repeat;
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 70%;
+                        max-width: 574px;
+                        display: block;
+                        height: 2.5vw;
+                    }
+                }
+
+                &-body {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    text-align: left;
+
+                    h3 {
+                        text-align: center;
+                        font-size: 4.5vw;
+                        font-size: 4vw;
+                        font-weight: 600;
+                        margin-bottom: 3vw;
+                    }
+
+                    p {
+                        margin-bottom: 30px;
+                    }
+                }
+
+                // &:after {
+                //     content: '';
+                //     display: block;
+                //     width: calc(100vw + 500px);
+                //     height: 200px;
+                //     background: linear-gradient(to top, black, rgba(0, 0, 0, 0));
+                //     position: absolute;
+                //     bottom: 0;
+                //     left: -100px;
+                //     z-index: 10;
+                //     overflow: hidden;
+                // }
+            }
+            .main-final-team-body div {
+                margin-bottom: 0;
+            }
+        }
+    }
+    // * Collapsed
+    @media (min-width: 992px) and (max-width: 1200px) {
+        .main {
+            text-align: center;
+            margin-left: 0 !important;
+
+            * {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 17px;
+            }
+
+            h2 {
+                font-family: neilvard-one;
+                font-size: 10vw;
+            }
+
+            &-navigation {
+                height: calc(100vh - 85px);
+                transition: left 0.5s ease;
+                top: 85px;
+                
+                &-collapsed-active {
+                    left: 0;
+                    
+                }
+
+                &-collapsed-inactive {
+                    left: -500px;
+                }
+            }
+
+            section {
+                padding: 150px 100px;
+                min-height: 100vh;
+                // border: solid 1px white;
+            }
+
+            &-introduction,
+            &-story,
+            &-assets,
+            &-additional_features,
+            &-target {
+                color: white;
+                position: relative;
+
+                button {
+                    position: absolute;
+                    bottom: 40px;
+                    left: calc(50vw - 80px);
+                    background: url("../images/documentation/Read-more-button.container.png");
+                    background-repeat: no-repeat;
+                    background-size: 105% 100%;
+                    color: #453214;
+                    font-family: neilvard-one;
+                    font-weight: bold;
+                    border: none;
+                    z-index: 15;
+                    padding: 15px 30px;
+                }
+            }
+
+            &-gameplay,
+            &-token {
+                color: #453214;
+            }
+
+            &-introduction {
+                height: calc(100vh - 85px);
+                padding: 30px 7vw;
+                background: url("../images/documentation/Section-1-BG.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+
+                h2 {
+                    margin: 0;
+                    position: relative;
+                }
+
+                hr {
+                    position: relative;
+                    width: 100%;
+                    height: 3vw;
+                    margin: 2vw auto;
+                    border: none;
+                    opacity: 1;
+
+                    &:after {
+                        content: '';
+                        background-size: 100% 100%;
+                        background-repeat: no-repeat;
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 70%;
+                        max-width: 574px;
+                        display: block;
+                        height: 2.5vw;
+                    }
+                }
+
+                &-body {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    text-align: left;
+
+                    p {
+                        margin-bottom: 30px;
+                    }
+                }
+
+                // &-more {
+                //     position: absolute;
+                //     bottom: 40px;
+                //     left: calc(50vw - 80px);
+                //     background: url("../images/documentation/Read-more-button.container.png");
+                //     background-repeat: no-repeat;
+                //     background-size: 105% 100%;
+                //     color: #453214;
+                //     font-family: neilvard-one;
+                //     font-weight: bold;
+                //     border: none;
+                //     z-index: 15;
+                //     padding: 15px 30px;
+                // }
+
+                // &:after {
+                //     content: '';
+                //     display: block;
+                //     width: calc(100vw + 500px);
+                //     height: 200px;
+                //     background: linear-gradient(to top, black, rgba(0, 0, 0, 0));
+                //     position: absolute;
+                //     bottom: 0;
+                //     left: -100px;
+                //     z-index: 10;
+                //     overflow: hidden;
+                // }
+            }
+
+            &-story {
+                height: 100vh;
+                padding: 30px 7vw;
+                background: url("../images/documentation/Section-2-BG.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+
+                h2 {
+                    margin: 0;
+                    position: relative;
+                }
+
+                hr {
+                    position: relative;
+                    width: 100%;
+                    height: 3vw;
+                    margin: 2vw auto;
+                    border: none;
+                    opacity: 1;
+
+                    &:after {
+                        content: '';
+                        background-size: 100% 100%;
+                        background-repeat: no-repeat;
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 70%;
+                        max-width: 574px;
+                        display: block;
+                        height: 2.5vw;
+                    }
+                }
+
+                &-body {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    text-align: left;
+
+                    h3 {
+                        text-align: center;
+                        font-size: 4.5vw;
+                        font-size: 4vw;
+                        font-weight: 600;
+                        margin-bottom: 3vw;
+                    }
+
+                    p {
+                        margin-bottom: 30px;
+                    }
+                }
+
+                // &-more {
+                //     position: absolute;
+                //     bottom: 40px;
+                //     left: 50%;
+                //     transform: translateX(-50%);
+                //     background: url("../images/documentation/Read-more-button.container.png");
+                //     background-repeat: no-repeat;
+                //     // background-position: center;
+                //     background-size: 105% 100%;
+                //     color: #453214;
+                //     font-family: neilvard-one;
+                //     font-weight: bold;
+                //     border: none;
+                //     z-index: 15;
+                //     padding: 15px 30px;
+                // }
+
+                // &:after {
+                //     content: '';
+                //     display: block;
+                //     width: calc(100vw + 500px);
+                //     height: 200px;
+                //     background: linear-gradient(to top, black, rgba(0, 0, 0, 0));
+                //     position: absolute;
+                //     bottom: 0;
+                //     left: -100px;
+                //     z-index: 10;
+                //     overflow: hidden;
+                // }
+            }
+        }
+    }
+
+   

@@ -1,0 +1,1605 @@
+html {
+    body {
+        @import "modules/_header.scss";
+        @import "modules/_footer.scss";
+        @import "modules/_pop-up.scss";
+    }
+} 
+
+.disable-scroll {
+    overflow-y: hidden !important;
+    // opacity: 0 !important;
+}
+
+
+
+@media screen and (min-width: 0px){
+    html {
+        body {
+            max-width: 1920px;
+            margin: auto;
+            padding: 0;
+            box-sizing: border-box;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+
+            main{
+                .hero-section{
+                    background: url("../images/about/hol-team-header.jpg");
+                    background-size: cover;
+                    overflow: hidden;
+                    min-height: 700px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-position-x: -390px;
+                    .container{
+                        
+                        .wrapper{
+                            color: #fff;
+                            .team-divider:before {
+                                content: "";
+                                background-image: url(../images/about/hol-core-hr-2.png);
+                                padding: 10px 0;
+                                width: 85%;
+                                background-size: contain;
+                                background-position: center;
+                                display: inline-block;
+                                margin-bottom: 15px;
+                                background-repeat: no-repeat;
+                            }
+                            .team-hero-context{
+                                margin-top: -120px;
+                                width: 100%;
+                                margin-left: auto;
+                                margin-right: auto;
+                                justify-content: center;
+                                align-items: center;
+                                text-align: center;
+                            }
+                            h1{
+                                font-size: 60px;
+                                font-weight: 700;
+                                font-family: neilvard-one;
+                            }
+                            
+                            #read_more{
+                                background: url("../images/staking/1-Connect-Wallet.png");
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                height: 43px;
+                                width: 180px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                text-decoration: none;
+                                color: #3d2503 !important;
+                                font-weight: bold !important;
+                                text-transform: uppercase;
+                                letter-spacing: 0px;
+                            }
+                        }
+                    }
+                }
+                .foundation{
+                    position: relative;
+                    min-height: 730px;
+                    .team-foundation{
+                        background: url("../images/about/Section-2-BG.png");
+                        background-size: cover;
+                        overflow: hidden;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        min-height: 1150px;
+                        top: -125px;
+                        padding: 0 20px;
+                        padding-right: unset;
+                        .col-5{
+                            width: 55.666667%;
+                            display: none;
+                        }
+                        .col-7{
+                            width: 100%;
+                        }
+                        .hero-container{
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            img{
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                width: 52%;
+                            }
+                        }
+                    }
+                    .team-context{
+                        margin-top: -120px;
+                    }
+                    h5{
+                        font-size: 29px;
+                        font-weight: 700;
+                        font-family: neilvard-one;
+                    }
+                    p{
+                        width: 100%;
+                    }
+                }
+                .team-members{
+                    position: relative;
+                    background: url("../images/about/Section-3-BG.png");
+                    background-size: cover;
+                    .carousel-person-details{
+                        position: relative;
+                        overflow: visible;
+                        display: flex;
+                        justify-content: center;
+                        .carousel-description{
+                            position: absolute;
+                            width: 100%;
+                            margin: auto;
+                            text-align: center;
+                            bottom: 0;
+                            min-height: 480px;
+                            padding: 0px 20px;
+                        }
+                    }
+                    .hol-carousel{
+                        position: relative;
+                        min-height: 1100px;
+                    }
+                    .carousel-container{
+                        overflow: hidden;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        min-height: 970px;
+                        display: flex;
+                        flex-direction: column;
+                        h5{
+                            font-size: 35px;
+                            color: #fff;
+                            font-family: neilvard-one;
+                        }
+                        .owl-item > div {
+                            cursor: pointer;
+                            margin: 6% 8%;
+                            transition: margin 0.4s ease;
+                        }
+                        .owl-item.center > div {
+                            cursor: auto;
+                            margin: 0;
+                        }
+                        .owl-carousel .owl-stage-outer {
+                            // top: 60px;
+                        }
+                        .profile:before {
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            height: 100px;
+                            width: 100%;
+                            bottom: 0;
+                            transition: height 0.25s ease-out;
+                            background: linear-gradient(360deg, #1a5a64, transparent);
+                            opacity: 1;
+                        }
+                        .profile{
+                            position: relative;
+                            border-radius: 10px;
+                            border: 3px solid #fff;
+                            .top-left, .bottom-left, .bottom-right, .top-right{
+                                background: url("../images/staking/hol-core-border-white.png");
+                                height: 32px;
+                                width: 32px;
+                                position: absolute;
+                                border-radius: 5px;
+                            }
+                            .top-left, .bottom-left{
+                                left: -3px;
+                            }
+                            .bottom-right, .top-right{
+                                right: -3px;
+                            }
+                            .top-left{
+                                top: -3px;
+                                transform: rotate(90deg);
+                            }
+                            .bottom-left{
+                                bottom: -3px;
+                                transform: rotate(0);
+                            }
+                            .bottom-right{
+                                bottom: -3px;
+                                transform: rotate(270deg);
+                            }
+                            .top-right{
+                                top: -3px;
+                                transform: rotate(180deg);
+                            }
+                        }
+                        
+                        // .personal-container{
+                        //     position: relative;
+                        //     min-height: 100px;
+                        //     .personal-details{
+                        //         position: absolute;
+                        //         min-height: 100px;
+                        //         width: 100%;
+                        //     }
+                        // }
+
+                    }
+                }
+            }
+            .team-members {
+                .carousel-description {
+                    color: white;
+                    .carousel-description-name{
+                        color: #D7C396;
+                        font-size: 25px;
+                        font-weight: 700;
+                        font-family: neilvard-one;
+                    }
+                    .carousel-description-position, .carousel-description-desc{
+                        font-size: 18px;
+                    }
+                }
+            }
+            .team-member-container{
+                .team-collection{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    margin: auto;
+                    width: 100%;
+                    .icon-container:nth-child(-n+5){
+                        margin-bottom: 30px;
+                    }
+                    .icon-container:hover{
+                        transform: scale(1.1);
+                    }
+                    .icon-container:hover a h3{
+                        color: #D5C298;
+                    }
+                    .icon-container{
+                        padding: 20px;
+                        flex: 1 0 50%;
+                        max-width: 300.328px;
+                        min-height: 245.328px;
+                        transform: scale(1);
+                        transition: transform 200ms ease-in-out;
+                        a{
+                            text-decoration: none;
+                            img{
+                                margin: auto;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin-bottom: 20px;
+                                width: 60%;
+                            }
+                            h3{
+                                text-align: center;
+                                color: #fff;
+                                text-transform: uppercase;
+                                font-weight: 700;
+                                font-size: 20px;
+                                font-family: neilvard-one;
+                            }
+                            p{
+                                text-align: center;
+                                color: #8E8F93;
+                            }
+                        }
+                    }
+                }
+                h1{
+                    color: #fff;
+                    font-size: 40px;
+                    font-weight: 700;
+                    font-family: neilvard-one;
+                    text-align: center;
+                    margin-bottom: 80px;
+                }
+                .paging{
+                    margin: auto;
+                    padding: 30px;
+                    .page-link{
+                        background-color: unset;
+                        color: #D7C396;
+                        border: unset;
+                        margin: 10px;
+                    }
+                    .pagination{
+                        justify-content: center;
+                    }
+                    .active{
+                        background-color:#D7C396;
+                        color: #371111;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width: 576px){
+    html {
+        body {
+            max-width: 1920px;
+            margin: auto;
+            padding: 0;
+            box-sizing: border-box;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+
+            main{
+                .hero-section{
+                    background: url("../images/about/hol-team-header.jpg");
+                    background-size: cover;
+                    overflow: hidden;
+                    min-height: 700px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-position-x: -640px;
+                    .container{
+                        
+                        .wrapper{
+                            color: #fff;
+                            .team-divider:before {
+                                content: "";
+                                background-image: url(../images/about/hol-core-hr-2.png);
+                                padding: 10px 0;
+                                width: 85%;
+                                background-size: contain;
+                                background-position: center;
+                                display: inline-block;
+                                margin-bottom: 15px;
+                                background-repeat: no-repeat;
+                            }
+                            .team-hero-context{
+                                margin-top: -120px;
+                                width: 100%;
+                                margin-left: auto;
+                                margin-right: auto;
+                                justify-content: flex-start;
+                                align-items: center;
+                                text-align: left;
+                            }
+                            h1{
+                                font-size: 60px;
+                                font-weight: 700;
+                                font-family: neilvard-one;
+                            }
+                            
+                            #read_more{
+                                background: url("../images/staking/1-Connect-Wallet.png");
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                height: 43px;
+                                width: 180px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                text-decoration: none;
+                                color: #3d2503 !important;
+                                font-weight: bold !important;
+                                text-transform: uppercase;
+                                letter-spacing: 0px;
+                            }
+                        }
+                    }
+                }
+                .foundation{
+                    position: relative;
+                    min-height: 550px;
+                    .team-foundation{
+                        background: url("../images/about/Section-2-BG.png");
+                        background-size: cover;
+                        overflow: hidden;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        min-height: 1000px;
+                        top: -125px;
+                        padding: 0 50px;
+                        padding-right: unset;
+                        .col-5{
+                            width: 55.666667%;
+                            display: none;
+                        }
+                        .col-7{
+                            width: 100%;
+                        }
+                        .hero-container{
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            img{
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                width: 52%;
+                            }
+                        }
+                    }
+                    .team-context{
+                        margin-top: -120px;
+                        width: unset;
+                    }
+                    h5{
+                        font-size: 29px;
+                        font-weight: 700;
+                        font-family: neilvard-one;
+                    }
+                    p{
+                        width: 90%;
+                    }
+                }
+                .team-members{
+                    position: relative;
+                    background: url("../images/about/Section-3-BG.png");
+                    background-size: cover;
+                    .carousel-person-details{
+                        position: relative;
+                        overflow: visible;
+                        display: flex;
+                        justify-content: center;
+                        .carousel-description{
+                            position: absolute;
+                            width: 80%;
+                            margin: auto;
+                            text-align: center;
+                            bottom: 0;
+                            min-height: 300px;
+                        }
+                    }
+                    .hol-carousel{
+                        position: relative;
+                        min-height: 1100px;
+                    }
+                    .carousel-container{
+                        overflow: hidden;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        min-height: 1100px;
+                        display: flex;
+                        flex-direction: column;
+                        h5{
+                            font-size: 60px;
+                            color: #fff;
+                            font-family: neilvard-one;
+                        }
+                        .owl-item > div {
+                            cursor: pointer;
+                            margin: 6% 8%;
+                            transition: margin 0.4s ease;
+                        }
+                        .owl-item.center > div {
+                            cursor: auto;
+                            margin: 0;
+                        }
+                        .owl-carousel .owl-stage-outer {
+                            // top: 60px;
+                        }
+                        .profile:before {
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            height: 100px;
+                            width: 100%;
+                            bottom: 0;
+                            transition: height 0.25s ease-out;
+                            background: linear-gradient(360deg, #1a5a64, transparent);
+                            opacity: 1;
+                        }
+                        .profile{
+                            position: relative;
+                            border-radius: 10px;
+                            border: 3px solid #fff;
+                            .top-left, .bottom-left, .bottom-right, .top-right{
+                                background: url("../images/staking/hol-core-border-white.png");
+                                height: 32px;
+                                width: 32px;
+                                position: absolute;
+                                border-radius: 5px;
+                            }
+                            .top-left, .bottom-left{
+                                left: -3px;
+                            }
+                            .bottom-right, .top-right{
+                                right: -3px;
+                            }
+                            .top-left{
+                                top: -3px;
+                                transform: rotate(90deg);
+                            }
+                            .bottom-left{
+                                bottom: -3px;
+                                transform: rotate(0);
+                            }
+                            .bottom-right{
+                                bottom: -3px;
+                                transform: rotate(270deg);
+                            }
+                            .top-right{
+                                top: -3px;
+                                transform: rotate(180deg);
+                            }
+                        }
+                        
+                        // .personal-container{
+                        //     position: relative;
+                        //     min-height: 100px;
+                        //     .personal-details{
+                        //         position: absolute;
+                        //         min-height: 100px;
+                        //         width: 100%;
+                        //     }
+                        // }
+
+                    }
+                }
+            }
+            .team-members {
+                .carousel-description {
+                    color: white;
+                    .carousel-description-name{
+                        color: #D7C396;
+                        font-size: 40px;
+                        font-weight: 700;
+                        font-family: neilvard-one;
+                    }
+                    .carousel-description-position, .carousel-description-desc{
+                        font-size: 18px;
+                    }
+                }
+            }
+            .team-member-container{
+                .team-collection{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    margin: auto;
+                    width: 100%;
+                    .icon-container:nth-child(-n+5){
+                        margin-bottom: 30px;
+                    }
+                    .icon-container:hover{
+                        transform: scale(1.1);
+                    }
+                    .icon-container:hover a h3{
+                        color: #D5C298;
+                    }
+                    .icon-container{
+                        padding: 20px;
+                        flex: 1 0 50%;
+                        max-width: 300.328px;
+                        min-height: 245.328px;
+                        transform: scale(1);
+                        transition: transform 200ms ease-in-out;
+                        a{
+                            text-decoration: none;
+                            img{
+                                margin: auto;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin-bottom: 20px;
+                                width: 60%;
+                            }
+                            h3{
+                                text-align: center;
+                                color: #fff;
+                                text-transform: uppercase;
+                                font-weight: 700;
+                                font-size: 20px;
+                                font-family: neilvard-one;
+                            }
+                            p{
+                                text-align: center;
+                                color: #8E8F93;
+                            }
+                        }
+                    }
+                }
+                h1{
+                    color: #fff;
+                    font-size: 40px;
+                    font-weight: 700;
+                    font-family: neilvard-one;
+                    text-align: center;
+                    margin-bottom: 80px;
+                }
+                .paging{
+                    margin: auto;
+                    padding: 30px;
+                    .page-link{
+                        background-color: unset;
+                        color: #D7C396;
+                        border: unset;
+                        margin: 10px;
+                    }
+                    .pagination{
+                        justify-content: center;
+                    }
+                    .active{
+                        background-color:#D7C396;
+                        color: #371111;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    html {
+        body {
+            max-width: 1920px;
+            margin: auto;
+            padding: 0;
+            box-sizing: border-box;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+
+            main{
+                .hero-section{
+                    background: url("../images/about/hol-team-header.jpg");
+                    background-size: cover;
+                    overflow: hidden;
+                    min-height: 700px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-position-x: -390px;
+                    .container{
+                        
+                        .wrapper{
+                            color: #fff;
+                            .team-divider:before {
+                                content: "";
+                                background-image: url(../images/about/hol-core-hr-2.png);
+                                padding: 10px 0;
+                                width: 85%;
+                                background-size: contain;
+                                background-position: center;
+                                display: inline-block;
+                                margin-bottom: 15px;
+                                background-repeat: no-repeat;
+                            }
+                            .team-hero-context{
+                                margin-top: -120px;
+                                width: 50%;
+                                margin-left: unset;
+                                margin-right: unset;
+                                justify-content: flex-start;
+                                align-items: center;
+                                text-align: left;
+                            }
+                            h1{
+                                font-size: 60px;
+                                font-weight: 700;
+                                font-family: neilvard-one;
+                            }
+                            
+                            #read_more{
+                                background: url("../images/staking/1-Connect-Wallet.png");
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                height: 43px;
+                                width: 180px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                text-decoration: none;
+                                color: #3d2503 !important;
+                                font-weight: bold !important;
+                                text-transform: uppercase;
+                                letter-spacing: 0px;
+                            }
+                        }
+                    }
+                }
+                .foundation{
+                    position: relative;
+                    min-height: 550px;
+                    .team-foundation{
+                        background: url("../images/about/Section-2-BG.png");
+                        background-size: cover;
+                        overflow: hidden;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        min-height: 1000px;
+                        top: -125px;
+                        padding: 0 100px;
+                        padding-right: 30px;
+                        .col-5{
+                            width: 55.666667%;
+                            display: none;
+                        }
+                        .col-7{
+                            width: 100%;
+                        }
+                        .hero-container{
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            img{
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                width: 52%;
+                            }
+                        }
+                    }
+                    .team-context{
+                        margin-top: -120px;
+                        width: unset;
+                    }
+                    h5{
+                        font-size: 35px;
+                        font-weight: 700;
+                        font-family: neilvard-one;
+                    }
+                    p{
+                        width: 90%;
+                    }
+                }
+                .team-members{
+                    position: relative;
+                    background: url("../images/about/Section-3-BG.png");
+                    background-size: cover;
+                    .carousel-person-details{
+                        position: relative;
+                        overflow: visible;
+                        display: flex;
+                        justify-content: center;
+                        .carousel-description{
+                            position: absolute;
+                            width: 90%;
+                            margin: auto;
+                            text-align: center;
+                            bottom: 0;
+                            min-height: 300px;
+                        }
+                    }
+                    .hol-carousel{
+                        position: relative;
+                        min-height: 1100px;
+                    }
+                    .carousel-container{
+                        overflow: hidden;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        min-height: 1100px;
+                        display: flex;
+                        flex-direction: column;
+                        h5{
+                            font-size: 60px;
+                            color: #fff;
+                            font-family: neilvard-one;
+                        }
+                        .owl-item > div {
+                            cursor: pointer;
+                            margin: 6% 8%;
+                            transition: margin 0.4s ease;
+                        }
+                        .owl-item.center > div {
+                            cursor: auto;
+                            margin: 0;
+                        }
+                        .owl-carousel .owl-stage-outer {
+                            // top: 60px;
+                        }
+                        .profile:before {
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            height: 100px;
+                            width: 100%;
+                            bottom: 0;
+                            transition: height 0.25s ease-out;
+                            background: linear-gradient(360deg, #1a5a64, transparent);
+                            opacity: 1;
+                        }
+                        .profile{
+                            position: relative;
+                            border-radius: 10px;
+                            border: 3px solid #fff;
+                            .top-left, .bottom-left, .bottom-right, .top-right{
+                                background: url("../images/staking/hol-core-border-white.png");
+                                height: 32px;
+                                width: 32px;
+                                position: absolute;
+                                border-radius: 5px;
+                            }
+                            .top-left, .bottom-left{
+                                left: -3px;
+                            }
+                            .bottom-right, .top-right{
+                                right: -3px;
+                            }
+                            .top-left{
+                                top: -3px;
+                                transform: rotate(90deg);
+                            }
+                            .bottom-left{
+                                bottom: -3px;
+                                transform: rotate(0);
+                            }
+                            .bottom-right{
+                                bottom: -3px;
+                                transform: rotate(270deg);
+                            }
+                            .top-right{
+                                top: -3px;
+                                transform: rotate(180deg);
+                            }
+                        }
+                        
+                        // .personal-container{
+                        //     position: relative;
+                        //     min-height: 100px;
+                        //     .personal-details{
+                        //         position: absolute;
+                        //         min-height: 100px;
+                        //         width: 100%;
+                        //     }
+                        // }
+
+                    }
+                }
+            }
+            .team-members {
+                .carousel-description {
+                    color: white;
+                    .carousel-description-name{
+                        color: #D7C396;
+                        font-size: 40px;
+                        font-weight: 700;
+                        font-family: neilvard-one;
+                    }
+                    .carousel-description-position, .carousel-description-desc{
+                        font-size: 15px;
+                    }
+                }
+            }
+            .team-member-container{
+                .team-collection{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    margin: auto;
+                    width: 100%;
+                    .icon-container:nth-child(-n+5){
+                        margin-bottom: 30px;
+                    }
+                    .icon-container:hover{
+                        transform: scale(1.1);
+                    }
+                    .icon-container:hover a h3{
+                        color: #D5C298;
+                    }
+                    .icon-container{
+                        padding: 20px;
+                        flex: 1 0 50%;
+                        max-width: 300.328px;
+                        min-height: 245.328px;
+                        transform: scale(1);
+                        transition: transform 200ms ease-in-out;
+                        a{
+                            text-decoration: none;
+                            img{
+                                margin: auto;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin-bottom: 20px;
+                                width: 60%;
+                            }
+                            h3{
+                                text-align: center;
+                                color: #fff;
+                                text-transform: uppercase;
+                                font-weight: 700;
+                                font-size: 20px;
+                                font-family: neilvard-one;
+                            }
+                            p{
+                                text-align: center;
+                                color: #8E8F93;
+                            }
+                        }
+                    }
+                }
+                h1{
+                    color: #fff;
+                    font-size: 40px;
+                    font-weight: 700;
+                    font-family: neilvard-one;
+                    text-align: center;
+                    margin-bottom: 80px;
+                }
+                .paging{
+                    margin: auto;
+                    padding: 30px;
+                    .page-link{
+                        background-color: unset;
+                        color: #D7C396;
+                        border: unset;
+                        margin: 10px;
+                    }
+                    .pagination{
+                        justify-content: center;
+                    }
+                    .active{
+                        background-color:#D7C396;
+                        color: #371111;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width: 992px){
+    html {
+        body {
+            max-width: 1920px;
+            margin: auto;
+            padding: 0;
+            box-sizing: border-box;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+
+            main{
+                .hero-section{
+                    background: url("../images/about/hol-team-header.jpg");
+                    background-size: cover;
+                    overflow: hidden;
+                    min-height: 700px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-position-x: -390px;
+                    .container{
+                        
+                        .wrapper{
+                            color: #fff;
+                            .team-divider:before {
+                                content: "";
+                                background-image: url(../images/about/hol-core-hr-2.png);
+                                padding: 10px 0;
+                                width: 85%;
+                                background-size: contain;
+                                background-position: center;
+                                display: inline-block;
+                                margin-bottom: 15px;
+                                background-repeat: no-repeat;
+                            }
+                            .team-hero-context{
+                                margin-top: -120px;
+                            }
+                            h1{
+                                font-size: 60px;
+                                font-weight: 700;
+                                font-family: neilvard-one;
+                            }
+                            
+                            #read_more{
+                                background: url("../images/staking/1-Connect-Wallet.png");
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                height: 43px;
+                                width: 180px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                text-decoration: none;
+                                color: #3d2503 !important;
+                                font-weight: bold !important;
+                                text-transform: uppercase;
+                                letter-spacing: 0px;
+                            }
+                        }
+                    }
+                }
+                .foundation{
+                    position: relative;
+                    min-height: 650px;
+                    .team-foundation{
+                        background: url("../images/about/Section-2-BG.png");
+                        background-size: cover;
+                        overflow: hidden;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        min-height: 1000px;
+                        top: -125px;
+                        padding: 0 100px;
+                        padding-right: 30px;
+                        .col-5{
+                            width: 55.666667%;
+                            display: block;
+                        }
+                        .col-7{
+                            width: 57.333333%;
+                        }
+                        .hero-container{
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            img{
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                width: 52%;
+                            }
+                        }
+                    }
+                    .team-context{
+                        margin-top: -120px;
+                        width: unset;
+                    }
+                    h5{
+                        font-size: 35px;
+                        font-weight: 700;
+                        font-family: neilvard-one;
+                    }
+                    p{
+                        width: 85%;
+                    }
+                }
+                .team-members{
+                    position: relative;
+                    background: url("../images/about/Section-3-BG.png");
+                    background-size: cover;
+                    .carousel-person-details{
+                        position: relative;
+                        overflow: visible;
+                        display: flex;
+                        justify-content: center;
+                        .carousel-description{
+                            position: absolute;
+                            width: 100%;
+                            margin: auto;
+                            text-align: center;
+                            bottom: 0;
+                            min-height: 300px;
+                        }
+                    }
+                    .hol-carousel{
+                        position: relative;
+                        min-height: 811px;
+                    }
+                    .carousel-container{
+                        overflow: hidden;
+                        width: 100%;
+                        min-height: 650px; 
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        h5{
+                            font-size: 45px;
+                            color: #fff;
+                            font-family: neilvard-one;
+                        }
+                        .owl-item > div {
+                            cursor: pointer;
+                            margin: 6% 8%;
+                            transition: margin 0.4s ease;
+                        }
+                        .owl-item.center > div {
+                            cursor: auto;
+                            margin: 0;
+                        }
+                        .owl-carousel .owl-stage-outer {
+                            // top: 60px;
+                        }
+                        .profile:before {
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            height: 100px;
+                            width: 100%;
+                            bottom: 0;
+                            transition: height 0.25s ease-out;
+                            background: linear-gradient(360deg, #1a5a64, transparent);
+                            opacity: 1;
+                        }
+                        .profile{
+                            position: relative;
+                            border-radius: 10px;
+                            border: 3px solid #fff;
+                            .top-left, .bottom-left, .bottom-right, .top-right{
+                                background: url("../images/staking/hol-core-border-white.png");
+                                height: 32px;
+                                width: 32px;
+                                position: absolute;
+                                border-radius: 5px;
+                            }
+                            .top-left, .bottom-left{
+                                left: -3px;
+                            }
+                            .bottom-right, .top-right{
+                                right: -3px;
+                            }
+                            .top-left{
+                                top: -3px;
+                                transform: rotate(90deg);
+                            }
+                            .bottom-left{
+                                bottom: -3px;
+                                transform: rotate(0);
+                            }
+                            .bottom-right{
+                                bottom: -3px;
+                                transform: rotate(270deg);
+                            }
+                            .top-right{
+                                top: -3px;
+                                transform: rotate(180deg);
+                            }
+                        }
+                        
+                        // .personal-container{
+                        //     position: relative;
+                        //     min-height: 100px;
+                        //     .personal-details{
+                        //         position: absolute;
+                        //         min-height: 100px;
+                        //         width: 100%;
+                        //     }
+                        // }
+
+                    }
+                }
+            }
+            .team-members {
+                .carousel-description {
+                    color: white;
+                    .carousel-description-name{
+                        color: #D7C396;
+                        font-size: 30px;
+                        font-weight: 700;
+                        font-family: neilvard-one;
+                    }
+                    .carousel-description-position, .carousel-description-desc{
+                        font-size: 16px;
+                    }
+                }
+            }
+            .team-member-container{
+                .team-collection{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    margin: auto;
+                    width: 100%;
+                    .icon-container:nth-child(-n+5){
+                        margin-bottom: 30px;
+                    }
+                    .icon-container:hover{
+                        transform: scale(1.1);
+                    }
+                    .icon-container:hover a h3{
+                        color: #D5C298;
+                    }
+                    .icon-container{
+                        padding: 20px;
+                        flex: 1 0 20%;
+                        max-width: 300.328px;
+                        min-height: 245.328px;
+                        transform: scale(1);
+                        transition: transform 200ms ease-in-out;
+                        a{
+                            text-decoration: none;
+                            img{
+                                margin: auto;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin-bottom: 20px;
+                                width: 60%;
+                            }
+                            h3{
+                                text-align: center;
+                                color: #fff;
+                                text-transform: uppercase;
+                                font-weight: 700;
+                                font-size: 20px;
+                                font-family: neilvard-one;
+                            }
+                            p{
+                                text-align: center;
+                                color: #8E8F93;
+                            }
+                        }
+                    }
+                }
+                h1{
+                    color: #fff;
+                    font-size: 40px;
+                    font-weight: 700;
+                    font-family: neilvard-one;
+                    text-align: center;
+                    margin-bottom: 80px;
+                }
+                .paging{
+                    margin: auto;
+                    padding: 30px;
+                    .page-link{
+                        background-color: unset;
+                        color: #D7C396;
+                        border: unset;
+                        margin: 10px;
+                    }
+                    .pagination{
+                        justify-content: center;
+                    }
+                    .active{
+                        background-color:#D7C396;
+                        color: #371111;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width: 1200px){
+    html {
+        body {
+            max-width: 1920px;
+            margin: auto;
+            padding: 0;
+            box-sizing: border-box;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+
+            main{
+                .hero-section{
+                    background: url("../images/about/hol-team-header.jpg");
+                    background-size: cover;
+                    overflow: hidden;
+                    min-height: 700px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-position-x: unset;
+                    .container{
+                        
+                        .wrapper{
+                            color: #fff;
+                            .team-divider:before {
+                                content: "";
+                                background-image: url(../images/about/hol-core-hr-2.png);
+                                padding: 10px 0;
+                                width: 85%;
+                                background-size: contain;
+                                background-position: center;
+                                display: inline-block;
+                                margin-bottom: 15px;
+                                background-repeat: no-repeat;
+                            }
+                            .team-hero-context{
+                                margin-top: -120px;
+                                width: 50%;
+                                margin-left: unset;
+                                margin-right: unset;
+                                justify-content: flex-start;
+                                align-items: center;
+                                text-align: left;
+                            }
+                            h1{
+                                font-size: 60px;
+                                font-weight: 700;
+                                font-family: neilvard-one;
+                            }
+                            
+                            #read_more{
+                                background: url("../images/staking/1-Connect-Wallet.png");
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                height: 43px;
+                                width: 180px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                text-decoration: none;
+                                color: #3d2503 !important;
+                                font-weight: bold !important;
+                                text-transform: uppercase;
+                                letter-spacing: 0px;
+                            }
+                        }
+                    }
+                }
+                .foundation{
+                    position: relative;
+                    min-height: 650px;
+                    .team-foundation{
+                        background: url("../images/about/Section-2-BG.png");
+                        background-size: cover;
+                        overflow: hidden;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        min-height: 1000px;
+                        top: -125px;
+                        padding: 0 100px;
+                        padding-right: 30px;
+                        .col-5{
+                            width: 41.66666667%;
+                            display: block;
+                        }
+                        .col-7{
+                            width: 58.33333333%;
+                        }
+                        .hero-container{
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            img{
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                width: unset;
+                            }
+                        }
+                    }
+                    .team-context{
+                        margin-top: -120px;                    }
+                    h5{
+                        font-size: 35px;
+                        font-weight: 700;
+                        font-family: neilvard-one;
+                    }
+                    p{
+                        width: 85%;
+                    }
+                }
+                .team-members{
+                    position: relative;
+                    background: url("../images/about/Section-3-BG.png");
+                    background-size: cover;
+                    .carousel-person-details{
+                        position: relative;
+                        overflow: visible;
+                        display: flex;
+                        justify-content: center;
+                        .carousel-description{
+                            position: absolute;
+                            width: 60%;
+                            margin: auto;
+                            text-align: center;
+                            bottom: 0;
+                            min-height: 300px;
+                        }
+                    }
+                    .hol-carousel{
+                        position: relative;
+                        min-height: 1100px;
+                    }
+                    .carousel-container{
+                        overflow: hidden;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        min-height: 1100px;
+                        display: flex;
+                        flex-direction: column;
+                        h5{
+                            font-size: 60px;
+                            color: #fff;
+                            font-family: neilvard-one;
+                        }
+                        .owl-item > div {
+                            cursor: pointer;
+                            margin: 6% 8%;
+                            transition: margin 0.4s ease;
+                        }
+                        .owl-item.center > div {
+                            cursor: auto;
+                            margin: 0;
+                        }
+                        .owl-carousel .owl-stage-outer {
+                            // top: 60px;
+                        }
+                        .profile:before {
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            height: 100px;
+                            width: 100%;
+                            bottom: 0;
+                            transition: height 0.25s ease-out;
+                            background: linear-gradient(360deg, #1a5a64, transparent);
+                            opacity: 1;
+                        }
+                        .profile{
+                            position: relative;
+                            border-radius: 10px;
+                            border: 3px solid #fff;
+                            .top-left, .bottom-left, .bottom-right, .top-right{
+                                background: url("../images/staking/hol-core-border-white.png");
+                                height: 32px;
+                                width: 32px;
+                                position: absolute;
+                                border-radius: 5px;
+                            }
+                            .top-left, .bottom-left{
+                                left: -3px;
+                            }
+                            .bottom-right, .top-right{
+                                right: -3px;
+                            }
+                            .top-left{
+                                top: -3px;
+                                transform: rotate(90deg);
+                            }
+                            .bottom-left{
+                                bottom: -3px;
+                                transform: rotate(0);
+                            }
+                            .bottom-right{
+                                bottom: -3px;
+                                transform: rotate(270deg);
+                            }
+                            .top-right{
+                                top: -3px;
+                                transform: rotate(180deg);
+                            }
+                        }
+                        
+                        // .personal-container{
+                        //     position: relative;
+                        //     min-height: 100px;
+                        //     .personal-details{
+                        //         position: absolute;
+                        //         min-height: 100px;
+                        //         width: 100%;
+                        //     }
+                        // }
+
+                    }
+                }
+            }
+            .team-members {
+                .carousel-description {
+                    color: white;
+                    .carousel-description-name{
+                        color: #D7C396;
+                        font-size: 40px;
+                        font-weight: 700;
+                        font-family: neilvard-one;
+                    }
+                    .carousel-description-position, .carousel-description-desc{
+                        font-size: 18px;
+                    }
+                }
+            }
+            .team-member-container{
+                .team-collection{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    margin: auto;
+                    width: 75%;
+                    .icon-container:nth-child(-n+5){
+                        margin-bottom: 30px;
+                    }
+                    .icon-container:hover{
+                        transform: scale(1.1);
+                    }
+                    .icon-container:hover a h3{
+                        color: #D5C298;
+                    }
+                    .icon-container{
+                        padding: 20px;
+                        flex: 1 0 20%;
+                        max-width: 300.328px;
+                        min-height: 300.328px;
+                        transform: scale(1);
+                        transition: transform 200ms ease-in-out;
+                        a{
+                            text-decoration: none;
+                            img{
+                                margin: auto;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin-bottom: 20px;
+                                width: 60%;
+                            }
+                            h3{
+                                text-align: center;
+                                color: #fff;
+                                text-transform: uppercase;
+                                font-weight: 700;
+                                font-size: 20px;
+                                font-family: neilvard-one;
+                            }
+                            p{
+                                text-align: center;
+                                color: #8E8F93;
+                            }
+                        }
+                    }
+                }
+                h1{
+                    color: #fff;
+                    font-size: 40px;
+                    font-weight: 700;
+                    font-family: neilvard-one;
+                    text-align: center;
+                    margin-bottom: 80px;
+                }
+                .paging{
+                    margin: auto;
+                    padding: 30px;
+                    .page-link{
+                        background-color: unset;
+                        color: #D7C396;
+                        border: unset;
+                        margin: 10px;
+                    }
+                    .pagination{
+                        justify-content: center;
+                    }
+                    .active{
+                        background-color:#D7C396;
+                        color: #371111;
+                    }
+                }
+            }
+
+        }
+    }
+}

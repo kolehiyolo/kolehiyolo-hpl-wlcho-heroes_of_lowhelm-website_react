@@ -139,7 +139,7 @@ html body {
     align-items: center;
     width: 100vw;
     z-index: 2000000;
-    background-color: var(--header-bg);
+    background-color: black;
     height: 85px;
     padding: 0 30px;
   }

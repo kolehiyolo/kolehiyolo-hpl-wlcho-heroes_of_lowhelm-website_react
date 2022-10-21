@@ -12,8 +12,6 @@ const {BN, Long, units} = require('@zilliqa-js/util');
 const HOLAddress = "0x516fe17db252d6de4ed8f3e3c19f5418cba75c3b";
 const StakingAddress = "0xdec808a8dbf33bca8973be33ba4ae80c363c4fba";
 
-console.log(`TESTER`); 
-
 class App extends React.Component {
     //---------------
     //* constructor *

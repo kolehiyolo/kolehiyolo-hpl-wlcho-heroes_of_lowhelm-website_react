@@ -142,7 +142,7 @@ html body {
     align-items: center;
     width: 100vw;
     z-index: 2000000;
-    background-color: var(--header-bg);
+    background-color: black;
     height: 85px;
     padding: 0 30px;
   }
@@ -922,7 +922,8 @@ html body {
     /*for navigator*/
     /*for header*/
   }
-  html body body, html body html {
+  html body body,
+html body html {
     display: block;
     margin: 0;
     padding: 0;
@@ -967,7 +968,12 @@ html body {
     bottom: 0;
     background: linear-gradient(90deg, rgba(0, 212, 255, 0) 0%, #d7c396 20%, #FFF 50%, #d7c396 80%, rgba(0, 212, 255, 0) 100%);
   }
-  html body .wrapper, html body nav, html body .staking, html body .hero, html body .nav-item, html body .hero-image {
+  html body .wrapper,
+html body nav,
+html body .staking,
+html body .hero,
+html body .nav-item,
+html body .hero-image {
     position: relative;
   }
   html body .hero-section {
@@ -1055,17 +1061,22 @@ html body {
     display: inline-block;
     width: 100%;
   }
-  html body .top-left, html body .bottom-left, html body .bottom-right, html body .top-right {
+  html body .top-left,
+html body .bottom-left,
+html body .bottom-right,
+html body .top-right {
     background: url("../images/staking/hol-core-border-white.svg");
     height: 32px;
     width: 32px;
     position: absolute;
     border-radius: 5px;
   }
-  html body .top-left, html body .bottom-left {
+  html body .top-left,
+html body .bottom-left {
     left: -5px;
   }
-  html body .bottom-right, html body .top-right {
+  html body .bottom-right,
+html body .top-right {
     right: -3px;
   }
   html body .top-left {
@@ -1137,7 +1148,8 @@ html body {
   html body .sub_label {
     font-size: 12px;
   }
-  html body .hol-register-login, html body .btn_container {
+  html body .hol-register-login,
+html body .btn_container {
     display: none;
   }
   html body nav .container-fluid {
@@ -1260,7 +1272,8 @@ html body {
     /*for navigator*/
     /*for header*/
   }
-  html body body, html body html {
+  html body body,
+html body html {
     display: block;
     margin: 0;
     padding: 0;
@@ -1305,7 +1318,12 @@ html body {
     bottom: 0;
     background: linear-gradient(90deg, rgba(0, 212, 255, 0) 0%, #d7c396 20%, #FFF 50%, #d7c396 80%, rgba(0, 212, 255, 0) 100%);
   }
-  html body .wrapper, html body nav, html body .staking, html body .hero, html body .nav-item, html body .hero-image {
+  html body .wrapper,
+html body nav,
+html body .staking,
+html body .hero,
+html body .nav-item,
+html body .hero-image {
     position: relative;
   }
   html body .hero-section {
@@ -1383,17 +1401,22 @@ html body {
     display: inline-block;
     width: 100%;
   }
-  html body .top-left, html body .bottom-left, html body .bottom-right, html body .top-right {
+  html body .top-left,
+html body .bottom-left,
+html body .bottom-right,
+html body .top-right {
     background: url("../images/staking/hol-core-border-white.svg");
     height: 32px;
     width: 32px;
     position: absolute;
     border-radius: 5px;
   }
-  html body .top-left, html body .bottom-left {
+  html body .top-left,
+html body .bottom-left {
     left: -5px;
   }
-  html body .bottom-right, html body .top-right {
+  html body .bottom-right,
+html body .top-right {
     right: -3px;
   }
   html body .top-left {
@@ -1465,7 +1488,8 @@ html body {
   html body .sub_label {
     font-size: 12px;
   }
-  html body .hol-register-login, html body .btn_container {
+  html body .hol-register-login,
+html body .btn_container {
     display: none;
   }
   html body nav .container-fluid {
@@ -1596,7 +1620,8 @@ html body {
     /*for navigator*/
     /*for header*/
   }
-  html body body, html body html {
+  html body body,
+html body html {
     display: block;
     margin: 0;
     padding: 0;
@@ -1641,7 +1666,12 @@ html body {
     bottom: 0;
     background: linear-gradient(90deg, rgba(0, 212, 255, 0) 0%, #d7c396 20%, #FFF 50%, #d7c396 80%, rgba(0, 212, 255, 0) 100%);
   }
-  html body .wrapper, html body nav, html body .staking, html body .hero, html body .nav-item, html body .hero-image {
+  html body .wrapper,
+html body nav,
+html body .staking,
+html body .hero,
+html body .nav-item,
+html body .hero-image {
     position: relative;
   }
   html body .hero-section {
@@ -1719,17 +1749,22 @@ html body {
     display: inline-block;
     width: 100%;
   }
-  html body .top-left, html body .bottom-left, html body .bottom-right, html body .top-right {
+  html body .top-left,
+html body .bottom-left,
+html body .bottom-right,
+html body .top-right {
     background: url("../images/staking/hol-core-border-white.svg");
     height: 32px;
     width: 32px;
     position: absolute;
     border-radius: 5px;
   }
-  html body .top-left, html body .bottom-left {
+  html body .top-left,
+html body .bottom-left {
     left: -5px;
   }
-  html body .bottom-right, html body .top-right {
+  html body .bottom-right,
+html body .top-right {
     right: -3px;
   }
   html body .top-left {
@@ -1801,7 +1836,8 @@ html body {
   html body .sub_label {
     font-size: 12px;
   }
-  html body .hol-register-login, html body .btn_container {
+  html body .hol-register-login,
+html body .btn_container {
     display: none;
   }
   html body nav .container-fluid {
@@ -1931,7 +1967,9 @@ html body {
   html body {
     /*hero image*/
   }
-  html body body, html body html, html body .container {
+  html body body,
+html body html,
+html body .container {
     max-width: 1919px;
     margin: auto;
   }
@@ -1988,7 +2026,12 @@ html body {
     height: auto;
     min-height: 441px;
   }
-  html body .wrapper, html body nav, html body .staking, html body .hero, html body .nav-item, html body .btn_container {
+  html body .wrapper,
+html body nav,
+html body .staking,
+html body .hero,
+html body .nav-item,
+html body .btn_container {
     position: relative;
   }
   html body .hero-image:before {
@@ -2047,7 +2090,8 @@ html body {
     background: linear-gradient(to top, #d7c396 0%, transparent 100%);
     opacity: 0.2;
   }
-  html body .nav-item .nav-link:hover:before, html body .nav-item .active:before {
+  html body .nav-item .nav-link:hover:before,
+html body .nav-item .active:before {
     height: 80px;
   }
   html body .outer-border {
@@ -2066,7 +2110,8 @@ html body {
   html body .stake-left {
     margin: auto !important;
   }
-  html body ._qwerty_storage, html body ._qwertystake {
+  html body ._qwerty_storage,
+html body ._qwertystake {
     position: relative;
     background: url("../images/staking/fill.png");
     border: 3px solid #d7c396;
@@ -2133,7 +2178,8 @@ html body {
     border-radius: 6px;
     box-shadow: inset 0 0 6px #057868;
   }
-  html body .btn_wallet, html body .btn_connect {
+  html body .btn_wallet,
+html body .btn_connect {
     border: 3px solid #DDD3BA;
     box-shadow: inset 0 0 6px #b9ac8c;
   }
@@ -2160,17 +2206,22 @@ html body {
     margin-bottom: 4px;
     display: inline-block;
   }
-  html body .top-left, html body .bottom-left, html body .bottom-right, html body .top-right {
+  html body .top-left,
+html body .bottom-left,
+html body .bottom-right,
+html body .top-right {
     background: url("../images/staking/hol-core-border-white.svg");
     height: 32px;
     width: 32px;
     position: absolute;
     border-radius: 5px;
   }
-  html body .top-left, html body .bottom-left {
+  html body .top-left,
+html body .bottom-left {
     left: -3px;
   }
-  html body .bottom-right, html body .top-right {
+  html body .bottom-right,
+html body .top-right {
     right: -3px;
   }
   html body .top-left {
@@ -2247,7 +2298,8 @@ html body {
     top: -22px;
     letter-spacing: 0px;
   }
-  html body .btn_connect, html body .btn_wallet {
+  html body .btn_connect,
+html body .btn_wallet {
     background-position: center;
     margin-bottom: 0;
     color: #3c2302;
@@ -2267,7 +2319,11 @@ html body {
     text-transform: uppercase;
     letter-spacing: 0px;
   }
-  html body .hero-context-head h1, html body .hero-context-head p, html body .hero-context-body p, html body .divider, html body .stake_container {
+  html body .hero-context-head h1,
+html body .hero-context-head p,
+html body .hero-context-body p,
+html body .divider,
+html body .stake_container {
     transition: opacity var(--delay) ease, transform var(--delay) ease;
   }
   html body .divider {
@@ -2290,7 +2346,14 @@ html body {
   html body .btn-stake:hover {
     box-shadow: 0px 0px 10px #888888;
   }
-  html body span[class=stake_value], html body .stake_value, html body .staking input, html body ._qwerty_storage, html body .nav-item .nav-link:before, html body .hero-image, html body .hero-image:before, html body .hero:before {
+  html body span[class=stake_value],
+html body .stake_value,
+html body .staking input,
+html body ._qwerty_storage,
+html body .nav-item .nav-link:before,
+html body .hero-image,
+html body .hero-image:before,
+html body .hero:before {
     width: 100%;
   }
   html body .hero-context-head h1 {
@@ -2311,7 +2374,9 @@ html body {
   html body {
     /*hero image*/
   }
-  html body body, html body html, html body .container {
+  html body body,
+html body html,
+html body .container {
     max-width: 1919px;
     margin: auto;
   }
@@ -2368,7 +2433,12 @@ html body {
     height: auto;
     min-height: 660px;
   }
-  html body .wrapper, html body nav, html body .staking, html body .hero, html body .nav-item, html body .btn_container {
+  html body .wrapper,
+html body nav,
+html body .staking,
+html body .hero,
+html body .nav-item,
+html body .btn_container {
     position: relative;
   }
   html body .hero-image:before {
@@ -2427,7 +2497,8 @@ html body {
     background: linear-gradient(to top, #d7c396 0%, transparent 100%);
     opacity: 0.2;
   }
-  html body .nav-item .nav-link:hover:before, html body .nav-item .active:before {
+  html body .nav-item .nav-link:hover:before,
+html body .nav-item .active:before {
     height: 80px;
   }
   html body .outer-border {
@@ -2443,7 +2514,8 @@ html body {
     padding: 0;
     border-radius: 5px;
   }
-  html body ._qwerty_storage, html body ._qwertystake {
+  html body ._qwerty_storage,
+html body ._qwertystake {
     position: relative;
     background: url("../images/staking/fill.png");
     border: 3px solid #d7c396;
@@ -2510,7 +2582,8 @@ html body {
     border-radius: 6px;
     box-shadow: inset 0 0 6px #057868;
   }
-  html body .btn_wallet, html body .btn_connect {
+  html body .btn_wallet,
+html body .btn_connect {
     border: 3px solid #DDD3BA;
     box-shadow: inset 0 0 6px #b9ac8c;
   }
@@ -2537,17 +2610,22 @@ html body {
     margin-bottom: 4px;
     display: inline-block;
   }
-  html body .top-left, html body .bottom-left, html body .bottom-right, html body .top-right {
+  html body .top-left,
+html body .bottom-left,
+html body .bottom-right,
+html body .top-right {
     background: url("../images/staking/hol-core-border-white.svg");
     height: 32px;
     width: 32px;
     position: absolute;
     border-radius: 5px;
   }
-  html body .top-left, html body .bottom-left {
+  html body .top-left,
+html body .bottom-left {
     left: -3px;
   }
-  html body .bottom-right, html body .top-right {
+  html body .bottom-right,
+html body .top-right {
     right: -3px;
   }
   html body .top-left {
@@ -2624,7 +2702,8 @@ html body {
     top: -22px;
     letter-spacing: 0px;
   }
-  html body .btn_connect, html body .btn_wallet {
+  html body .btn_connect,
+html body .btn_wallet {
     background-position: center;
     margin-bottom: 0;
     color: #3c2302;
@@ -2644,7 +2723,11 @@ html body {
     text-transform: uppercase;
     letter-spacing: 0px;
   }
-  html body .hero-context-head h1, html body .hero-context-head p, html body .hero-context-body p, html body .divider, html body .stake_container {
+  html body .hero-context-head h1,
+html body .hero-context-head p,
+html body .hero-context-body p,
+html body .divider,
+html body .stake_container {
     transition: opacity var(--delay) ease, transform var(--delay) ease;
   }
   html body .divider {
@@ -2667,7 +2750,14 @@ html body {
   html body .btn-stake:hover {
     box-shadow: 0px 0px 10px #888888;
   }
-  html body span[class=stake_value], html body .stake_value, html body .staking input, html body ._qwerty_storage, html body .nav-item .nav-link:before, html body .hero-image, html body .hero-image:before, html body .hero:before {
+  html body span[class=stake_value],
+html body .stake_value,
+html body .staking input,
+html body ._qwerty_storage,
+html body .nav-item .nav-link:before,
+html body .hero-image,
+html body .hero-image:before,
+html body .hero:before {
     width: 100%;
   }
   html body .hero-context-head h1 {
@@ -2695,7 +2785,9 @@ html body {
   html body {
     /*hero image*/
   }
-  html body body, html body html, html body .container {
+  html body body,
+html body html,
+html body .container {
     max-width: 1919px;
     margin: auto;
   }
@@ -2748,7 +2840,12 @@ html body {
     height: auto;
     min-height: 770px;
   }
-  html body .wrapper, html body nav, html body .staking, html body .hero, html body .nav-item, html body .btn_container {
+  html body .wrapper,
+html body nav,
+html body .staking,
+html body .hero,
+html body .nav-item,
+html body .btn_container {
     position: relative;
   }
   html body .hero-image:before {
@@ -2805,7 +2902,8 @@ html body {
     background: linear-gradient(to top, #d7c396 0%, transparent 100%);
     opacity: 0.2;
   }
-  html body .nav-item .nav-link:hover:before, html body .nav-item .active:before {
+  html body .nav-item .nav-link:hover:before,
+html body .nav-item .active:before {
     height: 92px;
   }
   html body .outer-border {
@@ -2821,7 +2919,8 @@ html body {
     padding: 0;
     border-radius: 5px;
   }
-  html body ._qwerty_storage, html body ._qwertystake {
+  html body ._qwerty_storage,
+html body ._qwertystake {
     position: relative;
     background: url("../images/staking/fill.png");
     border: 3px solid #d7c396;
@@ -2888,7 +2987,8 @@ html body {
     border-radius: 6px;
     box-shadow: inset 0 0 6px #057868;
   }
-  html body .btn_wallet, html body .btn_connect {
+  html body .btn_wallet,
+html body .btn_connect {
     border: 3px solid #DDD3BA;
     box-shadow: inset 0 0 6px #b9ac8c;
   }
@@ -2915,17 +3015,22 @@ html body {
     margin-bottom: 4px;
     display: inline-block;
   }
-  html body .top-left, html body .bottom-left, html body .bottom-right, html body .top-right {
+  html body .top-left,
+html body .bottom-left,
+html body .bottom-right,
+html body .top-right {
     background: url("../images/staking/hol-core-border-white.svg");
     height: 32px;
     width: 32px;
     position: absolute;
     border-radius: 5px;
   }
-  html body .top-left, html body .bottom-left {
+  html body .top-left,
+html body .bottom-left {
     left: -3px;
   }
-  html body .bottom-right, html body .top-right {
+  html body .bottom-right,
+html body .top-right {
     right: -3px;
   }
   html body .top-left {
@@ -3001,7 +3106,8 @@ html body {
     top: -28px;
     letter-spacing: 3px;
   }
-  html body .btn_connect, html body .btn_wallet {
+  html body .btn_connect,
+html body .btn_wallet {
     background-position: center;
     margin-bottom: 0;
     color: #3c2302;
@@ -3009,7 +3115,11 @@ html body {
   html body .hol-read-more {
     display: none;
   }
-  html body .hero-context-head h1, html body .hero-context-head p, html body .hero-context-body p, html body .divider, html body .stake_container {
+  html body .hero-context-head h1,
+html body .hero-context-head p,
+html body .hero-context-body p,
+html body .divider,
+html body .stake_container {
     transition: opacity var(--delay) ease, transform var(--delay) ease;
   }
   html body .divider {
@@ -3032,7 +3142,14 @@ html body {
   html body .btn-stake:hover {
     box-shadow: 0px 0px 10px #888888;
   }
-  html body span[class=stake_value], html body .stake_value, html body .staking input, html body ._qwerty_storage, html body .nav-item .nav-link:before, html body .hero-image, html body .hero-image:before, html body .hero:before {
+  html body span[class=stake_value],
+html body .stake_value,
+html body .staking input,
+html body ._qwerty_storage,
+html body .nav-item .nav-link:before,
+html body .hero-image,
+html body .hero-image:before,
+html body .hero:before {
     width: 100%;
   }
   html body .hero-context-head h1 {
@@ -3050,7 +3167,9 @@ html body {
   html body {
     /*hero image*/
   }
-  html body body, html body html, html body .container {
+  html body body,
+html body html,
+html body .container {
     max-width: 1920px;
     margin: auto;
   }
@@ -3104,7 +3223,12 @@ html body {
     height: auto;
     min-height: 825.219px;
   }
-  html body .wrapper, html body nav, html body .staking, html body .hero, html body .nav-item, html body .btn_container {
+  html body .wrapper,
+html body nav,
+html body .staking,
+html body .hero,
+html body .nav-item,
+html body .btn_container {
     position: relative;
   }
   html body .hero-image:before {
@@ -3159,7 +3283,8 @@ html body {
     background: linear-gradient(to top, #d7c396 0%, transparent 100%);
     opacity: 0.2;
   }
-  html body .nav-item .nav-link:hover:before, html body .nav-item .active:before {
+  html body .nav-item .nav-link:hover:before,
+html body .nav-item .active:before {
     height: 92px;
   }
   html body .outer-border {
@@ -3175,7 +3300,8 @@ html body {
     padding: 0;
     border-radius: 5px;
   }
-  html body ._qwerty_storage, html body ._qwertystake {
+  html body ._qwerty_storage,
+html body ._qwertystake {
     position: relative;
     background: url("../images/staking/fill.png");
     border: 3px solid #d7c396;
@@ -3244,7 +3370,8 @@ html body {
     border-radius: 6px;
     box-shadow: inset 0 0 6px #057868;
   }
-  html body .btn_wallet, html body .btn_connect {
+  html body .btn_wallet,
+html body .btn_connect {
     border: 3px solid #DDD3BA;
     box-shadow: inset 0 0 6px #b9ac8c;
   }
@@ -3271,17 +3398,22 @@ html body {
     margin-bottom: 4px;
     display: inline-block;
   }
-  html body .top-left, html body .bottom-left, html body .bottom-right, html body .top-right {
+  html body .top-left,
+html body .bottom-left,
+html body .bottom-right,
+html body .top-right {
     background: url("../images/staking/hol-core-border-white.svg");
     height: 32px;
     width: 32px;
     position: absolute;
     border-radius: 5px;
   }
-  html body .top-left, html body .bottom-left {
+  html body .top-left,
+html body .bottom-left {
     left: -3px;
   }
-  html body .bottom-right, html body .top-right {
+  html body .bottom-right,
+html body .top-right {
     right: -3px;
   }
   html body .top-left {
@@ -3357,7 +3489,8 @@ html body {
     top: -28px;
     letter-spacing: 3px;
   }
-  html body .btn_connect, html body .btn_wallet {
+  html body .btn_connect,
+html body .btn_wallet {
     background-position: center;
     margin-bottom: 0;
     color: #3c2302;
@@ -3365,7 +3498,11 @@ html body {
   html body .hol-read-more {
     display: none;
   }
-  html body .hero-context-head h1, html body .hero-context-head p, html body .hero-context-body p, html body .divider, html body .stake_container {
+  html body .hero-context-head h1,
+html body .hero-context-head p,
+html body .hero-context-body p,
+html body .divider,
+html body .stake_container {
     transition: opacity var(--delay) ease, transform var(--delay) ease;
   }
   html body .divider {
@@ -3388,36 +3525,130 @@ html body {
   html body .btn-stake:hover {
     box-shadow: 0px 0px 10px #888888;
   }
-  html body span[class=stake_value], html body .stake_value, html body .staking input, html body ._qwerty_storage, html body .nav-item .nav-link:before, html body .hero-image, html body .hero-image:before, html body .hero:before {
+  html body span[class=stake_value],
+html body .stake_value,
+html body .staking input,
+html body ._qwerty_storage,
+html body .nav-item .nav-link:before,
+html body .hero-image,
+html body .hero-image:before,
+html body .hero:before {
     width: 100%;
   }
 }
-html body body, html body html {
+@media (min-width: 0px) {
+  html body ::-moz-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white !important;
+    opacity: 1; /* Firefox */
+  }
+  html body :-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white !important;
+    opacity: 1; /* Firefox */
+  }
+  html body ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white !important;
+    opacity: 1; /* Firefox */
+  }
+  html body :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+  }
+  html body ::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+  }
+  html body ._qwertystake {
+    padding: 30px 40px;
+  }
+  html body ._qwertystake .stakeFormSection .label-text {
+    padding: 0;
+  }
+  html body ._qwertystake .stakeFormSection .input-div div {
+    width: 100% !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 !important;
+    padding: 0 !important;
+    gap: 10px;
+  }
+  html body ._qwertystake .stakeFormSection .input-div div #filled-adornment-password {
+    box-sizing: border-box;
+    padding: 0px !important;
+    flex-grow: 1;
+    font-family: "Montserrat", sans-serif;
+  }
+  html body ._qwertystake .stakeFormSection .input-div div .MuiInputAdornment-root {
+    width: 100px !important;
+    height: 50px !important;
+    max-height: none;
+  }
+  html body ._qwertystake .stakeFormSection .input-div div .MuiInputAdornment-root button {
+    background-color: #ffc543;
+    color: #8c3606;
+    font-weight: bold;
+    font-size: 16px;
+    height: 100% !important;
+    width: 100% !important;
+  }
+  html body ._qwertystake .stakeFormSection .input-div div.css-g9m4e0-MuiInputBase-root-MuiFilledInput-root:after, html body ._qwertystake .stakeFormSection .input-div div.css-19mk8g1-MuiInputBase-root-MuiFilledInput-root:after {
+    border: none !important;
+  }
+  html body ._qwertystake .stakeFormSection .stake-button-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  html body ._qwertystake .stakeFormSection .stake-button-div button {
+    text-transform: capitalize;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+  }
+  html body .stake-right .stake-right-top .outer-border ._qwerty_storage .row {
+    width: 100%;
+  }
+  html body .stake-right .stake-right-top .outer-border ._qwerty_storage .row p {
+    padding: 0 !important;
+  }
+  html body .stake-right .stake-right-top .outer-border ._qwerty_storage .row form .label-text ._qwerty_alternative {
+    margin-left: 10px;
+  }
+  html body .stake-right .stake-right-top .outer-border ._qwerty_storage .row button {
+    margin: 20px 57px;
+    text-transform: capitalize;
+    font-family: "Montserrat", sans-serif;
+  }
+  html body .stake-right .stake-right-bottom .col .outer-border-white .outer-border .row .row .stake_value {
+    color: #dac799;
+  }
+}
+html body body,
+html body html {
   display: block;
   margin: 0;
   padding: 0;
   background: #0E0301;
   overflow-x: hidden;
 }
-html body .anim, html body .hero-context-head:after {
+html body .anim,
+html body .hero-context-head:after {
   transform: none !important;
   opacity: 1 !important;
 }
 html body :root {
-  --theme-color:#11111194;
-  --txt-white:#fff;
-  --txt-black:#372302;
-  --default-font:arial;
-  --ltr-padding:0 200px;
-  --ltr-padding-sm:0 50px;
-  --font-size:20px;
-  --width-full:100%;
+  --theme-color: #11111194;
+  --txt-white: #fff;
+  --txt-black: #372302;
+  --default-font: arial;
+  --ltr-padding: 0 200px;
+  --ltr-padding-sm: 0 50px;
+  --font-size: 20px;
+  --width-full: 100%;
 }
 html body :button {
-  --theme-color:#11111194;
-  --txt-white:#fff;
-  --txt-black:#372302;
-  --default-font:arial;
+  --theme-color: #11111194;
+  --txt-white: #fff;
+  --txt-black: #372302;
+  --default-font: arial;
 }
 html body .swal2-actions {
   width: 100% !important;
@@ -3447,7 +3678,8 @@ html body .swal2-actions button {
   border: none !important;
   background-color: transparent !important;
 }
-html body .swal2-actions button:focus, html body .swal2-popup .swal2-close:focus {
+html body .swal2-actions button:focus,
+html body .swal2-popup .swal2-close:focus {
   outline: none;
   border: none;
   box-shadow: unset !important;
@@ -3471,7 +3703,8 @@ html body .readmore-content {
   color: #e9cba5;
   font-weight: 300;
 }
-html body .swal2-title, html body .readmore-content {
+html body .swal2-title,
+html body .readmore-content {
   margin-bottom: 0 !important;
 }
 html body .pop-divider {
@@ -3495,7 +3728,7 @@ html body .swal2-popup .swal2-close {
   overflow-y: hidden !important;
 }
 
-html body {
+html body * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;

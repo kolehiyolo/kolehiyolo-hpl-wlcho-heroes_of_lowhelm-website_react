@@ -1,0 +1,3040 @@
+html {
+    body {
+        @import "modules/_header.scss";
+        @import "modules/_footer.scss";
+        @import "modules/_pop-up.scss";
+    }
+} 
+
+.disable-scroll {
+    overflow-y: hidden !important;
+    // opacity: 0 !important;
+}
+
+
+html {
+    overflow-x: hidden;
+    
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 0px){
+    html {
+        body {
+            margin: auto;
+            background: url("../images/home/desktop/1-background.png");
+                    background-size: cover;
+                    background-attachment: fixed;
+            main {
+                font-size: inherit;
+                overflow: hidden;
+                .wrapper{
+                    position: relative;
+                    .hero-container{
+                        position: relative;
+                        z-index: 0;
+                        img{
+                            right: 0;
+                            position: absolute;
+                            right: 0px;
+                            top: -60px;
+                            width: 60%;
+                            display: none;
+                        }
+                    }
+                    .hero{
+                        margin: auto;
+                        position: relative;
+                        z-index: 1;
+                        width: 100%;
+                        padding: 200px 0 0 0;
+                        img{
+                            display: flex;
+                            margin: auto;
+                            width: 60%;
+                            height: auto;
+                        }
+                        &-logo{
+                            max-width: 100%;
+                        }
+                        &-hol-play-button{
+                            max-width: 50%;
+                            cursor: pointer;
+                        }
+                    }
+                    .modal-dialog{
+                        padding-top: 74.7656px;
+                        max-width: 100%;
+                    }
+                    .modal-header{
+                        position: relative;
+                        padding-bottom: 56.25%;
+                        height: 0;
+                    }
+                    iframe{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+
+                    .hero-image:before {
+                        content: "";
+                        display: block;
+                        width: 100%;
+                        max-width: 1620px;
+                        height: 100%;
+                        max-height: 2727px;
+                        background-image: url("../images/home/desktop/1-hero.png");
+                        position: absolute;
+                        margin: auto;
+                        right: 0px;
+                        top: 0;
+                        background-repeat: no-repeat;
+                        background-size: 65%;
+                        background-position-x: 100%;
+                        background-position-y: 0%;
+                    }
+                }
+            }
+
+            // pvp section lang to
+            .pvp-section:before{
+                content: "";
+                background: linear-gradient(360deg, #000 0%, transparent 70%);
+                position: absolute;
+                bottom: 0;
+                z-index: 99;
+                height: 200px;
+                width: 100%;
+            }
+            .pvp-section{
+                background: linear-gradient(360deg, black, transparent);
+                background-image: url("../images/home/mobile/6-2-BG-1.png");
+                height: auto;
+                padding: 0px 20px;
+                padding-top: 230px;
+                background-size: cover;
+                display: flex;
+                background-repeat: no-repeat;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                min-height: 800px;
+                
+                .card-container{
+                    width: 100%;
+                    margin-bottom: 20px;
+                    background: transparent;
+                    padding: 3px;
+                    border: 2px solid rgb(255 255 255 / 50%) !important;
+                    .card-wrapper{
+                        width: 100%;
+                        padding: 7px;
+                        border-radius: 3px;
+                        background: linear-gradient(360deg, #b2a06f 0%, #dcc997cc 20%, #000000bf 65%);
+                    
+                        .card{
+                            width: 100%;
+                            background: transparent;
+                            padding: 50px 18px;
+                            color:#fff;
+                            text-align: center;
+                            border: 3px solid #d7c396!important;
+
+                            .top-left, .bottom-left, .bottom-right, .top-right{
+                                background: url("../images/staking/hol-core-border-white.svg");
+                                height: 32px;
+                                width: 32px;
+                                position: absolute;
+                                border-radius: 5px;
+                            }
+                            .top-left, .bottom-left{
+                                left: -3px;
+                            }
+                            .bottom-right, .top-right{
+                                right: -3px;
+                            }
+                            .top-left{
+                                top: -3px;
+                                transform: rotate(90deg);
+                            }
+                            .bottom-left{
+                                bottom: -3px;
+                                transform: rotate(0);
+                            }
+                            .bottom-right{
+                                bottom: -3px;
+                                transform: rotate(270deg);
+                            }
+                            .top-right{
+                                top: -3px;
+                                transform: rotate(180deg);
+                            }
+                            .pvp-divider{
+                                position: relative;
+                                &:before{
+                                    content: "";
+                                    background-image: url("../images/home/desktop/6-separator.png");
+                                    padding: 10px 0;
+                                    width: 85%;
+                                    background-size: contain;
+                                    background-position: center;
+                                    display: inline-block;
+                                    margin-bottom: 15px;
+                                    background-repeat: no-repeat;
+                                }
+                            }
+                            h5{
+                                font-size: 36px;
+                                font-weight: 700;
+                                font-family: neilvard-one;
+                            }
+                        }
+                    }
+                }
+            }
+
+            // guild section lang to
+            .guild-section{
+                background: url("../images/home/mobile/6-3-no-context.png");
+                height: auto;
+                padding: 26px 20px;
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+                position: relative;
+                z-index: 2;
+                .card-container:first-child{
+                    margin-bottom: 20px;
+                }
+                .guild-hero{
+                    display: none;
+                    img{
+                        position: absolute;
+                        left: 0;
+                        width: 100%;
+                    }
+                }
+                .card-container{
+                    width: 100%;
+                    background: transparent;
+                    padding: 3px;
+                    border: 2px solid rgb(255 255 255 / 50%) !important;
+                    .card-wrapper{
+                        width: 100%;
+                        padding: 7px;
+                        border-radius: 3px;
+                        background: linear-gradient(360deg, #b2a06f 0%, #dcc997cc 20%, #000000bf 65%);
+                    
+                        .card{
+                            width: 100%;
+                            background: transparent;
+                            padding: 30px 18px;
+                            color:#fff;
+                            text-align: center;
+                            border: 3px solid #d7c396!important;
+
+                            .top-left, .bottom-left, .bottom-right, .top-right{
+                                background: url("../images/staking/hol-core-border-white.svg");
+                                height: 32px;
+                                width: 32px;
+                                position: absolute;
+                                border-radius: 5px;
+                            }
+                            .top-left, .bottom-left{
+                                left: -3px;
+                            }
+                            .bottom-right, .top-right{
+                                right: -3px;
+                            }
+                            .top-left{
+                                top: -3px;
+                                transform: rotate(90deg);
+                            }
+                            .bottom-left{
+                                bottom: -3px;
+                                transform: rotate(0);
+                            }
+                            .bottom-right{
+                                bottom: -3px;
+                                transform: rotate(270deg);
+                            }
+                            .top-right{
+                                top: -3px;
+                                transform: rotate(180deg);
+                            }
+                            .pvp-divider{
+                                position: relative;
+                                &:before{
+                                    content: "";
+                                    background-image: url("../images/home/desktop/6-separator.png");
+                                    padding: 10px 0;
+                                    width: 85%;
+                                    background-size: contain;
+                                    background-position: center;
+                                    display: inline-block;
+                                    margin-bottom: 15px;
+                                    background-repeat: no-repeat;
+                                }
+                            }
+                            h5{
+                                font-size: 30px;
+                                font-weight: 700;
+                            }
+                            p{
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+             // loan-sytem lang to
+             .loan-sytem-section{
+                position: relative;
+                z-index: 1;
+                min-height: 220px;
+                .loan-container{
+                    .col-4{
+                        width: 70%;
+                        text-align: center;
+                    }
+                    background: url("../images/home/desktop/4-background.png");
+                    height: auto;
+                    padding: 200px 0;
+                    padding-right: 0;
+                    background-size: cover;
+                    background-position: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    min-height: 500px;
+                    position: absolute;
+                    top: -132px;
+                    width: 100%;
+                    h5{
+                        font-size: 39px;
+                        font-weight: 700;
+                        color: #593f26;
+                        font-family: neilvard-one;
+                    }
+                }
+            }
+
+
+
+            // expedition lang to
+            .expedition-section{
+                background: #0E0301;
+                background-image: url("../images/home/mobile/6-5-bg-2.png");
+                height: auto;
+                padding: 200px 0;
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                color: #fff;
+                .row{
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .col-4{
+                        width: 100%;
+                        p{
+                            text-align: center;
+                        }
+                    }
+                }
+                h5{
+                    font-size: 50px;
+                    font-weight: 700;
+                    color: #fff;
+                    font-family: neilvard-one;
+                }
+                .pvp-divider{
+                    position: relative;
+                    &:before{
+                        content: "";
+                        background-image: url("../images/home/desktop/6-separator.png");
+                        padding: 10px 0;
+                        width: 85%;
+                        background-size: contain;
+                        background-position: center;
+                        display: inline-block;
+                        margin-bottom: 15px;
+                        background-repeat: no-repeat;
+                    }
+                }
+                
+                & .active-image img{
+                    width: 80%;
+                    margin: 0 0 47px 0; 
+                }
+                & .ative-text h5{
+                    font-size: 20px;
+                    font-weight: 700;
+                    text-align: left;
+                }
+                & .ative-text p{
+                    text-align: left;
+                }
+                & .ative-text {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                }
+                & .active-icon{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: row;
+                    padding: 30px 0;
+                }
+                & .active-icon img{
+                    width: 18%;
+                    margin-bottom: 20px;
+                    padding: 0 10px;
+                } 
+                & .active-icon img:nth-child(2),& .active-icon img:nth-child(3){
+                    margin-bottom: -60px;
+                }
+            }
+
+
+            // PURCHASES section lang to
+            .purchase-section{
+                background: linear-gradient(360deg, black, transparent);
+                background: #0E0301;
+                background-image: url("../images/home/desktop/6-background.png");
+                height: auto;
+                padding: 10px 0px 80px 0px;
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                img{
+                    position: absolute;
+                    z-index: 0;
+                    top: -4px;
+                    width: 44%;
+                    display: none;
+                }
+                img:first-child{
+                    left: -50px !important;
+                    // max-width: 37%;
+                }
+                img:nth-child(2){
+                    right: -100px;
+                    top: 47px;
+                    width: 74% !important;
+                }
+                .card-container{
+                    z-index: 2;
+                    width: 90%;
+                    margin-bottom: 20px;
+                    background: transparent;
+                    padding: 3px;
+                    border: 2px solid rgb(255 255 255 / 50%) !important;
+                    .card-wrapper{
+                        width: 100%;
+                        padding: 7px;
+                        border-radius: 3px;
+                        background: linear-gradient(360deg, #b2a06f 0%, #dcc997cc 20%, #000000bf 65%);
+                    
+                        .card{
+                            width: 100%;
+                            background: transparent;
+                            padding: 20px 20px;
+                            color:#fff;
+                            text-align: center;
+                            border: 3px solid #d7c396!important;
+
+                            .top-left, .bottom-left, .bottom-right, .top-right{
+                                background: url("../images/staking/hol-core-border-white.svg");
+                                height: 32px;
+                                width: 32px;
+                                position: absolute;
+                                border-radius: 5px;
+                            }
+                            .top-left, .bottom-left{
+                                left: -3px;
+                            }
+                            .bottom-right, .top-right{
+                                right: -3px;
+                            }
+                            .top-left{
+                                top: -3px;
+                                transform: rotate(90deg);
+                            }
+                            .bottom-left{
+                                bottom: -3px;
+                                transform: rotate(0);
+                            }
+                            .bottom-right{
+                                bottom: -3px;
+                                transform: rotate(270deg);
+                            }
+                            .top-right{
+                                top: -3px;
+                                transform: rotate(180deg);
+                            }
+                            .pvp-divider{
+                                position: relative;
+                                &:before{
+                                    content: "";
+                                    background-image: url("../images/home/desktop/6-separator.png");
+                                    padding: 10px 0;
+                                    width: 85%;
+                                    background-size: contain;
+                                    background-position: center;
+                                    display: inline-block;
+                                    margin-bottom: 15px;
+                                    background-repeat: no-repeat;
+                                }
+                            }
+                            h5{
+                                font-size: 31px;
+                                font-weight: 700;
+                                font-family: neilvard-one;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+        }
+    }
+}
+
+@media screen and (min-width: 576px){
+    html {
+        body {
+            margin: auto;
+            background: url("../images/home/desktop/1-background.png");
+                    background-size: cover;
+                    background-attachment: fixed;
+            main {
+                font-size: inherit;
+                overflow: hidden;
+                .wrapper{
+                    position: relative;
+                    .hero-container{
+                        position: relative;
+                        z-index: 0;
+                        img{
+                            right: 0;
+                            position: absolute;
+                            right: 0px;
+                            top: -60px;
+                            width: 60%;
+                            display: none;
+                        }
+                    }
+                    .hero{
+                        margin: auto;
+                        position: relative;
+                        z-index: 1;
+                        width: 100%;
+                        padding: 200px 0 0 0;
+                        img{
+                            display: flex;
+                            margin: auto;
+                            width: 60%;
+                            height: auto;
+                        }
+                        &-logo{
+                            max-width: 100%;
+                        }
+                        &-hol-play-button{
+                            max-width: 50%;
+                            cursor: pointer;
+                        }
+                    }
+                    .modal-dialog{
+                        padding-top: 74.7656px;
+                        max-width: 70%;
+                    }
+                    .modal-header{
+                        position: relative;
+                        padding-bottom: 56.25%;
+                        height: 0;
+                    }
+                    iframe{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+
+                    .hero-image:before {
+                        content: "";
+                        display: block;
+                        width: 100%;
+                        max-width: 1620px;
+                        height: 100%;
+                        max-height: 2727px;
+                        background-image: url("../images/home/desktop/1-hero.png");
+                        position: absolute;
+                        margin: auto;
+                        right: 0px;
+                        top: 0;
+                        background-repeat: no-repeat;
+                        background-size: 65%;
+                        background-position-x: 100%;
+                        background-position-y: 0%;
+                    }
+                }
+            }
+
+            // pvp section lang to
+            .pvp-section:before{
+                content: "";
+                background: linear-gradient(360deg, #000 0%, transparent 70%);
+                position: absolute;
+                bottom: 0;
+                z-index: 99;
+                height: 200px;
+                width: 100%;
+            }
+            .pvp-section{
+                background: linear-gradient(360deg, black, transparent);
+                background-image: url("../images/home/mobile/6-2-BG-1.png");
+                height: auto;
+                padding: 0px 50px;
+                padding-top: 250px;
+                background-size: cover;
+                display: flex;
+                background-repeat: no-repeat;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                min-height: 1000px;
+                
+                .card-container{
+                    width: 100%;
+                    margin-bottom: 20px;
+                    background: transparent;
+                    padding: 3px;
+                    border: 2px solid rgb(255 255 255 / 50%) !important;
+                    .card-wrapper{
+                        width: 100%;
+                        padding: 7px;
+                        border-radius: 3px;
+                        background: linear-gradient(360deg, #b2a06f 0%, #dcc997cc 20%, #000000bf 65%);
+                    
+                        .card{
+                            width: 100%;
+                            background: transparent;
+                            padding: 50px 50px;
+                            color:#fff;
+                            text-align: center;
+                            border: 3px solid #d7c396!important;
+
+                            .top-left, .bottom-left, .bottom-right, .top-right{
+                                background: url("../images/staking/hol-core-border-white.svg");
+                                height: 32px;
+                                width: 32px;
+                                position: absolute;
+                                border-radius: 5px;
+                            }
+                            .top-left, .bottom-left{
+                                left: -3px;
+                            }
+                            .bottom-right, .top-right{
+                                right: -3px;
+                            }
+                            .top-left{
+                                top: -3px;
+                                transform: rotate(90deg);
+                            }
+                            .bottom-left{
+                                bottom: -3px;
+                                transform: rotate(0);
+                            }
+                            .bottom-right{
+                                bottom: -3px;
+                                transform: rotate(270deg);
+                            }
+                            .top-right{
+                                top: -3px;
+                                transform: rotate(180deg);
+                            }
+                            .pvp-divider{
+                                position: relative;
+                                &:before{
+                                    content: "";
+                                    background-image: url("../images/home/desktop/6-separator.png");
+                                    padding: 10px 0;
+                                    width: 85%;
+                                    background-size: contain;
+                                    background-position: center;
+                                    display: inline-block;
+                                    margin-bottom: 15px;
+                                    background-repeat: no-repeat;
+                                }
+                            }
+                            h5{
+                                font-size: 36px;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+
+            // guild section lang to
+            .guild-section{
+                background: url("../images/home/mobile/6-3-no-context.png");
+                height: auto;
+                padding: 260px 50px;
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+                position: relative;
+                z-index: 2;
+                .card-container:first-child{
+                    margin-bottom: 20px;
+                }
+                .guild-hero{
+                    display: none;
+                    img{
+                        position: absolute;
+                        left: 0;
+                        width: 100%;
+                    }
+                }
+                .card-container{
+                    width: 100%;
+                    background: transparent;
+                    padding: 3px;
+                    border: 2px solid rgb(255 255 255 / 50%) !important;
+                    .card-wrapper{
+                        width: 100%;
+                        padding: 7px;
+                        border-radius: 3px;
+                        background: linear-gradient(360deg, #b2a06f 0%, #dcc997cc 20%, #000000bf 65%);
+                    
+                        .card{
+                            width: 100%;
+                            background: transparent;
+                            padding: 30px 30px;
+                            color:#fff;
+                            text-align: center;
+                            border: 3px solid #d7c396!important;
+
+                            .top-left, .bottom-left, .bottom-right, .top-right{
+                                background: url("../images/staking/hol-core-border-white.svg");
+                                height: 32px;
+                                width: 32px;
+                                position: absolute;
+                                border-radius: 5px;
+                            }
+                            .top-left, .bottom-left{
+                                left: -3px;
+                            }
+                            .bottom-right, .top-right{
+                                right: -3px;
+                            }
+                            .top-left{
+                                top: -3px;
+                                transform: rotate(90deg);
+                            }
+                            .bottom-left{
+                                bottom: -3px;
+                                transform: rotate(0);
+                            }
+                            .bottom-right{
+                                bottom: -3px;
+                                transform: rotate(270deg);
+                            }
+                            .top-right{
+                                top: -3px;
+                                transform: rotate(180deg);
+                            }
+                            .pvp-divider{
+                                position: relative;
+                                &:before{
+                                    content: "";
+                                    background-image: url("../images/home/desktop/6-separator.png");
+                                    padding: 10px 0;
+                                    width: 85%;
+                                    background-size: contain;
+                                    background-position: center;
+                                    display: inline-block;
+                                    margin-bottom: 15px;
+                                    background-repeat: no-repeat;
+                                }
+                            }
+                            h5{
+                                font-size: 30px;
+                                font-weight: 700;
+                            }
+                            p{
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+             // loan-sytem lang to
+             .loan-sytem-section{
+                position: relative;
+                z-index: 1;
+                min-height: 220px;
+                .loan-container{
+                    .col-4{
+                        width: 70%;
+                        text-align: center;
+                    }
+                    background: url("../images/home/desktop/4-background.png");
+                    height: auto;
+                    padding: 200px 0;
+                    padding-right: 0;
+                    background-size: cover;
+                    background-position: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    min-height: 500px;
+                    position: absolute;
+                    top: -132px;
+                    width: 100%;
+                    h5{
+                        font-size: 39px;
+                        font-weight: 700;
+                        color: #593f26;
+                    }
+                }
+            }
+
+
+
+            // expedition lang to
+            .expedition-section{
+                background: #0E0301;
+                background-image: url("../images/home/mobile/6-5-bg-2.png");
+                height: auto;
+                padding: 200px 0;
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                color: #fff;
+                .row{
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .col-4{
+                        width: 100%;
+                        p{
+                            text-align: center;
+                        }
+                    }
+                }
+                h5{
+                    font-size: 50px;
+                    font-weight: 700;
+                    color: #fff;
+                }
+                .pvp-divider{
+                    position: relative;
+                    &:before{
+                        content: "";
+                        background-image: url("../images/home/desktop/6-separator.png");
+                        padding: 10px 0;
+                        width: 85%;
+                        background-size: contain;
+                        background-position: center;
+                        display: inline-block;
+                        margin-bottom: 15px;
+                        background-repeat: no-repeat;
+                    }
+                }
+                
+                & .active-image img{
+                    width: 80%;
+                    margin: 0 0 47px 0; 
+                }
+                & .ative-text h5{
+                    font-size: 20px;
+                    font-weight: 700;
+                    text-align: left;
+                }
+                & .ative-text p{
+                    text-align: left;
+                }
+                & .ative-text {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                }
+                & .active-icon{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: row;
+                    padding: 30px 0;
+                }
+                & .active-icon img{
+                    width: 18%;
+                    margin-bottom: 20px;
+                    padding: 0 10px;
+                } 
+                & .active-icon img:nth-child(2),& .active-icon img:nth-child(3){
+                    margin-bottom: -60px;
+                }
+            }
+
+
+            // PURCHASES section lang to
+            .purchase-section{
+                background: linear-gradient(360deg, black, transparent);
+                background: #0E0301;
+                background-image: url("../images/home/desktop/6-background.png");
+                height: auto;
+                padding: 10px 0px 80px 0px;
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                img{
+                    position: absolute;
+                    z-index: 0;
+                    top: -4px;
+                    width: 44%;
+                    display: block;
+                }
+                img:first-child{
+                    left: -50px !important;
+                    // max-width: 37%;
+                }
+                img:nth-child(2){
+                    right: -100px;
+                    top: 47px;
+                    width: 74% !important;
+                }
+                .card-container{
+                    z-index: 2;
+                    width: 70%;
+                    margin-bottom: 20px;
+                    background: transparent;
+                    padding: 3px;
+                    border: 2px solid rgb(255 255 255 / 50%) !important;
+                    .card-wrapper{
+                        width: 100%;
+                        padding: 7px;
+                        border-radius: 3px;
+                        background: linear-gradient(360deg, #b2a06f 0%, #dcc997cc 20%, #000000bf 65%);
+                    
+                        .card{
+                            width: 100%;
+                            background: transparent;
+                            padding: 20px 20px;
+                            color:#fff;
+                            text-align: center;
+                            border: 3px solid #d7c396!important;
+
+                            .top-left, .bottom-left, .bottom-right, .top-right{
+                                background: url("../images/staking/hol-core-border-white.svg");
+                                height: 32px;
+                                width: 32px;
+                                position: absolute;
+                                border-radius: 5px;
+                            }
+                            .top-left, .bottom-left{
+                                left: -3px;
+                            }
+                            .bottom-right, .top-right{
+                                right: -3px;
+                            }
+                            .top-left{
+                                top: -3px;
+                                transform: rotate(90deg);
+                            }
+                            .bottom-left{
+                                bottom: -3px;
+                                transform: rotate(0);
+                            }
+                            .bottom-right{
+                                bottom: -3px;
+                                transform: rotate(270deg);
+                            }
+                            .top-right{
+                                top: -3px;
+                                transform: rotate(180deg);
+                            }
+                            .pvp-divider{
+                                position: relative;
+                                &:before{
+                                    content: "";
+                                    background-image: url("../images/home/desktop/6-separator.png");
+                                    padding: 10px 0;
+                                    width: 85%;
+                                    background-size: contain;
+                                    background-position: center;
+                                    display: inline-block;
+                                    margin-bottom: 15px;
+                                    background-repeat: no-repeat;
+                                }
+                            }
+                            h5{
+                                font-size: 31px;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    html {
+        body {
+            margin: auto;
+            background: url("../images/home/desktop/1-background.png");
+                    background-size: cover;
+                    background-attachment: fixed;
+            main {
+                font-size: inherit;
+                overflow: hidden;
+                .wrapper{
+                    position: relative;
+                    .hero-container{
+                        position: relative;
+                        z-index: 0;
+                        img{
+                            right: 0;
+                            position: absolute;
+                            right: 0px;
+                            top: -60px;
+                            width: 60%;
+                            display: none;
+                        }
+                    }
+                    .hero{
+                        margin: auto;
+                        position: relative;
+                        z-index: 1;
+                        width: 100%;
+                        padding: 200px 0 0 0;
+                        img{
+                            display: flex;
+                            margin: auto;
+                            width: 60%;
+                            height: auto;
+                        }
+                        &-logo{
+                            max-width: 100%;
+                        }
+                        &-hol-play-button{
+                            max-width: 50%;
+                            cursor: pointer;
+                        }
+                    }
+                    .modal-dialog{
+                        padding-top: 74.7656px;
+                        max-width: 70%;
+                    }
+                    .modal-header{
+                        position: relative;
+                        padding-bottom: 56.25%;
+                        height: 0;
+                    }
+                    iframe{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+
+                    .hero-image:before {
+                        content: "";
+                        display: block;
+                        width: 100%;
+                        max-width: 1620px;
+                        height: 100%;
+                        max-height: 2727px;
+                        background-image: url("../images/home/desktop/1-hero.png");
+                        position: absolute;
+                        margin: auto;
+                        right: 0px;
+                        top: 0;
+                        background-repeat: no-repeat;
+                        background-size: 65%;
+                        background-position-x: 100%;
+                        background-position-y: 0%;
+                    }
+                }
+            }
+
+            // pvp section lang to
+            .pvp-section:before{
+                content: "";
+                background: linear-gradient(360deg, #000 0%, transparent 70%);
+                position: absolute;
+                bottom: -1px;
+                z-index: 99;
+                height: 200px;
+                width: 100%;
+            }
+            .pvp-section{
+                background: linear-gradient(360deg, black, transparent);
+                background-image: url("../images/home/mobile/6-2-BG-1.png");
+                height: auto;
+                padding: 0px 150px;
+                padding-top: 330px;
+                background-size: cover;
+                display: flex;
+                background-repeat: no-repeat;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                min-height: 1000px;
+                
+                .card-container{
+                    width: 100%;
+                    margin-bottom: 20px;
+                    background: transparent;
+                    padding: 3px;
+                    border: 2px solid rgb(255 255 255 / 50%) !important;
+                    .card-wrapper{
+                        width: 100%;
+                        padding: 7px;
+                        border-radius: 3px;
+                        background: linear-gradient(360deg, #b2a06f 0%, #dcc997cc 20%, #000000bf 65%);
+                    
+                        .card{
+                            width: 100%;
+                            background: transparent;
+                            padding: 50px 50px;
+                            color:#fff;
+                            text-align: center;
+                            border: 3px solid #d7c396!important;
+
+                            .top-left, .bottom-left, .bottom-right, .top-right{
+                                background: url("../images/staking/hol-core-border-white.svg");
+                                height: 32px;
+                                width: 32px;
+                                position: absolute;
+                                border-radius: 5px;
+                            }
+                            .top-left, .bottom-left{
+                                left: -3px;
+                            }
+                            .bottom-right, .top-right{
+                                right: -3px;
+                            }
+                            .top-left{
+                                top: -3px;
+                                transform: rotate(90deg);
+                            }
+                            .bottom-left{
+                                bottom: -3px;
+                                transform: rotate(0);
+                            }
+                            .bottom-right{
+                                bottom: -3px;
+                                transform: rotate(270deg);
+                            }
+                            .top-right{
+                                top: -3px;
+                                transform: rotate(180deg);
+                            }
+                            .pvp-divider{
+                                position: relative;
+                                &:before{
+                                    content: "";
+                                    background-image: url("../images/home/desktop/6-separator.png");
+                                    padding: 10px 0;
+                                    width: 85%;
+                                    background-size: contain;
+                                    background-position: center;
+                                    display: inline-block;
+                                    margin-bottom: 15px;
+                                    background-repeat: no-repeat;
+                                }
+                            }
+                            h5{
+                                font-size: 50px;
+                                font-weight: 700;
+                            }
+                            p{
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            // guild section lang to
+            .guild-section{
+                background: url("../images/home/mobile/6-3-no-context.png");
+                height: auto;
+                padding: 256px 150px;
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+                position: relative;
+                z-index: 2;
+                .card-container:first-child{
+                    margin-bottom: 20px;
+                }
+                .guild-hero{
+                    display: none;
+                    img{
+                        position: absolute;
+                        left: 0;
+                        width: 100%;
+                    }
+                }
+                .card-container{
+                    width: 100%;
+                    background: transparent;
+                    padding: 3px;
+                    border: 2px solid rgb(255 255 255 / 50%) !important;
+                    .card-wrapper{
+                        width: 100%;
+                        padding: 7px;
+                        border-radius: 3px;
+                        background: linear-gradient(360deg, #b2a06f 0%, #dcc997cc 20%, #000000bf 65%);
+                    
+                        .card{
+                            width: 100%;
+                            background: transparent;
+                            padding: 30px 30px;
+                            color:#fff;
+                            text-align: center;
+                            border: 3px solid #d7c396!important;
+
+                            .top-left, .bottom-left, .bottom-right, .top-right{
+                                background: url("../images/staking/hol-core-border-white.svg");
+                                height: 32px;
+                                width: 32px;
+                                position: absolute;
+                                border-radius: 5px;
+                            }
+                            .top-left, .bottom-left{
+                                left: -3px;
+                            }
+                            .bottom-right, .top-right{
+                                right: -3px;
+                            }
+                            .top-left{
+                                top: -3px;
+                                transform: rotate(90deg);
+                            }
+                            .bottom-left{
+                                bottom: -3px;
+                                transform: rotate(0);
+                            }
+                            .bottom-right{
+                                bottom: -3px;
+                                transform: rotate(270deg);
+                            }
+                            .top-right{
+                                top: -3px;
+                                transform: rotate(180deg);
+                            }
+                            .pvp-divider{
+                                position: relative;
+                                &:before{
+                                    content: "";
+                                    background-image: url("../images/home/desktop/6-separator.png");
+                                    padding: 10px 0;
+                                    width: 85%;
+                                    background-size: contain;
+                                    background-position: center;
+                                    display: inline-block;
+                                    margin-bottom: 15px;
+                                    background-repeat: no-repeat;
+                                }
+                            }
+                            h5{
+                                font-size: 50px;
+                                font-weight: 700;
+                            }
+                            p{
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+             // loan-sytem lang to
+             .loan-sytem-section{
+                position: relative;
+                z-index: 1;
+                min-height: 220px;
+                .loan-container{
+                    .col-4{
+                        width: 70%;
+                        text-align: center;
+                    }
+                    background: url("../images/home/desktop/4-background.png");
+                    height: auto;
+                    padding: 200px 0;
+                    padding-right: 0;
+                    background-size: cover;
+                    background-position: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    min-height: 500px;
+                    position: absolute;
+                    top: -132px;
+                    width: 100%;
+                    h5{
+                        font-size: 39px;
+                        font-weight: 700;
+                        color: #593f26;
+                    }
+                }
+            }
+
+
+
+            // expedition lang to
+            .expedition-section{
+                background: #0E0301;
+                background-image: url("../images/home/mobile/6-5-bg-2.png");
+                height: auto;
+                padding: 200px 50px;
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                color: #fff;
+                .row{
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .col-4{
+                        width: 100%;
+                        p{
+                            text-align: center;
+                        }
+                    }
+                }
+                h5{
+                    font-size: 50px;
+                    font-weight: 700;
+                    color: #fff;
+                }
+                .pvp-divider{
+                    position: relative;
+                    &:before{
+                        content: "";
+                        background-image: url("../images/home/desktop/6-separator.png");
+                        padding: 10px 0;
+                        width: 85%;
+                        background-size: contain;
+                        background-position: center;
+                        display: inline-block;
+                        margin-bottom: 15px;
+                        background-repeat: no-repeat;
+                    }
+                }
+                
+                & .active-image img{
+                    width: 80%;
+                    margin: 0 0 47px 0; 
+                }
+                & .ative-text h5{
+                    font-size: 20px;
+                    font-weight: 700;
+                    text-align: left;
+                }
+                & .ative-text p{
+                    text-align: left;
+                }
+                & .ative-text {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                }
+                & .active-icon{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: row;
+                    padding: 30px 0;
+                }
+                & .active-icon img{
+                    width: 18%;
+                    margin-bottom: 20px;
+                    padding: 0 10px;
+                } 
+                & .active-icon img:nth-child(2),& .active-icon img:nth-child(3){
+                    margin-bottom: -60px;
+                }
+            }
+
+
+            // PURCHASES section lang to
+            .purchase-section{
+                background: linear-gradient(360deg, black, transparent);
+                background: #0E0301;
+                background-image: url("../images/home/desktop/6-background.png");
+                height: auto;
+                padding: 10px 75px 80px 75px;
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                img{
+                    display: block;
+                    position: absolute;
+                    z-index: 0;
+                    top: -4px;
+                    width: 44%;
+                }
+                img:first-child{
+                    left: -50px !important;
+                    // max-width: 37%;
+                }
+                img:nth-child(2){
+                    right: -100px;
+                    top: 47px;
+                    width: 74% !important;
+                }
+                .card-container{
+                    z-index: 2;
+                    width: 70%;
+                    margin-bottom: 20px;
+                    background: transparent;
+                    padding: 3px;
+                    border: 2px solid rgb(255 255 255 / 50%) !important;
+                    .card-wrapper{
+                        width: 100%;
+                        padding: 7px;
+                        border-radius: 3px;
+                        background: linear-gradient(360deg, #b2a06f 0%, #dcc997cc 20%, #000000bf 65%);
+                    
+                        .card{
+                            width: 100%;
+                            background: transparent;
+                            padding: 20px 20px;
+                            color:#fff;
+                            text-align: center;
+                            border: 3px solid #d7c396!important;
+
+                            .top-left, .bottom-left, .bottom-right, .top-right{
+                                background: url("../images/staking/hol-core-border-white.svg");
+                                height: 32px;
+                                width: 32px;
+                                position: absolute;
+                                border-radius: 5px;
+                            }
+                            .top-left, .bottom-left{
+                                left: -3px;
+                            }
+                            .bottom-right, .top-right{
+                                right: -3px;
+                            }
+                            .top-left{
+                                top: -3px;
+                                transform: rotate(90deg);
+                            }
+                            .bottom-left{
+                                bottom: -3px;
+                                transform: rotate(0);
+                            }
+                            .bottom-right{
+                                bottom: -3px;
+                                transform: rotate(270deg);
+                            }
+                            .top-right{
+                                top: -3px;
+                                transform: rotate(180deg);
+                            }
+                            .pvp-divider{
+                                position: relative;
+                                &:before{
+                                    content: "";
+                                    background-image: url("../images/home/desktop/6-separator.png");
+                                    padding: 10px 0;
+                                    width: 85%;
+                                    background-size: contain;
+                                    background-position: center;
+                                    display: inline-block;
+                                    margin-bottom: 15px;
+                                    background-repeat: no-repeat;
+                                }
+                            }
+                            h5{
+                                font-size: 31px;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+        }
+    }
+}
+
+@media screen and (min-width: 992px){
+    html {
+        body {
+            margin: auto;
+            background: url("../images/home/desktop/1-background.png");
+                    background-size: cover;
+                    background-attachment: fixed;
+            main {
+                font-size: inherit;
+                overflow: hidden;
+                p{
+                    font-size: 20px;
+                }
+                .wrapper{
+                    position: relative;
+                    .hero-container{
+                        position: relative;
+                        z-index: 0;
+                        img{
+                            right: 0;
+                            position: absolute;
+                            right: 0px;
+                            top: -60px;
+                            width: 60%;
+                            display: block;
+                        }
+                    }
+                    .hero{
+                        margin: auto;
+                        position: relative;
+                        z-index: 1;
+                        width: 25%;
+                        padding: 0px 0 0 0;
+                        img{
+                            display: flex;
+                            margin: auto;
+                            width: 100%;
+                            height: auto;
+                        }
+                        &-logo{
+                            max-width: 100%;
+                        }
+                        &-hol-play-button{
+                            max-width: 50%;
+                            cursor: pointer;
+                        }
+                    }
+                    .modal-dialog{
+                        padding-top: 74.7656px;
+                        max-width: 70%;
+                    }
+                    .modal-header{
+                        position: relative;
+                        padding-bottom: 56.25%;
+                        height: 0;
+                    }
+                    iframe{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+
+                    .hero-image:before {
+                        content: "";
+                        display: block;
+                        width: 100%;
+                        max-width: 1620px;
+                        height: 100%;
+                        max-height: 2727px;
+                        background-image: url("../images/home/desktop/1-hero.png");
+                        position: absolute;
+                        margin: auto;
+                        right: 0px;
+                        top: 0;
+                        background-repeat: no-repeat;
+                        background-size: 65%;
+                        background-position-x: 100%;
+                        background-position-y: 0%;
+                    }
+                }
+            }
+
+            // pvp section lang to
+            .pvp-section:before{
+                content: "";
+                background: linear-gradient(360deg, #000 0%, transparent 70%);
+                position: absolute;
+                bottom: -1px;
+                z-index: 99;
+                height: 200px;
+                width: 100%;
+            }
+            .pvp-section{
+                background: linear-gradient(360deg, black, transparent);
+                background-image: url("../images/home/desktop/2-background.png");
+                height: auto;
+                padding: 0px 150px;
+                padding-top: 95px;
+                background-size: cover;
+                display: flex;
+                background-repeat: no-repeat;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                min-height: 1000px;
+                
+                .card-container{
+                    width: 100%;
+                    margin-bottom: 20px;
+                    background: transparent;
+                    padding: 3px;
+                    border: 2px solid rgb(255 255 255 / 50%) !important;
+                    .card-wrapper{
+                        width: 100%;
+                        padding: 7px;
+                        border-radius: 3px;
+                        background: linear-gradient(360deg, #b2a06f 0%, #dcc997cc 20%, #000000bf 65%);
+                    
+                        .card{
+                            width: 100%;
+                            background: transparent;
+                            padding: 50px 50px;
+                            color:#fff;
+                            text-align: center;
+                            border: 3px solid #d7c396!important;
+
+                            .top-left, .bottom-left, .bottom-right, .top-right{
+                                background: url("../images/staking/hol-core-border-white.svg");
+                                height: 32px;
+                                width: 32px;
+                                position: absolute;
+                                border-radius: 5px;
+                            }
+                            .top-left, .bottom-left{
+                                left: -3px;
+                            }
+                            .bottom-right, .top-right{
+                                right: -3px;
+                            }
+                            .top-left{
+                                top: -3px;
+                                transform: rotate(90deg);
+                            }
+                            .bottom-left{
+                                bottom: -3px;
+                                transform: rotate(0);
+                            }
+                            .bottom-right{
+                                bottom: -3px;
+                                transform: rotate(270deg);
+                            }
+                            .top-right{
+                                top: -3px;
+                                transform: rotate(180deg);
+                            }
+                            .pvp-divider{
+                                position: relative;
+                                &:before{
+                                    content: "";
+                                    background-image: url("../images/home/desktop/6-separator.png");
+                                    padding: 10px 0;
+                                    width: 85%;
+                                    background-size: contain;
+                                    background-position: center;
+                                    display: inline-block;
+                                    margin-bottom: 15px;
+                                    background-repeat: no-repeat;
+                                }
+                            }
+                            h5{
+                                font-size: 50px;
+                                font-weight: 700;
+                            }
+                            p{
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            // guild section lang to
+            .guild-section{
+                background: url("../images/home/desktop/hol-hero-3.png");
+                height: auto;
+                padding: 256px 150px;
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+                position: relative;
+                z-index: 2;
+                .card-container:first-child{
+                    margin-bottom: 20px;
+                }
+                .guild-hero{
+                    display: none;
+                    img{
+                        position: absolute;
+                        left: 0;
+                        width: 100%;
+                    }
+                }
+                .card-container{
+                    width: 100%;
+                    background: transparent;
+                    padding: 3px;
+                    border: 2px solid rgb(255 255 255 / 50%) !important;
+                    .card-wrapper{
+                        width: 100%;
+                        padding: 7px;
+                        border-radius: 3px;
+                        background: linear-gradient(360deg, #b2a06f 0%, #dcc997cc 20%, #000000bf 65%);
+                    
+                        .card{
+                            width: 100%;
+                            background: transparent;
+                            padding: 30px 30px;
+                            color:#fff;
+                            text-align: center;
+                            border: 3px solid #d7c396!important;
+
+                            .top-left, .bottom-left, .bottom-right, .top-right{
+                                background: url("../images/staking/hol-core-border-white.svg");
+                                height: 32px;
+                                width: 32px;
+                                position: absolute;
+                                border-radius: 5px;
+                            }
+                            .top-left, .bottom-left{
+                                left: -3px;
+                            }
+                            .bottom-right, .top-right{
+                                right: -3px;
+                            }
+                            .top-left{
+                                top: -3px;
+                                transform: rotate(90deg);
+                            }
+                            .bottom-left{
+                                bottom: -3px;
+                                transform: rotate(0);
+                            }
+                            .bottom-right{
+                                bottom: -3px;
+                                transform: rotate(270deg);
+                            }
+                            .top-right{
+                                top: -3px;
+                                transform: rotate(180deg);
+                            }
+                            .pvp-divider{
+                                position: relative;
+                                &:before{
+                                    content: "";
+                                    background-image: url("../images/home/desktop/6-separator.png");
+                                    padding: 10px 0;
+                                    width: 85%;
+                                    background-size: contain;
+                                    background-position: center;
+                                    display: inline-block;
+                                    margin-bottom: 15px;
+                                    background-repeat: no-repeat;
+                                }
+                            }
+                            h5{
+                                font-size: 50px;
+                                font-weight: 700;
+                            }
+                            p{
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+             // loan-sytem lang to
+             .loan-sytem-section{
+                position: relative;
+                z-index: 1;
+                min-height: 220px;
+                .loan-container{
+                    .col-4{
+                        width: 70%;
+                        text-align: center;
+                    }
+                    background: url("../images/home/desktop/4-background.png");
+                    height: auto;
+                    padding: 275px 0;
+                    padding-right: 0;
+                    background-size: cover;
+                    background-position: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    min-height: 500px;
+                    position: absolute;
+                    top: -277px;
+                    width: 100%;
+                    h5{
+                        font-size: 39px;
+                        font-weight: 700;
+                        color: #593f26;
+                    }
+                }
+            }
+
+
+
+            // expedition lang to
+            .expedition-section{
+                background: #0E0301;
+                background-image: url("../images/home/mobile/6-5-bg-2.png");
+                height: auto;
+                padding: 291px 50px;
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                color: #fff;
+                .row{
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .col-4{
+                        width: 100%;
+                        p{
+                            text-align: center;
+                        }
+                    }
+                }
+                h5{
+                    font-size: 50px;
+                    font-weight: 700;
+                    color: #fff;
+                }
+                .pvp-divider{
+                    position: relative;
+                    &:before{
+                        content: "";
+                        background-image: url("../images/home/desktop/6-separator.png");
+                        padding: 10px 0;
+                        width: 85%;
+                        background-size: contain;
+                        background-position: center;
+                        display: inline-block;
+                        margin-bottom: 15px;
+                        background-repeat: no-repeat;
+                    }
+                }
+                
+                & .active-image img{
+                    width: 80%;
+                    margin: 0 0 47px 0; 
+                }
+                & .ative-text h5{
+                    font-size: 20px;
+                    font-weight: 700;
+                    text-align: left;
+                }
+                & .ative-text p{
+                    text-align: left;
+                }
+                & .ative-text {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                }
+                & .active-icon{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: row;
+                    padding: 30px 0;
+                }
+                & .active-icon img{
+                    width: 18%;
+                    margin-bottom: 20px;
+                    padding: 0 10px;
+                } 
+                & .active-icon img:nth-child(2),& .active-icon img:nth-child(3){
+                    margin-bottom: -60px;
+                }
+            }
+
+
+            // PURCHASES section lang to
+            .purchase-section{
+                background: linear-gradient(360deg, black, transparent);
+                background: #0E0301;
+                background-image: url("../images/home/desktop/6-background.png");
+                height: auto;
+                padding: 200px 75px 200px 75px;
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                img{
+                    position: absolute;
+                    z-index: 0;
+                    top: -4px;
+                    width: 44%;
+                    display: block;
+                }
+                img:first-child{
+                    left: -50px !important;
+                    // max-width: 37%;
+                }
+                img:nth-child(2){
+                    right: -100px;
+                    top: 47px;
+                    width: 74% !important;
+                }
+                .card-container{
+                    z-index: 2;
+                    width: 70%;
+                    margin-bottom: 20px;
+                    background: transparent;
+                    padding: 3px;
+                    border: 2px solid rgb(255 255 255 / 50%) !important;
+                    .card-wrapper{
+                        width: 100%;
+                        padding: 7px;
+                        border-radius: 3px;
+                        background: linear-gradient(360deg, #b2a06f 0%, #dcc997cc 20%, #000000bf 65%);
+                    
+                        .card{
+                            width: 100%;
+                            background: transparent;
+                            padding: 20px 20px;
+                            color:#fff;
+                            text-align: center;
+                            border: 3px solid #d7c396!important;
+
+                            .top-left, .bottom-left, .bottom-right, .top-right{
+                                background: url("../images/staking/hol-core-border-white.svg");
+                                height: 32px;
+                                width: 32px;
+                                position: absolute;
+                                border-radius: 5px;
+                            }
+                            .top-left, .bottom-left{
+                                left: -3px;
+                            }
+                            .bottom-right, .top-right{
+                                right: -3px;
+                            }
+                            .top-left{
+                                top: -3px;
+                                transform: rotate(90deg);
+                            }
+                            .bottom-left{
+                                bottom: -3px;
+                                transform: rotate(0);
+                            }
+                            .bottom-right{
+                                bottom: -3px;
+                                transform: rotate(270deg);
+                            }
+                            .top-right{
+                                top: -3px;
+                                transform: rotate(180deg);
+                            }
+                            .pvp-divider{
+                                position: relative;
+                                &:before{
+                                    content: "";
+                                    background-image: url("../images/home/desktop/6-separator.png");
+                                    padding: 10px 0;
+                                    width: 85%;
+                                    background-size: contain;
+                                    background-position: center;
+                                    display: inline-block;
+                                    margin-bottom: 15px;
+                                    background-repeat: no-repeat;
+                                }
+                            }
+                            h5{
+                                font-size: 31px;
+                                font-weight: 700;
+                            }
+                            p{
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+        }
+    }
+}
+
+
+@media screen and (min-width: 1200px){
+    html {
+        body {
+            margin: auto;
+            background: url("../images/home/desktop/1-background.png");
+                    background-size: cover;
+                    background-attachment: fixed;
+            main {
+                font-size: inherit;
+                overflow: hidden;
+                p{
+                    font-size: 20px;
+                }
+                .wrapper{
+                    position: relative;
+                    .hero-container{
+                        position: relative;
+                        z-index: 0;
+                        img{
+                            right: 0;
+                            position: absolute;
+                            right: 0px;
+                            top: -60px;
+                            width: 60%;
+                            display: block;
+                        }
+                    }
+                    .hero{
+                        margin: auto;
+                        position: relative;
+                        z-index: 1;
+                        width: 25%;
+                        padding: 0px 0 0 0;
+                        img{
+                            display: flex;
+                            margin: auto;
+                            width: 100%;
+                            height: auto;
+                        }
+                        &-logo{
+                            max-width: 100%;
+                        }
+                        &-hol-play-button{
+                            max-width: 50%;
+                            cursor: pointer;
+                        }
+                    }
+                    .modal-dialog{
+                        padding-top: 74.7656px;
+                        max-width: 70%;
+                    }
+                    .modal-header{
+                        position: relative;
+                        padding-bottom: 56.25%;
+                        height: 0;
+                    }
+                    iframe{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+
+                    .hero-image:before {
+                        content: "";
+                        display: block;
+                        width: 100%;
+                        max-width: 1620px;
+                        height: 100%;
+                        max-height: 2727px;
+                        background-image: url("../images/home/desktop/1-hero.png");
+                        position: absolute;
+                        margin: auto;
+                        right: 0px;
+                        top: 0;
+                        background-repeat: no-repeat;
+                        background-size: 65%;
+                        background-position-x: 100%;
+                        background-position-y: 0%;
+                    }
+                }
+            }
+
+            // pvp section lang to
+            .pvp-section:before{
+                content: "";
+                background: linear-gradient(360deg, #000 0%, transparent 70%);
+                position: absolute;
+                bottom: -1px;
+                z-index: 99;
+                height: 200px;
+                width: 100%;
+            }
+            .pvp-section{
+                background: linear-gradient(360deg, black, transparent);
+                background-image: url("../images/home/desktop/2-background.png");
+                height: auto;
+                padding: 0px 150px;
+                padding-top: 95px;
+                background-size: cover;
+                display: flex;
+                background-repeat: no-repeat;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                min-height: 784px;
+                
+                .card-container{
+                    width: 100%;
+                    margin-bottom: 20px;
+                    background: transparent;
+                    padding: 3px;
+                    border: 2px solid rgb(255 255 255 / 50%) !important;
+                    .card-wrapper{
+                        width: 100%;
+                        padding: 7px;
+                        border-radius: 3px;
+                        background: linear-gradient(360deg, #b2a06f 0%, #dcc997cc 20%, #000000bf 65%);
+                    
+                        .card{
+                            width: 100%;
+                            background: transparent;
+                            padding: 50px 50px;
+                            color:#fff;
+                            text-align: center;
+                            border: 3px solid #d7c396!important;
+
+                            .top-left, .bottom-left, .bottom-right, .top-right{
+                                background: url("../images/staking/hol-core-border-white.svg");
+                                height: 32px;
+                                width: 32px;
+                                position: absolute;
+                                border-radius: 5px;
+                            }
+                            .top-left, .bottom-left{
+                                left: -3px;
+                            }
+                            .bottom-right, .top-right{
+                                right: -3px;
+                            }
+                            .top-left{
+                                top: -3px;
+                                transform: rotate(90deg);
+                            }
+                            .bottom-left{
+                                bottom: -3px;
+                                transform: rotate(0);
+                            }
+                            .bottom-right{
+                                bottom: -3px;
+                                transform: rotate(270deg);
+                            }
+                            .top-right{
+                                top: -3px;
+                                transform: rotate(180deg);
+                            }
+                            .pvp-divider{
+                                position: relative;
+                                &:before{
+                                    content: "";
+                                    background-image: url("../images/home/desktop/6-separator.png");
+                                    padding: 10px 0;
+                                    width: 85%;
+                                    background-size: contain;
+                                    background-position: center;
+                                    display: inline-block;
+                                    margin-bottom: 15px;
+                                    background-repeat: no-repeat;
+                                }
+                            }
+                            h5{
+                                font-size: 50px;
+                                font-weight: 700;
+                            }
+                            p{
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            // guild section lang to
+            .guild-section{
+                background: url("../images/home/desktop/hol-hero-3.png");
+                height: auto;
+                padding: 256px 150px;
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: flex-end;
+                position: relative;
+                z-index: 2;
+                .card-container:first-child{
+                    margin-right: 10px;
+                    margin-bottom: 0;
+                }
+                .guild-hero{
+                    display: block;
+                    img{
+                        position: absolute;
+                        left: 0;
+                        width: 100%;
+                    }
+                }
+                .card-container{
+                    width: 100%;
+                    background: transparent;
+                    padding: 3px;
+                    border: 2px solid rgb(255 255 255 / 50%) !important;
+                    .card-wrapper{
+                        width: 100%;
+                        padding: 7px;
+                        border-radius: 3px;
+                        background: linear-gradient(360deg, #b2a06f 0%, #dcc997cc 20%, #000000bf 65%);
+                    
+                        .card{
+                            width: 100%;
+                            background: transparent;
+                            padding: 30px 30px;
+                            color:#fff;
+                            text-align: center;
+                            border: 3px solid #d7c396!important;
+                            min-height: 507px;
+
+                            .top-left, .bottom-left, .bottom-right, .top-right{
+                                background: url("../images/staking/hol-core-border-white.svg");
+                                height: 32px;
+                                width: 32px;
+                                position: absolute;
+                                border-radius: 5px;
+                            }
+                            .top-left, .bottom-left{
+                                left: -3px;
+                            }
+                            .bottom-right, .top-right{
+                                right: -3px;
+                            }
+                            .top-left{
+                                top: -3px;
+                                transform: rotate(90deg);
+                            }
+                            .bottom-left{
+                                bottom: -3px;
+                                transform: rotate(0);
+                            }
+                            .bottom-right{
+                                bottom: -3px;
+                                transform: rotate(270deg);
+                            }
+                            .top-right{
+                                top: -3px;
+                                transform: rotate(180deg);
+                            }
+                            .pvp-divider{
+                                position: relative;
+                                &:before{
+                                    content: "";
+                                    background-image: url("../images/home/desktop/6-separator.png");
+                                    padding: 10px 0;
+                                    width: 85%;
+                                    background-size: contain;
+                                    background-position: center;
+                                    display: inline-block;
+                                    margin-bottom: 15px;
+                                    background-repeat: no-repeat;
+                                }
+                            }
+                            h5{
+                                font-size: 50px;
+                                font-weight: 700;
+                            }
+                            p{
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+             // loan-sytem lang to
+             .loan-sytem-section{
+                position: relative;
+                z-index: 1;
+                min-height: 220px;
+                .loan-container{
+                    .col-4{
+                        width: 33%;
+                        text-align: left;
+                    }
+                    background: url("../images/home/desktop/4-background.png");
+                    height: auto;
+                    padding: 275px 0;
+                    padding-right: 100px;
+                    background-size: cover;
+                    background-position: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-end;
+                    min-height: 500px;
+                    position: absolute;
+                    top: -277px;
+                    width: 100%;
+                    h5{
+                        font-size: 39px;
+                        font-weight: 700;
+                        color: #593f26;
+                    }
+                }
+            }
+
+
+
+            // expedition lang to
+            .expedition-section{
+                background: #0E0301;
+                background-image: url("../images/home/desktop/5-background.png");
+                height: auto;
+                padding: 294px 50px;
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                color: #fff;
+                .row{
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    .col-4{
+                        width: 33%;
+                        p{
+                            text-align: left;
+                        }
+                    }
+                }
+                h5{
+                    font-size: 50px;
+                    font-weight: 700;
+                    color: #fff;
+                }
+                .pvp-divider{
+                    position: relative;
+                    &:before{
+                        content: "";
+                        background-image: url("../images/home/desktop/6-separator.png");
+                        padding: 10px 0;
+                        width: 85%;
+                        background-size: contain;
+                        background-position: center;
+                        display: inline-block;
+                        margin-bottom: 15px;
+                        background-repeat: no-repeat;
+                    }
+                }
+                
+                & .active-image img{
+                    width: 80%;
+                    margin: 0 0 47px 0; 
+                }
+                & .ative-text h5{
+                    font-size: 20px;
+                    font-weight: 700;
+                    text-align: left;
+                }
+                & .ative-text p{
+                    text-align: left;
+                }
+                & .ative-text {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                }
+                & .active-icon{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    padding: 30px 0;
+                }
+                & .active-icon img{
+                    width: 25%;
+                    margin-bottom: 20px;
+                    padding: 0 10px;
+                } 
+                & .active-icon img:first-child, & .active-icon img:last-child{
+                    margin-left: -100px;
+                } 
+                & .active-icon img:nth-child(2),& .active-icon img:nth-child(3){
+                    margin-bottom: 10px;
+                }
+            }
+
+
+            // PURCHASES section lang to
+            .purchase-section{
+                background: linear-gradient(360deg, black, transparent);
+                background: #0E0301;
+                background-image: url("../images/home/desktop/6-background.png");
+                height: auto;
+                padding: 200px 75px 200px 75px;
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                img{
+                    position: absolute;
+                    z-index: 0;
+                    top: -4px;
+                    width: 44%;
+                    display: block;
+                }
+                img:first-child{
+                    left: -50px !important;
+                    // max-width: 37%;
+                }
+                img:nth-child(2){
+                    right: -100px;
+                    top: 47px;
+                    width: 74% !important;
+                }
+                .card-container{
+                    z-index: 2;
+                    width: 70%;
+                    margin-bottom: 20px;
+                    background: transparent;
+                    padding: 3px;
+                    border: 2px solid rgb(255 255 255 / 50%) !important;
+                    .card-wrapper{
+                        width: 100%;
+                        padding: 7px;
+                        border-radius: 3px;
+                        background: linear-gradient(360deg, #b2a06f 0%, #dcc997cc 20%, #000000bf 65%);
+                    
+                        .card{
+                            width: 100%;
+                            background: transparent;
+                            padding: 20px 20px;
+                            color:#fff;
+                            text-align: center;
+                            border: 3px solid #d7c396!important;
+
+                            .top-left, .bottom-left, .bottom-right, .top-right{
+                                background: url("../images/staking/hol-core-border-white.svg");
+                                height: 32px;
+                                width: 32px;
+                                position: absolute;
+                                border-radius: 5px;
+                            }
+                            .top-left, .bottom-left{
+                                left: -3px;
+                            }
+                            .bottom-right, .top-right{
+                                right: -3px;
+                            }
+                            .top-left{
+                                top: -3px;
+                                transform: rotate(90deg);
+                            }
+                            .bottom-left{
+                                bottom: -3px;
+                                transform: rotate(0);
+                            }
+                            .bottom-right{
+                                bottom: -3px;
+                                transform: rotate(270deg);
+                            }
+                            .top-right{
+                                top: -3px;
+                                transform: rotate(180deg);
+                            }
+                            .pvp-divider{
+                                position: relative;
+                                &:before{
+                                    content: "";
+                                    background-image: url("../images/home/desktop/6-separator.png");
+                                    padding: 10px 0;
+                                    width: 85%;
+                                    background-size: contain;
+                                    background-position: center;
+                                    display: inline-block;
+                                    margin-bottom: 15px;
+                                    background-repeat: no-repeat;
+                                }
+                            }
+                            h5{
+                                font-size: 31px;
+                                font-weight: 700;
+                            }
+                            p{
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+        }
+    }
+}
+
+
+// desktop
+@media screen and (min-width: 1400px){
+    html {
+        body {
+            max-width: 1920px;
+            margin: auto;
+            background: url("../images/home/desktop/1-background.png");
+                    background-size: cover;
+                    background-attachment: fixed;
+            main {
+                font-size: inherit;
+                overflow: hidden;
+                .wrapper{
+                    position: relative;
+                    .hero-container{
+                        position: relative;
+                        z-index: 0;
+                        img{
+                            right: 0;
+                            position: absolute;
+                            right: 0px;
+                            top: -113px;
+                            width: 60%;
+                            display: block;
+                        }
+                    }
+                    .hero{
+                        margin: auto;
+                        position: relative;
+                        z-index: 1;
+                        width: 25%;
+                        img{
+                            display: flex;
+                            margin: auto;
+                            width: 100%;
+                            height: auto;
+                        }
+                        &-logo{
+                            max-width: 100%;
+                        }
+                        &-hol-play-button{
+                            max-width: 50%;
+                            cursor: pointer;
+                        }
+                    }
+                    .modal-dialog{
+                        padding-top: 74.7656px;
+                        max-width: 70%;
+                    }
+                    .modal-header{
+                        position: relative;
+                        padding-bottom: 56.25%;
+                        height: 0;
+                    }
+                    iframe{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+
+                    .hero-image:before {
+                        content: "";
+                        display: block;
+                        width: 100%;
+                        max-width: 1620px;
+                        height: 100%;
+                        max-height: 2727px;
+                        background-image: url("../images/home/desktop/1-hero.png");
+                        position: absolute;
+                        margin: auto;
+                        right: 0px;
+                        top: 0;
+                        background-repeat: no-repeat;
+                        background-size: 65%;
+                        background-position-x: 100%;
+                        background-position-y: 0%;
+                    }
+                }
+            }
+
+            // pvp section lang to
+            .pvp-section:before{
+                content: "";
+                background: linear-gradient(360deg, #000 0%, transparent 70%);
+                position: absolute;
+                bottom: 0;
+                z-index: 99;
+                height: 200px;
+                width: 100%;
+            }
+            .pvp-section{
+                background: linear-gradient(360deg, black, transparent);
+                background-image: url("../images/home/desktop/2-background.png");
+                height: auto;
+                padding: 200px 250px;
+                padding-top: 400px;
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                min-height: 1123px;
+                
+                .card-container{
+                    width: 50%;
+                    margin-bottom: 20px;
+                    background: transparent;
+                    padding: 3px;
+                    border: 2px solid rgb(255 255 255 / 50%) !important;
+                    .card-wrapper{
+                        width: 100%;
+                        padding: 7px;
+                        border-radius: 3px;
+                        background: linear-gradient(360deg, #b2a06f 0%, #dcc997cc 20%, #000000bf 65%);
+                    
+                        .card{
+                            width: 100%;
+                            background: transparent;
+                            padding: 50px 50px;
+                            color:#fff;
+                            text-align: center;
+                            border: 3px solid #d7c396!important;
+
+                            .top-left, .bottom-left, .bottom-right, .top-right{
+                                background: url("../images/staking/hol-core-border-white.svg");
+                                height: 32px;
+                                width: 32px;
+                                position: absolute;
+                                border-radius: 5px;
+                            }
+                            .top-left, .bottom-left{
+                                left: -3px;
+                            }
+                            .bottom-right, .top-right{
+                                right: -3px;
+                            }
+                            .top-left{
+                                top: -3px;
+                                transform: rotate(90deg);
+                            }
+                            .bottom-left{
+                                bottom: -3px;
+                                transform: rotate(0);
+                            }
+                            .bottom-right{
+                                bottom: -3px;
+                                transform: rotate(270deg);
+                            }
+                            .top-right{
+                                top: -3px;
+                                transform: rotate(180deg);
+                            }
+                            .pvp-divider{
+                                position: relative;
+                                &:before{
+                                    content: "";
+                                    background-image: url("../images/home/desktop/6-separator.png");
+                                    padding: 10px 0;
+                                    width: 85%;
+                                    background-size: contain;
+                                    background-position: center;
+                                    display: inline-block;
+                                    margin-bottom: 15px;
+                                    background-repeat: no-repeat;
+                                }
+                            }
+                            h5{
+                                font-size: 60px;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+
+            // guild section lang to
+            .guild-section{
+                background: url("../images/home/desktop/hol-hero-3.png");
+                height: auto;
+                padding: 200px 250px;
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+                position: relative;
+                z-index: 2;
+                .card-container:first-child{
+                    margin-bottom: 20px !important;
+                    margin-right: 0 !important;
+                }
+                .guild-hero{
+                    display: block;
+                    img{
+                        position: absolute;
+                        left: 0;
+                        top: 368px;  
+                    }
+                }
+                .card-container{
+                    width: 50%;
+                    background: transparent;
+                    padding: 3px;
+                    border: 2px solid rgb(255 255 255 / 50%) !important;
+                    .card-wrapper{
+                        width: 100%;
+                        padding: 7px;
+                        border-radius: 3px;
+                        background: linear-gradient(360deg, #b2a06f 0%, #dcc997cc 20%, #000000bf 65%);
+                    
+                        .card{
+                            width: 100%;
+                            background: transparent;
+                            padding: 50px 50px;
+                            color:#fff;
+                            text-align: center;
+                            border: 3px solid #d7c396!important;
+
+                            .top-left, .bottom-left, .bottom-right, .top-right{
+                                background: url("../images/staking/hol-core-border-white.svg");
+                                height: 32px;
+                                width: 32px;
+                                position: absolute;
+                                border-radius: 5px;
+                            }
+                            .top-left, .bottom-left{
+                                left: -3px;
+                            }
+                            .bottom-right, .top-right{
+                                right: -3px;
+                            }
+                            .top-left{
+                                top: -3px;
+                                transform: rotate(90deg);
+                            }
+                            .bottom-left{
+                                bottom: -3px;
+                                transform: rotate(0);
+                            }
+                            .bottom-right{
+                                bottom: -3px;
+                                transform: rotate(270deg);
+                            }
+                            .top-right{
+                                top: -3px;
+                                transform: rotate(180deg);
+                            }
+                            .pvp-divider{
+                                position: relative;
+                                &:before{
+                                    content: "";
+                                    background-image: url("../images/home/desktop/6-separator.png");
+                                    padding: 10px 0;
+                                    width: 85%;
+                                    background-size: contain;
+                                    background-position: center;
+                                    display: inline-block;
+                                    margin-bottom: 15px;
+                                    background-repeat: no-repeat;
+                                }
+                            }
+                            h5{
+                                font-size: 60px;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+             // loan-sytem lang to
+             .loan-sytem-section{
+                position: relative;
+                z-index: 1;
+                min-height: 520px;
+                .loan-container{
+                    .col-4{
+                        width: 33.33%;
+                        text-align: left;
+                    }
+                    background: url("../images/home/desktop/4-background.png");
+                    height: auto;
+                    padding: 200px 0;
+                    padding-right: 200px;
+                    background-size: cover;
+                    background-position: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-end;
+                    min-height: 1200px;
+                    position: absolute;
+                    top: -400px;
+                    width: 100%;
+                    h5{
+                        font-size: 60px;
+                        font-weight: 700;
+                        color: #593f26;
+                    }
+                }
+            }
+
+
+
+            // expedition lang to
+            .expedition-section{
+                background: #0E0301;
+                background-image: url("../images/home/desktop/5-background.png");
+                height: auto;
+                padding: 200px 0;
+                background-size: cover;
+                background-position: center;
+                background-position-y: -445px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                color: #fff;
+                h5{
+                    font-size: 60px;
+                    font-weight: 700;
+                    color: #fff;
+                }
+                .pvp-divider{
+                    position: relative;
+                    &:before{
+                        content: "";
+                        background-image: url("../images/home/desktop/6-separator.png");
+                        padding: 10px 0;
+                        width: 85%;
+                        background-size: contain;
+                        background-position: center;
+                        display: inline-block;
+                        margin-bottom: 15px;
+                        background-repeat: no-repeat;
+                    }
+                }
+                
+                & .active-image img{
+                    width: 80%;
+                }
+                & .ative-text h5{
+                    font-size: 35px;
+                    font-weight: 700;
+                    text-align: left;
+                }
+                & .ative-text {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                }
+                & .active-icon{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                }
+                & .active-icon img{
+                    width: 15%;
+                    margin-bottom: 20px;
+                }
+                & .active-icon img:last-child{
+                    margin-bottom: 0 !important;
+                }
+                & .active-icon img:first-child, & .active-icon img:last-child{
+                    margin-left: -100px;
+                }
+                & .active-icon img:nth-child(2){
+                    margin-left: -10px;
+                }
+            }
+
+
+            // PURCHASES section lang to
+            .purchase-section{
+                background: linear-gradient(360deg, black, transparent);
+                background: #0E0301;
+                background-image: url("../images/home/desktop/6-background.png");
+                height: auto;
+                padding: 200px 0px;
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                img{
+                    position: absolute;
+                    z-index: 0;
+                    top: -30px;
+                    display: block;
+                }
+                img:first-child{
+                    left: 0 !important;
+                    // max-width: 37%;
+                }
+                img:nth-child(2){
+                    right: -100px;
+                    top: 100px;
+                    max-width: 60%;
+                }
+                .card-container{
+                    z-index: 2;
+                    width: 40%;
+                    margin-bottom: 20px;
+                    background: transparent;
+                    padding: 3px;
+                    border: 2px solid rgb(255 255 255 / 50%) !important;
+                    .card-wrapper{
+                        width: 100%;
+                        padding: 7px;
+                        border-radius: 3px;
+                        background: linear-gradient(360deg, #b2a06f 0%, #dcc997cc 20%, #000000bf 65%);
+                    
+                        .card{
+                            width: 100%;
+                            background: transparent;
+                            padding: 50px 50px;
+                            color:#fff;
+                            text-align: center;
+                            border: 3px solid #d7c396!important;
+
+                            .top-left, .bottom-left, .bottom-right, .top-right{
+                                background: url("../images/staking/hol-core-border-white.svg");
+                                height: 32px;
+                                width: 32px;
+                                position: absolute;
+                                border-radius: 5px;
+                            }
+                            .top-left, .bottom-left{
+                                left: -3px;
+                            }
+                            .bottom-right, .top-right{
+                                right: -3px;
+                            }
+                            .top-left{
+                                top: -3px;
+                                transform: rotate(90deg);
+                            }
+                            .bottom-left{
+                                bottom: -3px;
+                                transform: rotate(0);
+                            }
+                            .bottom-right{
+                                bottom: -3px;
+                                transform: rotate(270deg);
+                            }
+                            .top-right{
+                                top: -3px;
+                                transform: rotate(180deg);
+                            }
+                            .pvp-divider{
+                                position: relative;
+                                &:before{
+                                    content: "";
+                                    background-image: url("../images/home/desktop/6-separator.png");
+                                    padding: 10px 0;
+                                    width: 85%;
+                                    background-size: contain;
+                                    background-position: center;
+                                    display: inline-block;
+                                    margin-bottom: 15px;
+                                    background-repeat: no-repeat;
+                                }
+                            }
+                            h5{
+                                font-size: 60px;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+        }
+    }
+}

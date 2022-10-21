@@ -1,0 +1,1320 @@
+html {
+    body {
+        @import "modules/_header.scss";
+        @import "modules/_footer.scss";
+        @import "modules/_pop-up.scss";
+    }
+} 
+
+.disable-scroll {
+    overflow-y: hidden !important;
+    // opacity: 0 !important;
+}
+
+
+
+
+.zilpay::placeholder, .metamask::placeholder{
+    color: rgb(255, 255, 255) !important;
+}
+@media screen and (min-width: 0px){
+    html {
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .main {
+                .hol-sidebar{
+                    position: fixed;
+                    width: 100%;
+                    height: 100vh;
+                    overflow: visible;
+                    z-index: 9999;
+                    display: none;
+                    .hol-sidebar-panel{
+                        position: absolute;
+                        left: 0;
+                        top: 30%;
+                        transform: translateY(-50%);
+                        width: 100%;
+                        z-index: 9;
+                        .logo-container{
+                            display: none;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            img{
+                                width: 50%;
+                            }
+                        }
+                        ul{
+                            padding: 0;
+                            list-style: none;
+                            display: flex;
+                            li{
+                                position: relative;
+                                padding: 20px 0;
+                                padding-left: 30px;
+                                a{
+                                    text-decoration: none;
+                                    color: #fff;
+                                    font-size: 13px;
+                                    font-weight: 600;
+                                    min-height: 300px;
+                                    z-index: 999;
+                                }  
+                            }
+                            li:hover:before{
+                                width: 100%;
+                            }
+                            li:before{
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                height: 100% !important;
+                                width: 0px;
+                                left: 0;
+                                bottom: 0;
+                                transition: width 0.25s ease-out;
+                                background: linear-gradient(to right, #101010 0%, transparent 100%);
+                                opacity: 0.3;
+                            }
+                            .active:before{
+                                width: 100% !important;
+                            }
+                        }
+                    }
+                }
+
+                .hide{
+                    display: none !important;
+                }
+                .show{
+                    display: block;
+                }
+                .update-information:before{
+                    content: "";
+                    background: url("../images/account/heroes.png");
+                    min-height: 942px;
+                    min-width: 642px;
+                    position: absolute;
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    bottom: 0;
+                    right: 0;
+                }
+                .update-information{
+                    background: url("../images/account/BG.png");
+                    min-height: 1000px;
+                    position: relative;
+                    padding: 20px 0;
+                    .details{
+                        padding: 10px;
+                        margin: auto;
+                        position: relative;
+                        z-index: 9999;
+                        background-color: rgba(255,255,255,0.9);
+                        width: 95%;
+                        .step{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 0;
+                            svg{
+                                width: 25px;
+                                height: 25px;
+                                margin-right: 30px;
+                            }
+                        }
+                        .next-step{
+                            display: flex;
+                            justify-content: center;
+                            align-items: flex-start;
+                            flex-direction: column;
+                        }
+                        .qr-code{
+                            width: 50%;
+                            margin: auto;
+                        }
+                        .zilpay{
+                            background: #153d61;
+                            border: 1px solid #78a9c1;
+                            border-radius: 0;
+                        }
+                        .metamask{
+                            background: #4a9fcc;
+                            border: 1px solid #277aa0;
+                            border-radius: 0;
+                        }
+                        .transparent-code{
+                            border: 1px solid #277aa0;
+                            border-radius: 0;
+                        }
+                        ::placeholder{
+                            color: rgb(59, 59, 59);
+                        }
+                        span{
+                            font-size: 15px;
+                            text-align: center;
+                        }
+                        h4{
+                            font-size: 27px;
+                            text-align: left;
+                            margin-top: 30px;
+                        }
+                        input{
+                            margin-bottom: 20px;
+                            padding: 10px;
+                        }
+                        .Facode{   
+                            display: flex;
+                            width: 100%;
+                            justify-content: center;
+                            align-items: center;                      
+                            .digit-code {
+                                position: relative;
+                                margin: 20px auto;
+                            }
+                            .form-masked-pin {
+                                display: block;
+                                width: 340px;
+                                height: 45px;
+                                overflow: hidden;
+                                margin: 0 -157px;
+                                padding: 0;
+                                position: relative;
+                                left: 50%;
+                                font-size: 28px;
+                                letter-spacing: 37px;
+                                border: none !important;
+                                background: none !important;
+                                box-shadow: none !important;
+                                text-indent: 14px;
+                                z-index: 1;
+                                outline: 0;
+                                font-family: Menlo, Monaco, 'Courier New', monospace;
+                            }
+                            
+                            .bg-box-group {
+                                width: 324px;
+                                height: 60px;
+                                position: absolute;
+                                z-index: 0;
+                                top: 0px;
+                                left: 50%;
+                                margin: 0 -157px;
+                            }
+                            
+                            .bg-box {
+                                width: 44px;
+                                height: 45px;
+                                display: block;
+                                border-radius: 8px;
+                                border: 2px solid #909096;
+                                background: #fff;
+                                float: left;
+                                margin-right: 10px;
+                            }
+                        }
+                        
+                        h3{
+                            text-align: center;
+                            font-size: 40px;
+                            font-weight: 700;
+                            color: #103A4A;
+                            padding: 20px 0;
+                        }
+                    }
+                }
+                input{
+                    border: 1px solid #145068;
+                    border-radius: 5px;
+                    padding: 10px;
+                    background: transparent;
+                    margin-bottom: 10px;
+                }
+                input:focus{
+                    outline: none;
+                    background: rgba(255, 255, 255, .1);
+                }
+                .pribtn{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .btn_connect{
+                    margin-bottom: 0;
+                    color: #3c2302;
+                    background: url("../images/staking/claim-reward-button-container.png");
+                    background-repeat: no-repeat;
+                    background-size: 113%;
+                    background-position-y: -13px;
+                    background-position-x: -18px;
+                    width: 250px;
+                    height: 55px;
+                    font-size: 18px;
+                    font-weight: 700;
+                    border: 3px solid #DDD3BA;
+                    box-shadow: inset 0 0 6px #b9ac8c;
+                }
+                h4, label{
+                    padding:0;
+                }
+                ::placeholder{
+                    color: #1e4d68;
+                }
+                .row{
+                    margin: unset;
+                    padding: 0 40px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 576px){
+    html {
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .main {
+                .hol-sidebar{
+                    position: fixed;
+                    width: 100%;
+                    height: 100vh;
+                    overflow: visible;
+                    z-index: 9999;
+                    display: none;
+                    .hol-sidebar-panel{
+                        position: absolute;
+                        left: 0;
+                        top: 30%;
+                        transform: translateY(-50%);
+                        width: 100%;
+                        z-index: 9;
+                        .logo-container{
+                            display: none;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            img{
+                                width: 50%;
+                            }
+                        }
+                        ul{
+                            padding: 0;
+                            list-style: none;
+                            display: flex;
+                            li{
+                                position: relative;
+                                padding: 20px 0;
+                                padding-left: 30px;
+                                a{
+                                    text-decoration: none;
+                                    color: #fff;
+                                    font-size: 13px;
+                                    font-weight: 600;
+                                    min-height: 300px;
+                                    z-index: 999;
+                                }  
+                            }
+                            li:hover:before{
+                                width: 100%;
+                            }
+                            li:before{
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                height: 100% !important;
+                                width: 0px;
+                                left: 0;
+                                bottom: 0;
+                                transition: width 0.25s ease-out;
+                                background: linear-gradient(to right, #101010 0%, transparent 100%);
+                                opacity: 0.3;
+                            }
+                            .active:before{
+                                width: 100% !important;
+                            }
+                        }
+                    }
+                }
+
+                .hide{
+                    display: none !important;
+                }
+                .show{
+                    display: block;
+                }
+                .update-information:before{
+                    content: "";
+                    background: url("../images/account/heroes.png");
+                    min-height: 942px;
+                    min-width: 642px;
+                    position: absolute;
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    bottom: 0;
+                    right: 0;
+                }
+                .update-information{
+                    background: url("../images/account/BG.png");
+                    min-height: 1000px;
+                    position: relative;
+                    padding: 20px 0;
+                    .details{
+                        padding: 10px;
+                        margin: auto;
+                        position: relative;
+                        z-index: 9999;
+                        background-color: rgba(255,255,255,0.9);
+                        width: 95%;
+                        .step{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 0;
+                            svg{
+                                width: 25px;
+                                height: 25px;
+                                margin-right: 30px;
+                            }
+                        }
+                        .next-step{
+                            display: flex;
+                            justify-content: center;
+                            align-items: flex-start;
+                            flex-direction: column;
+                        }
+                        .qr-code{
+                            width: 50%;
+                            margin: auto;
+                        }
+                        .zilpay{
+                            background: #153d61;
+                            border: 1px solid #78a9c1;
+                            border-radius: 0;
+                        }
+                        .metamask{
+                            background: #4a9fcc;
+                            border: 1px solid #277aa0;
+                            border-radius: 0;
+                        }
+                        .transparent-code{
+                            border: 1px solid #277aa0;
+                            border-radius: 0;
+                        }
+                        ::placeholder{
+                            color: rgb(59, 59, 59);
+                        }
+                        span{
+                            font-size: 15px;
+                            text-align: center;
+                        }
+                        h4{
+                            font-size: 27px;
+                            text-align: left;
+                            margin-top: 30px;
+                        }
+                        input{
+                            margin-bottom: 20px;
+                            padding: 10px;
+                        }
+                        .Facode{   
+                            display: flex;
+                            width: 100%;
+                            justify-content: center;
+                            align-items: center;                      
+                            .digit-code {
+                                position: relative;
+                                margin: 20px auto;
+                            }
+                            .form-masked-pin {
+                                display: block;
+                                width: 340px;
+                                height: 45px;
+                                overflow: hidden;
+                                margin: 0 -157px;
+                                padding: 0;
+                                position: relative;
+                                left: 50%;
+                                font-size: 28px;
+                                letter-spacing: 37px;
+                                border: none !important;
+                                background: none !important;
+                                box-shadow: none !important;
+                                text-indent: 14px;
+                                z-index: 1;
+                                outline: 0;
+                                font-family: Menlo, Monaco, 'Courier New', monospace;
+                            }
+                            
+                            .bg-box-group {
+                                width: 324px;
+                                height: 60px;
+                                position: absolute;
+                                z-index: 0;
+                                top: 0px;
+                                left: 50%;
+                                margin: 0 -157px;
+                            }
+                            
+                            .bg-box {
+                                width: 44px;
+                                height: 45px;
+                                display: block;
+                                border-radius: 8px;
+                                border: 2px solid #909096;
+                                background: #fff;
+                                float: left;
+                                margin-right: 10px;
+                            }
+                        }
+                        
+                        h3{
+                            text-align: center;
+                            font-size: 40px;
+                            font-weight: 700;
+                            color: #103A4A;
+                            padding: 20px 0;
+                        }
+                    }
+                }
+                input{
+                    border: 1px solid #145068;
+                    border-radius: 5px;
+                    padding: 10px;
+                    background: transparent;
+                    margin-bottom: 10px;
+                }
+                input:focus{
+                    outline: none;
+                    background: rgba(255, 255, 255, .1);
+                }
+                .pribtn{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .btn_connect{
+                    margin-bottom: 0;
+                    color: #3c2302;
+                    background: url("../images/staking/claim-reward-button-container.png");
+                    background-repeat: no-repeat;
+                    background-size: 113%;
+                    background-position-y: -13px;
+                    background-position-x: -18px;
+                    width: 250px;
+                    height: 55px;
+                    font-size: 18px;
+                    font-weight: 700;
+                    border: 3px solid #DDD3BA;
+                    box-shadow: inset 0 0 6px #b9ac8c;
+                }
+                h4, label{
+                    padding:0;
+                }
+                ::placeholder{
+                    color: #1e4d68;
+                }
+                .row{
+                    margin: unset;
+                    padding: 0 40px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 768px){
+    html {
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .main {
+                .hol-sidebar{
+                    position: fixed;
+                    width: 20%;
+                    height: 100vh;
+                    overflow: visible;
+                    z-index: 9999;
+                    display: block;
+                    .hol-sidebar-panel{
+                        position: absolute;
+                        left: 0;
+                        top: 30%;
+                        transform: translateY(-50%);
+                        width: 100%;
+                        z-index: 9;
+                        .logo-container{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            img{
+                                width: 50%;
+                            }
+                        }
+                        ul{
+                            padding: 0;
+                            list-style: none;
+                            display: block;
+                            li{
+                                position: relative;
+                                padding: 20px 0;
+                                padding-left: 30px;
+                                a{
+                                    text-decoration: none;
+                                    color: #fff;
+                                    font-size: 13px;
+                                    font-weight: 600;
+                                    min-height: 300px;
+                                    z-index: 999;
+                                }  
+                            }
+                            li:hover:before{
+                                width: 100%;
+                            }
+                            li:before{
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                height: 100% !important;
+                                width: 0px;
+                                left: 0;
+                                bottom: 0;
+                                transition: width 0.25s ease-out;
+                                background: linear-gradient(to right, #101010 0%, transparent 100%);
+                                opacity: 0.3;
+                            }
+                            .active:before{
+                                width: 100% !important;
+                            }
+                        }
+                    }
+                }
+
+                .hide{
+                    display: none !important;
+                }
+                .show{
+                    display: block;
+                }
+                .update-information:before{
+                    content: "";
+                    background: url("../images/account/heroes.png");
+                    min-height: 942px;
+                    min-width: 642px;
+                    position: absolute;
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    bottom: 0;
+                    right: 0;
+                }
+                .update-information{
+                    background: url("../images/account/BG.png");
+                    min-height: 940px;
+                    position: relative;
+                    padding: 20px 0;
+                    .details{
+                        padding: 10px;
+                        margin: auto;
+                        position: relative;
+                        z-index: 9999;
+                        background-color: rgba(255,255,255,0.9);
+                        width: 60%;
+                        .step{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 0;
+                            svg{
+                                width: 25px;
+                                height: 25px;
+                                margin-right: 30px;
+                            }
+                        }
+                        .next-step{
+                            display: flex;
+                            justify-content: center;
+                            align-items: flex-start;
+                            flex-direction: column;
+                        }
+                        .qr-code{
+                            width: 50%;
+                            margin: auto;
+                        }
+                        .zilpay{
+                            background: #153d61;
+                            border: 1px solid #78a9c1;
+                            border-radius: 0;
+                        }
+                        .metamask{
+                            background: #4a9fcc;
+                            border: 1px solid #277aa0;
+                            border-radius: 0;
+                        }
+                        .transparent-code{
+                            border: 1px solid #277aa0;
+                            border-radius: 0;
+                        }
+                        ::placeholder{
+                            color: rgb(59, 59, 59);
+                        }
+                        span{
+                            font-size: 15px;
+                            text-align: center;
+                        }
+                        h4{
+                            font-size: 27px;
+                            text-align: left;
+                            margin-top: 30px;
+                        }
+                        input{
+                            margin-bottom: 20px;
+                            padding: 10px;
+                        }
+                        .Facode{   
+                            display: flex;
+                            width: 100%;
+                            justify-content: center;
+                            align-items: center;                      
+                            .digit-code {
+                                position: relative;
+                                margin: 20px auto;
+                            }
+                            .form-masked-pin {
+                                display: block;
+                                width: 340px;
+                                height: 45px;
+                                overflow: hidden;
+                                margin: 0 -157px;
+                                padding: 0;
+                                position: relative;
+                                left: 50%;
+                                font-size: 28px;
+                                letter-spacing: 37px;
+                                border: none !important;
+                                background: none !important;
+                                box-shadow: none !important;
+                                text-indent: 14px;
+                                z-index: 1;
+                                outline: 0;
+                                font-family: Menlo, Monaco, 'Courier New', monospace;
+                            }
+                            
+                            .bg-box-group {
+                                width: 324px;
+                                height: 60px;
+                                position: absolute;
+                                z-index: 0;
+                                top: 0px;
+                                left: 50%;
+                                margin: 0 -157px;
+                            }
+                            
+                            .bg-box {
+                                width: 44px;
+                                height: 45px;
+                                display: block;
+                                border-radius: 8px;
+                                border: 2px solid #909096;
+                                background: #fff;
+                                float: left;
+                                margin-right: 10px;
+                            }
+                        }
+                        
+                        h3{
+                            text-align: center;
+                            font-size: 40px;
+                            font-weight: 700;
+                            color: #103A4A;
+                            padding: 20px 0;
+                        }
+                    }
+                }
+                input{
+                    border: 1px solid #145068;
+                    border-radius: 5px;
+                    padding: 10px;
+                    background: transparent;
+                    margin-bottom: 10px;
+                }
+                input:focus{
+                    outline: none;
+                    background: rgba(255, 255, 255, .1);
+                }
+                .pribtn{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .btn_connect{
+                    margin-bottom: 0;
+                    color: #3c2302;
+                    background: url("../images/staking/claim-reward-button-container.png");
+                    background-repeat: no-repeat;
+                    background-size: 113%;
+                    background-position-y: -13px;
+                    background-position-x: -18px;
+                    width: 250px;
+                    height: 55px;
+                    font-size: 18px;
+                    font-weight: 700;
+                    border: 3px solid #DDD3BA;
+                    box-shadow: inset 0 0 6px #b9ac8c;
+                }
+                h4, label{
+                    padding:0;
+                }
+                ::placeholder{
+                    color: #1e4d68;
+                }
+                .row{
+                    margin: unset;
+                    padding: 0 40px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 992px){
+    html {
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .main {
+                .hol-sidebar{
+                    position: fixed;
+                    width: 20%;
+                    height: 100vh;
+                    overflow: visible;
+                    z-index: 9999;
+                    display: block;
+                    .hol-sidebar-panel{
+                        position: absolute;
+                        left: 0;
+                        top: 30%;
+                        transform: translateY(-50%);
+                        width: 100%;
+                        z-index: 9;
+                        .logo-container{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            img{
+                                width: 50%;
+                            }
+                        }
+                        ul{
+                            padding: 0;
+                            list-style: none;
+                            display: block;
+                            li{
+                                position: relative;
+                                padding: 20px 0;
+                                padding-left: 30px;
+                                a{
+                                    text-decoration: none;
+                                    color: #fff;
+                                    font-size: 13px;
+                                    font-weight: 600;
+                                    min-height: 300px;
+                                    z-index: 999;
+                                }  
+                            }
+                            li:hover:before{
+                                width: 100%;
+                            }
+                            li:before{
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                height: 60px !important;
+                                width: 0px;
+                                left: 0;
+                                bottom: 0;
+                                transition: width 0.25s ease-out;
+                                background: linear-gradient(to right, #101010 0%, transparent 100%);
+                                opacity: 0.3;
+                            }
+                            .active:before{
+                                width: 100% !important;
+                            }
+                        }
+                    }
+                }
+
+                .hide{
+                    display: none !important;
+                }
+                .show{
+                    display: block;
+                }
+                .update-information:before{
+                    content: "";
+                    background: url("../images/account/heroes.png");
+                    min-height: 942px;
+                    min-width: 642px;
+                    position: absolute;
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    bottom: 0;
+                    right: 0;
+                }
+                .update-information{
+                    background: url("../images/account/BG.png");
+                    min-height: 940px;
+                    position: relative;
+                    padding: 20px 0;
+                    .details{
+                        padding: 10px;
+                        margin: auto;
+                        position: relative;
+                        z-index: 9999;
+                        background-color: rgba(255,255,255,0.7);
+                        width: 60%;
+                        .step{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 0;
+                            svg{
+                                width: 25px;
+                                height: 25px;
+                                margin-right: 30px;
+                            }
+                        }
+                        .next-step{
+                            display: flex;
+                            justify-content: center;
+                            align-items: flex-start;
+                            flex-direction: column;
+                        }
+                        .qr-code{
+                            width: 50%;
+                            margin: auto;
+                        }
+                        .zilpay{
+                            background: #153d61;
+                            border: 1px solid #78a9c1;
+                            border-radius: 0;
+                        }
+                        .metamask{
+                            background: #4a9fcc;
+                            border: 1px solid #277aa0;
+                            border-radius: 0;
+                        }
+                        .transparent-code{
+                            border: 1px solid #277aa0;
+                            border-radius: 0;
+                        }
+                        ::placeholder{
+                            color: rgb(59, 59, 59);
+                        }
+                        span{
+                            font-size: 15px;
+                            text-align: center;
+                        }
+                        h4{
+                            font-size: 27px;
+                            text-align: left;
+                            margin-top: 30px;
+                        }
+                        input{
+                            margin-bottom: 20px;
+                            padding: 10px;
+                        }
+                        .Facode{   
+                            display: flex;
+                            width: 100%;
+                            justify-content: center;
+                            align-items: center;                      
+                            .digit-code {
+                                position: relative;
+                                margin: 20px auto;
+                            }
+                            .form-masked-pin {
+                                display: block;
+                                width: 340px;
+                                height: 45px;
+                                overflow: hidden;
+                                margin: 0 -157px;
+                                padding: 0;
+                                position: relative;
+                                left: 50%;
+                                font-size: 28px;
+                                letter-spacing: 37px;
+                                border: none !important;
+                                background: none !important;
+                                box-shadow: none !important;
+                                text-indent: 14px;
+                                z-index: 1;
+                                outline: 0;
+                                font-family: Menlo, Monaco, 'Courier New', monospace;
+                            }
+                            
+                            .bg-box-group {
+                                width: 324px;
+                                height: 60px;
+                                position: absolute;
+                                z-index: 0;
+                                top: 0px;
+                                left: 50%;
+                                margin: 0 -157px;
+                            }
+                            
+                            .bg-box {
+                                width: 44px;
+                                height: 45px;
+                                display: block;
+                                border-radius: 8px;
+                                border: 2px solid #909096;
+                                background: #fff;
+                                float: left;
+                                margin-right: 10px;
+                            }
+                        }
+                        
+                        h3{
+                            text-align: center;
+                            font-size: 40px;
+                            font-weight: 700;
+                            color: #103A4A;
+                            padding: 20px 0;
+                        }
+                    }
+                }
+                input{
+                    border: 1px solid #145068;
+                    border-radius: 5px;
+                    padding: 10px;
+                    background: transparent;
+                    margin-bottom: 10px;
+                }
+                input:focus{
+                    outline: none;
+                    background: rgba(255, 255, 255, .1);
+                }
+                .pribtn{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .btn_connect{
+                    margin-bottom: 0;
+                    color: #3c2302;
+                    background: url("../images/staking/claim-reward-button-container.png");
+                    background-repeat: no-repeat;
+                    background-size: 113%;
+                    background-position-y: -13px;
+                    background-position-x: -18px;
+                    width: 250px;
+                    height: 55px;
+                    font-size: 18px;
+                    font-weight: 700;
+                    border: 3px solid #DDD3BA;
+                    box-shadow: inset 0 0 6px #b9ac8c;
+                }
+                h4, label{
+                    padding:0;
+                }
+                ::placeholder{
+                    color: #1e4d68;
+                }
+                .row{
+                    margin: unset;
+                    padding: 0 40px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1200px){
+    html {
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .main {
+                .hol-sidebar{
+                    position: fixed;
+                    width: 20%;
+                    height: 100vh;
+                    overflow: visible;
+                    z-index: 9999;
+                    display: block;
+                    .hol-sidebar-panel{
+                        position: absolute;
+                        left: 0;
+                        top: 30%;
+                        transform: translateY(-50%);
+                        width: 100%;
+                        z-index: 9;
+                        .logo-container{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            img{
+                                width: 50%;
+                            }
+                        }
+                        ul{
+                            display: block;
+                            padding: 0;
+                            list-style: none;
+                            li{
+                                position: relative;
+                                padding: 20px 0;
+                                padding-left: 100px;
+                                a{
+                                    text-decoration: none;
+                                    color: #fff;
+                                    font-size: 20px;
+                                    font-weight: 600;
+                                    min-height: 300px;
+                                    z-index: 999;
+                                }  
+                            }
+                            li:hover:before{
+                                width: 100%;
+                            }
+                            li:before{
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                height: 60px !important;
+                                width: 0px;
+                                left: 0;
+                                bottom: 0;
+                                transition: width 0.25s ease-out;
+                                background: linear-gradient(to right, #101010 0%, transparent 100%);
+                                opacity: 0.3;
+                            }
+                            .active:before{
+                                width: 100% !important;
+                            }
+                        }
+                    }
+                }
+
+                .hide{
+                    display: none !important;
+                }
+                .show{
+                    display: block;
+                }
+                .update-information:before{
+                    content: "";
+                    background: url("../images/account/heroes.png");
+                    min-height: 942px;
+                    min-width: 642px;
+                    position: absolute;
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    bottom: 0;
+                    right: 0;
+                }
+                .update-information{
+                    background: url("../images/account/BG.png");
+                    min-height: 940px;
+                    position: relative;
+                    padding: unset;
+
+                    
+                    .details{
+                        padding: unset;
+                        margin: auto;
+                        position: relative;
+                        z-index: 2;
+                        background-color: transparent;
+                        width: 33.33333333%;
+                        .step{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 0;
+                            svg{
+                                width: 25px;
+                                height: 25px;
+                                margin-right: 30px;
+                            }
+                        }
+                        .next-step{
+                            display: flex;
+                            justify-content: center;
+                            align-items: flex-start;
+                            flex-direction: column;
+                        }
+                        .qr-code{
+                            width: 50%;
+                            margin: auto;
+                        }
+                        .zilpay{
+                            background: #153d61;
+                            border: 1px solid #78a9c1;
+                            border-radius: 0;
+                        }
+                        .metamask{
+                            background: #4a9fcc;
+                            border: 1px solid #277aa0;
+                            border-radius: 0;
+                        }
+                        .transparent-code{
+                            border: 1px solid #277aa0;
+                            border-radius: 0;
+                        }
+                        ::placeholder{
+                            color: #fff;
+                        }
+                        span{
+                            font-size: 15px;
+                            text-align: center;
+                        }
+                        h4{
+                            font-size: 27px;
+                            text-align: left;
+                            margin-top: 30px;
+                        }
+                        input{
+                            margin-bottom: 20px;
+                            padding: 10px;
+                        }
+                        .Facode{   
+                            display: flex;
+                            width: 100%;
+                            justify-content: center;
+                            align-items: center;                      
+                            .digit-code {
+                                position: relative;
+                                margin: 20px auto;
+                            }
+                            .form-masked-pin {
+                                display: block;
+                                width: 340px;
+                                height: 45px;
+                                overflow: hidden;
+                                margin: 0 -157px;
+                                padding: 0;
+                                position: relative;
+                                left: 50%;
+                                font-size: 28px;
+                                letter-spacing: 37px;
+                                border: none !important;
+                                background: none !important;
+                                box-shadow: none !important;
+                                text-indent: 14px;
+                                z-index: 1;
+                                outline: 0;
+                                font-family: Menlo, Monaco, 'Courier New', monospace;
+                            }
+                            
+                            .bg-box-group {
+                                width: 324px;
+                                height: 60px;
+                                position: absolute;
+                                z-index: 0;
+                                top: 0px;
+                                left: 50%;
+                                margin: 0 -157px;
+                            }
+                            
+                            .bg-box {
+                                width: 44px;
+                                height: 45px;
+                                display: block;
+                                border-radius: 8px;
+                                border: 2px solid #909096;
+                                background: #fff;
+                                float: left;
+                                margin-right: 10px;
+                            }
+                        }
+                        
+                        h3{
+                            text-align: center;
+                            font-size: 40px;
+                            font-weight: 700;
+                            color: #103A4A;
+                            padding: 20px 0;
+                        }
+                    }
+                }
+                input{
+                    border: 1px solid #145068;
+                    border-radius: 5px;
+                    padding: 10px;
+                    background: transparent;
+                    margin-bottom: 10px;
+                }
+                input:focus{
+                    outline: none;
+                    background: rgba(255, 255, 255, .1);
+                }
+                .pribtn{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .btn_connect{
+                    margin-bottom: 0;
+                    color: #3c2302;
+                    background: url("../images/staking/claim-reward-button-container.png");
+                    background-repeat: no-repeat;
+                    background-size: 113%;
+                    background-position-y: -13px;
+                    background-position-x: -18px;
+                    width: 250px;
+                    height: 55px;
+                    font-size: 18px;
+                    font-weight: 700;
+                    border: 3px solid #DDD3BA;
+                    box-shadow: inset 0 0 6px #b9ac8c;
+                }
+                h4, label{
+                    padding:0;
+                }
+                ::placeholder{
+                    color: #1e4d68;
+                }
+                .row{
+                    margin: unset;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,326 @@
+// pop up
+@media screen and (min-width: 0px){
+    .swal2-container {
+        z-index: 9999999 !important;
+    }
+    .swal2-html-container form input{
+        background-color: #26140a;
+        border: none;
+        font-size: 18px;
+        color: #453423;
+        width: 100%;
+        height: 50px;
+        text-indent: 5px;
+        border: 1px solid #867d64;
+        border-radius: 7px;
+    }
+    .swal2-html-container form .row{
+        margin: 0;
+    }
+    .swal2-html-container form label{
+        text-align: left;
+        color: #B19D7B;
+    }
+    .swal2-html-container form input::placeholder{
+        color: #5C4E47;
+    }
+    .swal2-html-container p{
+        color: #fff;
+        font-size: 15px;
+    }
+    .swal2-html-container label{
+        padding:0;
+    }
+    .finish{
+        text-align: center;
+    }
+    .finish{
+        color: #fff;
+    }
+    .btn-login{
+        box-shadow: 0;
+        transition: box-shadow 1s ease;
+    }
+    .btn-login:hover{
+        box-shadow: 0px 0px 10px #888888;
+    }
+    .btn-login {
+        background: url("../images/staking/teal-button.svg");
+        background-size: 146%;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 350px;
+        height: 50px;
+        font-size: 23px;
+        font-weight: 600;
+        margin: auto;
+        margin: 20px auto;
+        color: var(--txt-white);
+        border: 3px solid #82cec0;
+        border-radius: 6px;
+        box-shadow: inset 0 0 6px #057868;
+    }
+    .btn-register{
+        box-shadow: 0;
+        transition: box-shadow 1s ease;
+    }
+    .btn-register:hover{
+        box-shadow: 0px 0px 10px #888888;
+    }
+    .btn-register {
+        background: url("../images/staking/connect-button-container.png");
+        background-size: 146%;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 50px;
+        font-size: 23px;
+        font-weight: 600;
+        margin: auto;
+        margin: 20px auto;
+        color: var(--txt-white);
+        border-radius: 6px;
+        border: 3px solid #DDD3BA;
+        box-shadow: inset 0 0 6px #b9ac8c;
+    }
+    #register{
+        margin-top: 0px;
+    }
+    .Facode{   
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;                      
+        .digit-code {
+            position: relative;
+            margin: 20px auto;
+            width: 100%;
+        }
+        .form-masked-pin {
+            display: block;
+            width: 100%;
+            height: 45px;
+            overflow: hidden;
+            margin: 0px 0px;
+            padding: 0;
+            position: relative;
+            left: -4px;
+            top: -5px;
+            font-size: 25px;
+            letter-spacing: 29px;
+            border: none !important;
+            background: none !important;
+            box-shadow: none !important;
+            text-indent: 14px;
+            z-index: 1;
+            outline: 0;
+            font-family: Menlo, Monaco, "Courier New", monospace;
+        }
+        
+        .bg-box-group {
+            width: 100%;
+            height: 60px;
+            position: absolute;
+            z-index: 0;
+            top: 0px;
+            left: 0;
+            margin: 0 0;
+        }
+        
+        .bg-box {
+            width: 34px;
+            height: 34px;
+            display: block;
+            border-radius: 8px;
+            border: 2px solid #909096;
+            background: #fff;
+            float: left;
+            margin-right: 10px;
+        }
+    }
+    .qr-code {
+        width: 50%;
+        margin: auto;
+    }
+    .step{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        text-align: left;
+        font-size: 14px;
+        color: #dac799;
+        svg{
+            width: 25px;
+            height: 25px;
+            margin-right: 15px;
+        }
+    }
+    .next-step{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .row-setup{
+        margin-bottom: 10px !important;
+    }
+}
+@media screen and (min-width: 1200px){
+    .swal2-html-container form input{
+        background-color: #26140a;
+        border: none;
+        font-size: 18px;
+        color: #453423;
+        width: 100%;
+        height: 50px;
+        text-indent: 5px;
+        border: 1px solid #867d64;
+        border-radius: 7px;
+    }
+    .swal2-html-container form .row{
+        margin: 0;
+    }
+    .swal2-html-container form label{
+        text-align: left;
+        color: #B19D7B;
+    }
+    .swal2-html-container form input::placeholder{
+        color: #5C4E47;
+    }
+    .swal2-html-container p{
+        color: #fff;
+        font-size: 15px;
+    }
+    .swal2-html-container label{
+        padding:0;
+    }
+    .finish{
+        text-align: center;
+    }
+    .finish{
+        color: #fff;
+    }
+    .btn-login{
+        box-shadow: 0;
+        transition: box-shadow 1s ease;
+    }
+    .btn-login:hover{
+        box-shadow: 0px 0px 10px #888888;
+    }
+    .btn-login {
+        background: url("../images/staking/teal-button.svg");
+        background-size: 146%;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 350px;
+        height: 50px;
+        font-size: 23px;
+        font-weight: 600;
+        margin: auto;
+        margin: 20px auto;
+        color: var(--txt-white);
+        border: 3px solid #82cec0;
+        border-radius: 6px;
+        box-shadow: inset 0 0 6px #057868;
+    }
+    .btn-register{
+        box-shadow: 0;
+        transition: box-shadow 1s ease;
+    }
+    .btn-register:hover{
+        box-shadow: 0px 0px 10px #888888;
+    }
+    .btn-register {
+        background: url("../images/staking/connect-button-container.png");
+        background-size: 146%;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 350px;
+        height: 50px;
+        font-size: 23px;
+        font-weight: 600;
+        margin: auto;
+        margin: 20px auto;
+        color: var(--txt-white);
+        border-radius: 6px;
+        border: 3px solid #DDD3BA;
+        box-shadow: inset 0 0 6px #b9ac8c;
+    }
+    #register{
+        margin-top: 0px;
+    }
+    .Facode{   
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;                      
+        .digit-code {
+            position: relative;
+            margin: 20px auto;
+        }
+        .form-masked-pin {
+            display: block;
+            width: 340px;
+            height: 45px;
+            overflow: hidden;
+            margin: 0 -157px;
+            padding: 0;
+            position: relative;
+            left: 50%;
+            font-size: 28px;
+            letter-spacing: 37px;
+            border: none !important;
+            background: none !important;
+            box-shadow: none !important;
+            text-indent: 14px;
+            z-index: 1;
+            outline: 0;
+            font-family: Menlo, Monaco, 'Courier New', monospace;
+        }
+        
+        .bg-box-group {
+            width: 324px;
+            height: 60px;
+            position: absolute;
+            z-index: 0;
+            top: 0px;
+            left: 50%;
+            margin: 0 -157px;
+        }
+        
+        .bg-box {
+            width: 44px;
+            height: 45px;
+            display: block;
+            border-radius: 8px;
+            border: 2px solid #909096;
+            background: #fff;
+            float: left;
+            margin-right: 10px;
+        }
+    }
+    .qr-code {
+        width: 50%;
+        margin: auto;
+    }
+    .step{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        text-align: left;
+        font-size: 14px;
+        color: #dac799;
+        svg{
+            width: 25px;
+            height: 25px;
+            margin-right: 15px;
+        }
+    }
+    .next-step{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .row-setup{
+        margin-bottom: 10px !important;
+    }
+}
