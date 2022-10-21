@@ -45,7 +45,12 @@ function Header() {
                             <p>Staking</p>
                         </a></li>
                 </ul>
-
+                {/* <div class="header-navigation-login_register header-navigation-account">
+                    <button><i class="bi bi-person-circle"></i></button>
+                </div> */}
+                <div class="header-navigation-login_register">
+                    <a id="login-button">Login/Register</a>
+                </div>
             </div>
             <div className="header-collapse-btn">
                 <button><i className="bi bi-list"></i></button>

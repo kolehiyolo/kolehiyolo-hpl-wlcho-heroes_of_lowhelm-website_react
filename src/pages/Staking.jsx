@@ -315,7 +315,7 @@ class App extends React.Component {
         return (
             <main className="main">
             <link rel="stylesheet" href="../css/staking.css"/>
-            {/* <section className="container hero-section">
+            <section className="container hero-section">
                     <div className="wrapper">
                         <div className="hero-image">
                             <div className="row justify-content-start mb-full-hieght">
@@ -346,7 +346,7 @@ class App extends React.Component {
                             </div>
                         </div>
                     </div>
-            </section> */}
+            </section>
             {/* Staking Form */}
             <section className="staking">
                 <div className="wrapper">
