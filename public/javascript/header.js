@@ -6,8 +6,6 @@ function headerScript() {
         $('.header-collapse-btn button i').click(function () {
             counter++;
 
-            console.log("counter = " + counter);
-            // console.log("TOGGLEEEE");
             if ($('.header-navigation').hasClass('header-navigation-collapsed-active')) {
                 $('.header-navigation').removeClass('header-navigation-collapsed-active');
                 $('.header-navigation').addClass('header-navigation-collapsed-inactive');
@@ -23,7 +21,6 @@ function headerScript() {
                 }
         
                 $('html, body').addClass('disable-scroll');
-                // console.log(`WORK`); 
             }
         });
         

@@ -12,6 +12,7 @@ import Documentation from "./pages/Documentation";
 import About from "./pages/About";
 import Socials from "./pages/Socials";
 import Staking from './pages/Staking';
+import Account from './pages/Account';
 
 // * Content Based on the React Routing
 const content = {
@@ -26,6 +27,7 @@ const content = {
             <Route path="about" element={<About />} />
             <Route path="socials" element={<Socials />} />
             <Route path="staking" element={<Staking />} />
+            <Route path="account" element={<Account />} />
           </Route>
         </Routes>
       </BrowserRouter>
@@ -58,15 +60,15 @@ const target = {
 
 // * Render Content
 ReactDOM.createRoot(document.getElementById(target.css)).render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <content.css />
-  </React.StrictMode>
+  // </React.StrictMode>
 );
 
 ReactDOM.createRoot(document.getElementById(target.html)).render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <content.html />
-  </React.StrictMode>
+  // </React.StrictMode>
 );
 
 // * Reporting

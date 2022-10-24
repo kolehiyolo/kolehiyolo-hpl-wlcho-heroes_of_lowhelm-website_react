@@ -45,10 +45,10 @@ function Header() {
                             <p>Staking</p>
                         </a></li>
                 </ul>
-                {/* <div class="header-navigation-login_register header-navigation-account">
-                    <button><i class="bi bi-person-circle"></i></button>
+                {/* <div className="header-navigation-login_register header-navigation-account">
+                    <button><i className="bi bi-person-circle"></i></button>
                 </div> */}
-                <div class="header-navigation-login_register">
+                <div className="header-navigation-login_register">
                     <a id="login-button">Login/Register</a>
                 </div>
             </div>

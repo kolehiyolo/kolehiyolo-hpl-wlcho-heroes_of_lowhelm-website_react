@@ -916,6 +916,7 @@ html body {
 }
 
 html body {
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -1172,6 +1173,9 @@ html body {
   }
 }
 @media screen and (min-width: 576px) {
+  html {
+    width: 100vw;
+  }
   main .hero-section {
     background: url("../images/news/hol-home-header.jpg");
     background-size: cover;
