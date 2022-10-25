@@ -3621,6 +3621,101 @@ html body .hero:before {
     color: #dac799;
   }
 }
+@media (max-width: 992px) {
+  html body ._qwertystake {
+    padding: 12px;
+  }
+  html body ._qwertystake .stakeFormSection .label-text {
+    padding: 0;
+  }
+  html body ._qwertystake .stakeFormSection .input-div div {
+    width: 100% !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 !important;
+    padding: 0 !important;
+    gap: 10px;
+  }
+  html body ._qwertystake .stakeFormSection .input-div div #filled-adornment-password {
+    box-sizing: border-box;
+    padding: 0px !important;
+    flex-grow: 1;
+    font-family: "Montserrat", sans-serif;
+  }
+  html body ._qwertystake .stakeFormSection .input-div div .MuiInputAdornment-root {
+    width: 100px !important;
+    height: 50px !important;
+    max-height: none;
+  }
+  html body ._qwertystake .stakeFormSection .input-div div .MuiInputAdornment-root button {
+    background-color: #ffc543;
+    color: #8c3606;
+    font-weight: bold;
+    font-size: 16px;
+    height: 100% !important;
+    width: 100% !important;
+  }
+  html body ._qwertystake .stakeFormSection .input-div div.css-g9m4e0-MuiInputBase-root-MuiFilledInput-root:after, html body ._qwertystake .stakeFormSection .input-div div.css-19mk8g1-MuiInputBase-root-MuiFilledInput-root:after {
+    border: none !important;
+  }
+  html body ._qwertystake .stakeFormSection .stake-button-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  html body ._qwertystake .stakeFormSection .stake-button-div button {
+    text-transform: capitalize;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+  }
+  html body .stake-right {
+    padding: 12px;
+  }
+  html body .stake-right .stake-right-top .outer-border ._qwerty_storage .row {
+    width: 100%;
+    padding: 0;
+  }
+  html body .stake-right .stake-right-top .outer-border ._qwerty_storage .row p {
+    padding: 0 !important;
+  }
+  html body .stake-right .stake-right-top .outer-border ._qwerty_storage .row form .label-text ._qwerty_alternative {
+    margin-left: 10px;
+  }
+  html body .stake-right .stake-right-top .outer-border ._qwerty_storage .row button {
+    margin: 0px;
+    text-transform: capitalize;
+    font-family: "Montserrat", sans-serif;
+    padding: 6px 0;
+    font-size: 16px;
+  }
+  html body .stake-right .stake-right-bottom {
+    margin: 30px 0 0;
+    width: 100%;
+  }
+  html body .stake-right .stake-right-bottom p {
+    padding: 0;
+  }
+  html body .stake-right .stake-right-bottom .qwerty-rewards .stake_value {
+    padding: 0;
+  }
+  html body .stake-right .stake-right-bottom .col:nth-child(1) {
+    margin-bottom: 20px;
+  }
+  html body .stake-right .stake-right-bottom .col .btn_connect {
+    margin: 20px 0px 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  html body .stake-right .stake-right-bottom .col .outer-border-white .outer-border .row .row {
+    padding: 0px 12px;
+  }
+  html body .stake-right .stake-right-bottom .col .outer-border-white .outer-border .row .row .stake_value {
+    color: #dac799;
+    padding: 0 !important;
+  }
+}
 html body body,
 html body html {
   display: block;
