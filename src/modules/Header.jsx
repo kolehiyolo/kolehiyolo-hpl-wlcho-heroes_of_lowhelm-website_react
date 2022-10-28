@@ -57,9 +57,9 @@ function Header() {
             </div>
             <div className="header-account header-account-collapsed-inactive">
                 <ul>
-                    <li className="header-account-item"><a href="account.php">Account Management</a></li>
-                    <li className="header-account-item"><a href="account.php">2FA</a></li>
-                    <li className="header-account-item"><a href="account.php">Connect Wallet</a></li>
+                    <li className="header-account-item"><a href="account">Account Management</a></li>
+                    <li className="header-account-item"><a href="account">2FA</a></li>
+                    <li className="header-account-item"><a href="account">Connect Wallet</a></li>
                     <li className="header-account-item">
                         <form action="#" method="GET">
                             <button type="submit" name="logout">Log Out</button>
